@@ -2,22 +2,6 @@
 const getDate = require('../middlewares/getDate');
 const CheckService = require('../services/check.service');
 
-
-exports.Check = {
-    //시력 교정 여부 체크_클라이언트에서 저장 후 검사 결과 보낼 때 같이 전송
-    checkStart: async (req, res) => {
-        if (req.body.corrected) {
-            const check_corrected = req.body.corrected;
-            console.log(check_corrected);
-            return res.redirect('/api/check/vision');
-        }
-        else {
-            console.log('fail');
-            return res.status(400).json('fail');
-        }
-    }
-}
-
 //시력검사
 exports.Vision = {
     //시력검사 시작시 GET
@@ -25,9 +9,8 @@ exports.Vision = {
         try {
             if ((req.params.user_id)) {
                 const user_id = req.params.user_id;
-                var dateNow = new Date();
-                const date = await getDate.today_date(dateNow);
-                let check_vs_no = 'vs_' + String(date) + user_id;
+                let dateNow = await getDate.convertDate();
+                let check_vs_no = 'vs_' + String(dateNow) + user_id;
 
                 //성공(200)
                 return res.status(200).json({
@@ -43,7 +26,7 @@ exports.Vision = {
             //그 외 모든 오류
         } catch (err) {
             console.log(err);
-            return res.status(500).json('fail');
+            return res.status(500).json('Internal Server Error Occured');
         }
     },
 
@@ -52,14 +35,13 @@ exports.Vision = {
         try {
             if (req.body.check_id) {
                 const actoken = req.headers.authorization;
-                console.log(actoken);
                 const check_vs_no = req.body.check_id;
                 const user_id = req.params.user_id;
                 const check_corrected = req.body.check_corrected;
                 const right_result = req.body.right_result;
                 const left_result = req.body.left_result;
-                const send_vs_result = await CheckService.VisionCheck.insert_vs_result(check_vs_no, user_id, right_result, left_result, check_corrected);
-                const send_vs_check_info = await CheckService.CheckInfo.insert_check_result('vs', check_vs_no, user_id)
+                const send_vs_result = await CheckService.VisionCheck.insertVisionResult(check_vs_no, user_id, right_result, left_result, check_corrected);
+                const send_vs_check_info = await CheckService.CheckInfo.insertCheckResult('vs', check_vs_no, user_id)
 
                 if (send_vs_result != -1) {
                     return res.status(200).json({
@@ -86,7 +68,7 @@ exports.BlindSpot = {
             if (req.params.user_id) {
                 const user_id = req.params.user_id;
                 var dateNow = new Date();
-                const date = await getDate.today_date(dateNow);
+                const date = await getDate.convertDate(dateNow);
                 let check_bs_no = 'bs_' + String(date) + user_id;
 
                 //성공(200)
@@ -123,7 +105,7 @@ exports.BlindSpot = {
                 const check_category = 'bs';
                 // 검사 결과 보내기
                 const bs_result
-                    = await CheckService.BlindSpotCheck.insert_bs_result(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point);
+                    = await CheckService.BlindSpotCheck.insertBlindResult(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point);
 
 
                 if (bs_result != -1) {
@@ -148,7 +130,7 @@ exports.EyeMovement = {
             if (req.params.user_id) {
                 const user_id = req.params.user_id;
                 var dateNow = new Date();
-                const date = await getDate.today_date(dateNow);
+                const date = await getDate.convertDate(dateNow);
                 let check_id = 'em_' + String(date) + user_id;
 
                 // res.cookie('check_no', check_id);
@@ -176,7 +158,7 @@ exports.EyeMovement = {
                 const left_vfi = req.body.left_vfi;
                 const right_location = req.body.right_location;
                 const left_location = req.body.left_location;
-                const check_result = await CheckService.CheckInfo.insert_check_result('em', check_em_id, user_id);
+                const check_result = await CheckService.CheckInfo.insertCheckResult('em', check_em_id, user_id);
                 console.log(check_result);
                 const result_em_check = await CheckService.EyeMovementCheck.insert_em_result(check_em_id, user_id, right_vfi, left_vfi);
                 console.log(result_em_check);
@@ -198,6 +180,21 @@ exports.EyeMovement = {
             return res.status(500).json('server error');
         }
     },
+
+    // exports.Check = {
+    //     //시력 교정 여부 체크_클라이언트에서 저장 후 검사 결과 보낼 때 같이 전송
+    //     checkStart: async (req, res) => {
+    //         if (req.body.corrected) {
+    //             const check_corrected = req.body.corrected;
+    //             console.log(check_corrected);
+    //             return res.redirect('/api/check/vision');
+    //         }
+    //         else {
+    //             console.log('fail');
+    //             return res.status(400).json('fail');
+    //         }
+    //     }
+    // }
 
     //암점자가인식검사 검사 POST
     // //검사_좌우_기타

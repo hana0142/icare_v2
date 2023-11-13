@@ -124,56 +124,35 @@ exports.BlindSpotCheck = {
         let isExistedResult = -2;
         let data = {};
 
-        const rightResult = async (check_bs_id) => {
-            let isExistedResult = -1;
-
-            try {
-                return await Blind_spot_right_detail_result.findOne({
-                    where: { check_id: check_bs_id },
-                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
-                    raw: true
-                });
-            } catch (err) {
-                console.log(err);
-                isExistedResult = -1;
-                return isExistedResult;
-            }
-        };
-
-        const leftResult = async (check_bs_id) => {
-            let isExistedResult = -2;
-
-            try {
-                return await Blind_spot_left_detail_result.findOne({
-                    where: { check_id: check_bs_id },
-                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
-                    raw: true
-                });
-            } catch (err) {
-                console.log(err);
-                isExistedResult = -1;
-                return isExistedResult;
-            }
-        };
-
         try {
-            let blindSpotRightResult = rightResult(check_bs_id);
-            data['right_detail_result'] = await blindSpotRightResult;
-
-            let blindSpotleftResult = leftResult(check_bs_id);
-            data['left_detail_result'] = await blindSpotleftResult;
-
-            if ((data['right_detail_result'] != -1) && (data['left_detail_result'] != -1)) {
-                return data;
-            }
-
-            else {
+            //암점자가인식 우안 검사 결과
+            await Blind_spot_right_detail_result.findOne({
+                where: { check_id: check_bs_id },
+                attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
+                raw: true
+            }).then(bsRightResult => {
+                data['right_detail_result'] = bsRightResult;
+            }).catch((err) => {
+                console.log(err);
                 isExistedResult = -1;
                 return isExistedResult;
-            }
+            });
 
-        }
-        catch (err) {
+            //암점자가인식 좌안 검사 결과
+            await Blind_spot_left_detail_result.findOne({
+                where: { check_id: check_bs_id },
+                attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
+                raw: true
+            }).then((bsLeftResult) => {
+                data['left_detail_result'] = bsLeftResult;
+            }).catch((err) => {
+                console.log(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            });
+            return data;
+
+        } catch (err) {
             console.log(err);
             isExistedResult = -1;
             return isExistedResult;
@@ -194,10 +173,13 @@ exports.BlindSpotCheck = {
                 where: { user_id },
                 attributes: [
                     [sequelize.fn('date_trunc', 'month', sequelize.col('created_date')), 'month'],
+                    //우안 vfi 결과 평균값
                     [sequelize.fn('AVG', sequelize.col('right_vfi')), 'right_vfi'],
+                    //좌안 vfi 결과 평균값
                     [sequelize.fn('AVG', sequelize.col('left_vfi')), 'left_vfi'],
                 ],
                 raw: true,
+                //created_date 컬럼 월 기준으로 데이터 그룹화
                 group: [sequelize.fn('date_trunc', 'month', sequelize.col('created_date'))]
             });
             return resultPerMonth;
@@ -209,7 +191,7 @@ exports.BlindSpotCheck = {
     },
 
     /**
-     * 암점자가인식검사 월 별 결과 평균
+     * 암점자가인식검사 월 별 결과 최댓값, 최솟값
      * 
      * @param {String} user_id
      * @return {Object} get_per_month_result
@@ -265,47 +247,56 @@ exports.EyeMovementCheck = {
     },
 
     /**
-         * 안구이동검사 결과 조회_check_em_id
-         * 
-         * @param {String} check_em_id
-         * @return {Number} isExistedResult
-        */
+     * 안구이동검사 결과 조회_check_em_id
+     * 
+     * @param {String} check_em_id
+     * @return {Number} isExistedResult
+    */
     selectByCheckId: async (check_em_id) => {
         let isExistedResult = -2;
         let data = {};
 
         try {
-            const leftResult = await Eye_left_detail_result.findAll({
+            await Eye_left_detail_result.findAll({
                 where: { check_id: check_em_id },
                 attributes: ['check_id', 'user_id', 'location_t', 'location_st', 'location_it', 'location_sn', 'location_in', 'created_date'],
                 raw: true
+            }).then((emleftResult) => {
+                data['left_detail_result'] = emleftResult;
+            }).catch((err) => {
+                console.log(err);
+                isExistedResult = -1;
+                return isExistedResult;
             });
 
-            const rightResult = await Eye_right_detail_result.findAll({
+            await Eye_right_detail_result.findAll({
                 where: { check_id: check_em_id },
                 attributes: ['check_id', 'user_id', 'location_t', 'location_st', 'location_it', 'location_sn', 'location_in', 'created_date'],
                 raw: true
-            });
-
-            data['right_detail_result'] = rightResult;
-            data['left_detail_result'] = leftResult;
-
+            }).then((emRightResult) => {
+                data['right_detail_result'] = emRightResult;
+            }).catch((err) => {
+                console.log(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            })
             return data;
+
         } catch (err) {
             console.log(err);
+            isExistedResult = -1;
             return isExistedResult;
         }
     },
 
     /**
-     * 안구이동검사 결과 조회_user_id
+     * 안구이동검사 월 별 평균 결과 조회
      * 
      * @param {String} user_id
      * @return {Number} isExistedResult
     */
     selectGroupByMonth: async (user_id) => {
         let isExistedResult = -2;
-        let data = {};
 
         try {
             const eyeMovementResult = await Eye_movement_result.findAll({
@@ -326,7 +317,7 @@ exports.EyeMovementCheck = {
     },
 
     /**
-     * 안구이동검사 결과 조회_user_id
+     * 안구이동검사 결과_월 별최댓값, 최솟값
      * 
      * @param {String} user_id
      * @return {Number} isExistedResult
@@ -348,7 +339,6 @@ exports.EyeMovementCheck = {
                 raw: true,
                 group: [sequelize.fn('date_trunc', 'month', sequelize.col('created_date'))]
             });
-
             return get_per_month_result;
         } catch (err) {
             console.log(err);
@@ -356,3 +346,63 @@ exports.EyeMovementCheck = {
         }
     },
 }
+
+
+/*
+      const rightResult = async (check_bs_id) => {
+            let isExistedResult = -1;
+
+            try {
+                const bsRightResult = await Blind_spot_right_detail_result.findOne({
+                    where: { check_id: check_bs_id },
+                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
+                    raw: true
+                });
+                return bsRightResult;
+            } catch (err) {
+                console.log(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            }
+        };
+
+        const leftResult = async (check_bs_id) => {
+            let isExistedResult = -2;
+
+            try {
+                const bsLeftResult = await Blind_spot_left_detail_result.findOne({
+                    where: { check_id: check_bs_id },
+                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
+                    raw: true
+                });
+                return bsLeftResult;
+            } catch (err) {
+                console.log(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            }
+        };
+
+        try {
+            let blindSpotRightResult = rightResult(check_bs_id);
+            data['right_detail_result'] = await blindSpotRightResult;
+
+            let blindSpotleftResult = leftResult(check_bs_id);
+            data['left_detail_result'] = await blindSpotleftResult;
+
+            if ((data['right_detail_result'] != -1) && (data['left_detail_result'] != -1)) {
+                return data;
+            }
+
+            else {
+                isExistedResult = -1;
+                return isExistedResult;
+            }
+
+        }
+        catch (err) {
+            console.log(err);
+            isExistedResult = -1;
+            return isExistedResult;
+        }
+*/

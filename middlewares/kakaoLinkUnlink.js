@@ -1,3 +1,5 @@
+// const winston = require('winston');
+const axios = require('axios');
 exports.Kakao = {
     unlinkUser(session, provider, userId) {
         let result = false;
@@ -37,6 +39,8 @@ exports.Kakao = {
     },
 
     async getUserInfo(kakaoAccessToken) {
+        let isExistedResult = -2;
+
         try {
             const kakaoUserInfo = await axios({
                 method: "GET",
@@ -47,8 +51,10 @@ exports.Kakao = {
             });
             return kakaoUserInfo;
         } catch (err) {
-            logger.error('error', err);
-            return res.status(401).json('Unauthorized');
+            console.log('error', err);
+            isExistedResult = -1;
+            return isExistedResult;
+            // return res.status(401).json('Unauthorized');
         }
 
     }

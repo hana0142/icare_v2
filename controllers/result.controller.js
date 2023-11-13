@@ -127,7 +127,6 @@ exports.BlindSpotCheck = {
                 const blindSpotResult = await ResultService.BlindSpotCheck.selectByCheckId(check_bs_id);
 
                 if (blindSpotResult != -1) {
-                    console.log(blindSpotResult);
                     return res.status(200).json({
                         'blind_spot_detail_result': blindSpotResult
                     });
@@ -199,23 +198,25 @@ exports.EyeMovementCheck = {
         try {
             if (req.params.user_id) {
                 const user_id = req.params.user_id;
-                let vs_result = await ResultService.EyeMovementCheck.get_result_user_id(user_id);
+                let vs_result = await ResultService.EyeMovementCheck.selectByUserId(user_id);
 
                 if (vs_result != -1) {
                     // vs_result = JSON.stringify(vs_result);
-                    console.log(vs_result);
+                    // console.log(vs_result);
                     // console.log(JSON.stringify(vs_result));
                     return res.status(200).json({
                         'eye_movement_result': vs_result
                     });
+                } else {
+                    return res.status(404).json('Do Not Found');
                 }
             }
             else {
-                return res.status(400).json('fail');
+                return res.status(400).json('Bad Request');
             }
         } catch (err) {
             console.log(err);
-            return res.status(500).json('fail');
+            return res.status(500).json('Internal Server Error occured');
         }
     },
 
@@ -225,7 +226,6 @@ exports.EyeMovementCheck = {
             if (req.params.check_em_id) {
                 const check_em_id = req.params.check_em_id;
                 const em_detail_result = await ResultService.EyeMovementCheck.selectByCheckId(check_em_id);
-                console.log(em_detail_result);
 
                 if (em_detail_result != -1) {
                     console.log(em_detail_result);
@@ -233,43 +233,50 @@ exports.EyeMovementCheck = {
                         'eye_movement_detail_result': em_detail_result
                     });
                 }
+                else {
+                    return res.status(4 - 4).json('Do Not Found');
+                }
             }
             else {
-                return res.status(400).json('fail');
+                return res.status(400).json('Bad Request');
             }
         } catch (err) {
             console.log(err);
-            return res.status(500).json('fail');
+            return res.status(500).json('Internal Server Error Occured');
         }
     },
 
     getResultMonth: async (req, res) => {
-        let data;
+        try {
+            if (req.params.user_id) {
+                const user_id = req.params.user_id;
+                const result_month = await ResultService.EyeMovementCheck.selectGroupByMonth(user_id);
 
-        if (req.params.user_id) {
-            const user_id = req.params.user_id;
-            const result_month = await ResultService.EyeMovementCheck.get_result_by_month(user_id);
-
-            if (result_month != -1) {
-                console.log(result_month);
-                return res.status(200).json({
-                    'result_per_month': result_month
-                });
+                if (result_month != -1) {
+                    console.log(result_month);
+                    return res.status(200).json({
+                        'result_per_month': result_month
+                    });
+                }
+                else {
+                    return res.status(404).json('Do Not Found');
+                }
             }
             else {
-                return res.status(400).json('fail');
+                return res.status(400).json('Bad Request');
             }
-        }
-        else {
-            return res.status(404).json('do not find user_id');
+        } catch (err) {
+            console.log(err);
+            return res.status(500).json('Internal Server Error Occured');
         }
     },
+
     getResultMonthDetail: async (req, res) => {
         let data;
 
         if (req.params.user_id) {
             const user_id = req.params.user_id;
-            const result_month = await ResultService.EyeMovementCheck.get_result_by_month_detail(user_id);
+            const result_month = await ResultService.EyeMovementCheck.selectGroupByMonthDetail(user_id);
 
             if (result_month != -1) {
                 console.log(result_month);

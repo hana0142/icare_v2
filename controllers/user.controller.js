@@ -28,8 +28,9 @@ exports.Login = {
                     code
                 })
             });
-            res.redirect('/kakao/token?token=' + tokenResponse.data.access_token);
-            return res.status(200).json({ 'token': tokenResponse.data.access_token });
+            res.send(tokenResponse.data.access_token);
+            // res.redirect('/kakao/token?token=' + tokenResponse.data.access_token);
+            // return res.status(200).json({ 'token': tokenResponse.data.access_token });
         } catch (error) {
             console.log(error);
             return res.status(500).json('Internal Server Error Occured');
@@ -38,9 +39,12 @@ exports.Login = {
 
     getToken: async (req, res) => {
         const kakaoAccessToken = req.headers.token;
+
         //1. kakaoAccessToken으로 사용자 정보 요청하기
         const kakaoUserInfo = await func_link.Kakao.getUserInfo(kakaoAccessToken);
-
+        if (kakaoUserInfo === -1) {
+            return res.status(404).json('Do Not Found')
+        }
 
         //2.linkedUserDB
         const authData = {
@@ -83,9 +87,8 @@ exports.Login = {
                 const provider = 'kakao';
                 const refreshToken = func_token.GenerateRefreshToken(email);
                 const InsertUser = await UserService.InsertUser(user_id, email, provider, refreshToken);
-                // console.log(jwt_token);
 
-                if (insertUser != -1) {
+                if (InsertUser != -1) {
                     res.redirect('/user/main?access_token=' + access_token + '?user_id' + user_id);
                     // return res.status(200).json({ 'user_id': user_id });
                     // return res.status(200).json({
@@ -96,7 +99,7 @@ exports.Login = {
                 else {
                     return res.status(500).json('fail');
                 }
-                // res.json(jwt_token);
+
             }
         } catch (err) {
             logger.error('error', err);
@@ -159,10 +162,6 @@ exports.auth = {
 
             //1. access token verified
             const verified_at = await func_token.VerifyAccessToken(accessToken);
-
-
-            // const user_id = await UserService.getUser(email);
-
 
             if (verified_at) {
 
