@@ -10,6 +10,11 @@ const userRouter = require('./routes/user.route');
 const checkRouter = require('./routes/check.route');
 const resultRouter = require('./routes/result.route');
 
+//logger, morgan
+global.logger || (global.logger = require('./config/logger'));
+const morganMiddleware = require('./config/morganMiddleware');
+app.use(morganMiddleware);
+
 //routes
 app.use(cookieParser());
 app.use(session({

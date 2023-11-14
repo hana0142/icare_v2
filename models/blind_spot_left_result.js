@@ -3,6 +3,7 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('blind_spot_left_result', {
     id: {
       autoIncrement: true,
+      autoIncrementIdentity: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
@@ -20,8 +21,36 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.ARRAY(DataTypes.TEXT),
       allowNull: true
     },
+    scotoma: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_t: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_sn: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_in: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_st: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_it: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    location_n: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
     created_date: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATE,
       allowNull: true
     }
   }, {

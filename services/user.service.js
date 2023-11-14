@@ -28,6 +28,37 @@ exports.SelectExistedUser = async (email) => {
     }
 };
 
+
+/**
+ * DB에서 user_id 이용해 사용자 유무 확인
+ * 
+ * @param {String} user_id
+ * @return {Number} isExistedResult
+ */
+exports.SelectExistedUserId = async (user_id) => {
+    let isExistedResult = -2;
+
+    try {
+        const SelectUser = await User.findAll({
+            where: { user_id }
+        });
+        console.log(SelectUser);
+
+        if (SelectUser.length != 0) {
+            isExistedResult = 1;
+            return isExistedResult;
+        }
+        else {
+            isExistedResult = -1;
+        }
+    } catch (err) {
+        console.log(err);
+        isExistedResult = -1;
+        return isExistedResult;
+    }
+};
+
+
 /**
  * DB에서 사용자 정보 조회
  * 

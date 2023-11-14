@@ -1,3 +1,4 @@
+const logger = require('../config/logger');
 const ResultService = require('../services/result.service');
 
 //시력검사 결과
@@ -27,8 +28,8 @@ exports.VisionCheck = {
         }
         //서버 오류
         catch (err) {
-            console.log(err);
-            return res.status(500).send('Internal Server Error occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -40,6 +41,7 @@ exports.VisionCheck = {
                 const visionResultByCheckId = await ResultService.VisionCheck.selectByCheckId(check_id);
 
                 if (visionResultByCheckId != -1) {
+                    logger.info('GET RESULT VISION check_id  ${check_id}}')
                     return res.status(200).json({
                         'vision_detail_result': visionResultByCheckId
                     });
@@ -52,8 +54,8 @@ exports.VisionCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -90,8 +92,8 @@ exports.VisionCheck = {
             }
 
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     }
 };
@@ -115,8 +117,8 @@ exports.BlindSpotCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -139,8 +141,8 @@ exports.BlindSpotCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -163,8 +165,8 @@ exports.BlindSpotCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -187,8 +189,8 @@ exports.BlindSpotCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     }
 };
@@ -215,8 +217,8 @@ exports.EyeMovementCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -241,8 +243,8 @@ exports.EyeMovementCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -266,33 +268,37 @@ exports.EyeMovementCheck = {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
     getResultMonthDetail: async (req, res) => {
         let data;
+        try {
+            if (req.params.user_id) {
+                const user_id = req.params.user_id;
+                const result_month = await ResultService.EyeMovementCheck.selectGroupByMonthDetail(user_id);
 
-        if (req.params.user_id) {
-            const user_id = req.params.user_id;
-            const result_month = await ResultService.EyeMovementCheck.selectGroupByMonthDetail(user_id);
-
-            if (result_month != -1) {
-                console.log(result_month);
-                return res.status(200).json({
-                    'result_per_month_max_min': result_month
-                });
+                if (result_month != -1) {
+                    console.log(result_month);
+                    return res.status(200).json({
+                        'result_per_month_max_min': result_month
+                    });
+                }
+                else {
+                    return res.status(400).json('fail');
+                }
             }
             else {
-                return res.status(400).json('fail');
+                return res.status(404).json('do not find user_id');
             }
+        } catch (err) {
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
-        else {
-            return res.status(404).json('do not find user_id');
-        }
-    },
 
+    }
 }
 
 

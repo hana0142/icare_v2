@@ -27,19 +27,16 @@ exports.CheckInfo = {
                 check_id: check_id,
                 created_date: created_date,
                 check_category: check_category
-            }).then((result) => {
+            }).then(() => {
                 isExistedResult = 0;
-                return isExistedResult;
             }).catch((err) => {
                 isExistedResult = -1;
-                console.log(err);
-                return isExistedResult;
             });
-
+            return isExistedResult;
         } catch (err) {
             return_result = -1;
             console.log(err);
-            return return_result;
+            return isExistedResult;
         }
     }
 }
@@ -67,14 +64,14 @@ exports.VisionCheck = {
                 right_eye_result: right_result,
                 created_date: created_date,
                 check_corrected: check_corrected
-            }).then((result) => {
+            }).then(() => {
                 isExistedResult = 0;
-                return isExistedResult;
             }).catch((err) => {
                 console.log(err);
                 isExistedResult = -1;
-                return isExistedResult;
             });
+
+            return isExistedResult;
         } catch (err) {
             console.log(err);
             isExistedResult = -1;
@@ -95,9 +92,11 @@ exports.BlindSpotCheck = {
      * @param {Number} bs_left_vfi
      * @param {Array} bs_right_spot_point
      * @param {Array} bs_left_spot_point
+     * @param {Array} bs_right_location
+     * @param {Array} bs_left_location
      * @return {Number} isExistedResult
     */
-    insertBlindResult: async (check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point) => {
+    insertBlindResult: async (check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point, bs_right_location, bs_left_location) => {
         const t = await sequelize.transaction();
         let isExistedResult = -2;
         const created_date = Date.now();
@@ -123,6 +122,13 @@ exports.BlindSpotCheck = {
                 check_id: check_bs_id,
                 user_id: user_id,
                 blind_spot_point: bs_left_spot_point,
+                scotoma: bs_left_location[1],
+                location_t: bs_left_location[3],
+                location_st: bs_left_location[5],
+                location_in: bs_left_location[7],
+                location_sn: bs_left_location[9],
+                location_it: bs_left_location[11],
+                location_n: bs_left_location[13],
                 created_date: created_date,
                 transaction: t
             });
@@ -130,6 +136,13 @@ exports.BlindSpotCheck = {
                 check_id: check_bs_id,
                 user_id: user_id,
                 blind_spot_point: bs_right_spot_point,
+                scotoma: bs_right_location[1],
+                location_t: bs_right_location[3],
+                location_st: bs_right_location[5],
+                location_in: bs_right_location[7],
+                location_sn: bs_right_location[9],
+                location_it: bs_right_location[11],
+                location_n: bs_right_location[13],
                 created_date: created_date,
                 transaction: t
             });
@@ -250,13 +263,13 @@ exports.EyeMovementCheck = {
         }
     },
     /**
- * 검사 정보 insert
- * 
- * @param {String} check_category
- * @param {String} check_id
- * @param {String} user_id
- * @return {Number} isExistedResult
-*/
+     * 검사 정보 insert
+     * 
+     * @param {String} check_category
+     * @param {String} check_id
+     * @param {String} user_id
+     * @return {Number} isExistedResult
+    */
     insert_em_right_result: async (check_em_id, user_id, right_location) => {
         var return_result = -1;
         // var dateNow = new Date();

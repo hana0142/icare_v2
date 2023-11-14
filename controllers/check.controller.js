@@ -1,6 +1,10 @@
 
+const logger = require('../config/logger');
 const getDate = require('../middlewares/getDate');
+const UserService = require('../services/user.service');
 const CheckService = require('../services/check.service');
+const { log } = require('winston');
+
 
 //시력검사
 exports.Vision = {
@@ -9,24 +13,34 @@ exports.Vision = {
         try {
             if ((req.params.user_id)) {
                 const user_id = req.params.user_id;
-                let dateNow = await getDate.convertDate();
-                let check_vs_no = 'vs_' + String(dateNow) + user_id;
+                const isCheckedUser = await UserService.SelectExistedUserId(user_id);
 
-                //성공(200)
-                return res.status(200).json({
-                    'check_id': check_vs_no
-                });
+                if (isCheckedUser === 1) {
+                    let dateNow = await getDate.convertDate();
+                    let check_vs_no = 'vs_' + String(dateNow) + user_id;
+
+                    //성공(200)
+                    logger.info(`GET_CHECK_VISION check_id : ${check_vs_no}`);
+                    return res.status(200).json({
+                        'check_id': check_vs_no
+                    });
+                }
+
+                else {
+                    logger.error(`Do Not Found User_ID`);
+                    return res.status(404).json('Do Not Found');
+                }
             }
-
             //params에 user_id 없음
             else {
+                logger.error()
                 return res.status(400).json('Bad Request');
             }
-
             //그 외 모든 오류
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('Internal Server Error Occured');
+            // console.log(err);
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -34,28 +48,43 @@ exports.Vision = {
     postCheck: async (req, res) => {
         try {
             if (req.body.check_id) {
-                const actoken = req.headers.authorization;
-                const check_vs_no = req.body.check_id;
+                const actoken = req.headers.access_token;
                 const user_id = req.params.user_id;
-                const check_corrected = req.body.check_corrected;
-                const right_result = req.body.right_result;
+                const check_vs_no = req.body.check_id;
                 const left_result = req.body.left_result;
-                const send_vs_result = await CheckService.VisionCheck.insertVisionResult(check_vs_no, user_id, right_result, left_result, check_corrected);
-                const send_vs_check_info = await CheckService.CheckInfo.insertCheckResult('vs', check_vs_no, user_id)
+                const right_result = req.body.right_result;
+                const check_corrected = req.body.check_corrected;
 
-                if (send_vs_result != -1) {
-                    return res.status(200).json({
+                let send_vs_result;
+                let send_vs_check_info;
+
+                // const send_vs_result =
+                await CheckService.VisionCheck.insertVisionResult(check_vs_no, user_id, right_result, left_result, check_corrected)
+                    .then((result) => {
+                        send_vs_result = result;
+                    })
+                await CheckService.CheckInfo.insertCheckResult('vs', check_vs_no, user_id).then((result) => {
+                    send_vs_check_info = result;
+                })
+
+
+                console.log(send_vs_result, send_vs_check_info);
+
+                if ((send_vs_result === 0) && (send_vs_check_info === 0)) {
+                    // log.info('POST_CHECK_VISION')
+                    return res.status(201).json({
                         'right_result': right_result,
                         'left_result': left_result
                     });
                 }
                 else {
+                    log.error('')
                     return res.status(400).json('fail');
                 }
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('server error');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     }
 }
@@ -82,8 +111,8 @@ exports.BlindSpot = {
             }
             //그 외 모든 오류
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('fail');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -98,14 +127,19 @@ exports.BlindSpot = {
                 //우안 검사 
                 const bs_right_vfi = req.body.bs_right_vfi;
                 const bs_right_spot_point = req.body.bs_right_spot_point;
+                const bs_right_location = req.body.bs_right_location;
 
                 //좌안 검사
                 const bs_left_vfi = req.body.bs_left_vfi;
                 const bs_left_spot_point = req.body.bs_left_spot_point;
+                const bs_left_location = req.body.bs_left_location;
+
                 const check_category = 'bs';
+
+                console.log(bs_left_location[0], bs_left_location[1], bs_left_location[2]);
                 // 검사 결과 보내기
                 const bs_result
-                    = await CheckService.BlindSpotCheck.insertBlindResult(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point);
+                    = await CheckService.BlindSpotCheck.insertBlindResult(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point, bs_right_location, bs_left_location);
 
 
                 if (bs_result != -1) {
@@ -116,8 +150,8 @@ exports.BlindSpot = {
                 }
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('server error');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     }
 }
@@ -142,8 +176,8 @@ exports.EyeMovement = {
                 return res.status(400).json('fail');
             }
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('fail');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
@@ -159,11 +193,11 @@ exports.EyeMovement = {
                 const right_location = req.body.right_location;
                 const left_location = req.body.left_location;
                 const check_result = await CheckService.CheckInfo.insertCheckResult('em', check_em_id, user_id);
-                console.log(check_result);
+                // console.log(check_result);
                 const result_em_check = await CheckService.EyeMovementCheck.insert_em_result(check_em_id, user_id, right_vfi, left_vfi);
-                console.log(result_em_check);
+                // console.log(result_em_check);
                 const insert_em_right_result = await CheckService.EyeMovementCheck.insert_em_right_result(check_em_id, user_id, right_location);
-                console.log(insert_em_right_result);
+                // console.log(insert_em_right_result);
 
                 const insert_em_left_result = await CheckService.EyeMovementCheck.insert_em_left_result(check_em_id, user_id, left_location);
 
@@ -176,8 +210,8 @@ exports.EyeMovement = {
             }
             // 
         } catch (err) {
-            console.log(err);
-            return res.status(500).json('server error');
+            logger.error('Internal Server Error message');
+            return res.status(500).json('Error Occured');
         }
     },
 
