@@ -1,3 +1,10 @@
+/**
+ * version : 0.1
+ * filename : result.controller.js
+ * author : @Hana
+ * comment : 결과 데이터 관련 컨트롤러
+*/
+
 const logger = require('../config/logger');
 const ResultService = require('../services/result.service');
 
@@ -10,25 +17,28 @@ exports.VisionCheck = {
                 const user_id = req.params.user_id;
                 const visionResultByUserId = await ResultService.VisionCheck.selectByUserId(user_id);
 
-                // .then((result) => { return res.status(200).json({ 'vision_result': result }) })
-                // .catch(err => { return res.status(400).send('Bad Request'); })
-
-                if (visionResultByUserId != -1) {
+                if ((visionResultByUserId === 1)) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if ((visionResultByUserId === 0)) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if ((visionResultByUserId === -1)) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('userinfo');
                     return res.status(200).json({
                         'vision_result': visionResultByUserId
                     });
                 }
-                else {
-                    return res.status(404).json('Not Found');
-                }
-            }
-            else {
+            } else {
+                logger.error('Bad Request');
                 return res.status(400).send('Bad Request');
             }
         }
-        //서버 오류
         catch (err) {
-            logger.error('Internal Server Error message');
+            logger.error('Internal Server Error message', { message: err });
             return res.status(500).json('Error Occured');
         }
     },
@@ -40,21 +50,28 @@ exports.VisionCheck = {
                 const check_id = req.params.check_id;
                 const visionResultByCheckId = await ResultService.VisionCheck.selectByCheckId(check_id);
 
-                if (visionResultByCheckId != -1) {
-                    logger.info('GET RESULT VISION check_id  ${check_id}}')
+                if ((visionResultByCheckId === 1)) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if ((visionResultByCheckId === 0)) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if ((visionResultByCheckId === -1)) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('userinfo');
                     return res.status(200).json({
-                        'vision_detail_result': visionResultByCheckId
+                        'vision_result': visionResultByCheckId
                     });
                 }
-                else {
-                    return res.status(404).json('Not Found');
-                }
+            } else {
+                logger.error('Bad Request');
+                return res.status(400).send('Bad Request');
             }
-            else {
-                return res.status(400).json('Bad Request');
-            }
-        } catch (err) {
-            logger.error('Internal Server Error message');
+        }
+        catch (err) {
+            logger.error('Internal Server Error message', { message: err });
             return res.status(500).json('Error Occured');
         }
     },
@@ -63,34 +80,38 @@ exports.VisionCheck = {
     resultGroupByMonth: async (req, res) => {
         try {
             if (req.params.user_id) {
-
                 const user_id = req.params.user_id;
                 const visionResultGroupByMonth = await ResultService.VisionCheck.selectGroupByMonth(user_id);
 
-                for (let i = 0; i < visionResultGroupByMonth.length; i++) {
-                    //날짜 추출
-                    var result_month_date = new Date(visionResultGroupByMonth[i]['month']);
-                    var result_year_num = result_month_date.getFullYear();
-                    var result_month_num = result_month_date.getMonth() + 1;
-                    var result_year_num = String(result_year_num);
-                    var result_month_num = String(result_month_num);
+                if ((visionResultGroupByMonth === 1)) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if ((visionResultGroupByMonth === 0)) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if ((visionResultGroupByMonth === -1)) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    for (let i = 0; i < visionResultGroupByMonth.length; i++) {
+                        //날짜 추출
+                        var result_month_date = new Date(visionResultGroupByMonth[i]['month']);
+                        var result_year_num = result_month_date.getFullYear();
+                        var result_month_num = result_month_date.getMonth() + 1;
+                        var result_year_num = String(result_year_num);
+                        var result_month_num = String(result_month_num);
 
-                    visionResultGroupByMonth[i]['month'] = result_year_num.concat(result_month_num);
-                }
-
-                if (visionResultGroupByMonth != -1) {
+                        visionResultGroupByMonth[i]['month'] = result_year_num.concat(result_month_num);
+                    }
+                    logger.info('success');
                     return res.status(200).json({
                         'result_per_month': visionResultGroupByMonth
                     });
                 }
-                else {
-                    return res.status(404).json('Do Not Found');
-                }
+            } else {
+                logger.error('Bad Request');
+                return res.status(400).send('Bad Request');
             }
-            else {
-                return res.status(400).json('Bad Request');
-            }
-
         } catch (err) {
             logger.error('Internal Server Error message');
             return res.status(500).json('Error Occured');
@@ -106,15 +127,19 @@ exports.BlindSpotCheck = {
                 const user_id = req.params.user_id;
                 const blindSpotResult = await ResultService.BlindSpotCheck.selectByUserId(user_id);
 
-                if (blindSpotResult != -1) {
+                if ((blindSpotResult === 1)) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if ((blindSpotResult === 0)) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if ((blindSpotResult === -1)) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('success');
                     return res.status(200).json({ 'blind_spot_result': blindSpotResult });
                 }
-                else {
-                    return res.status(404).json('Do Not Found');
-                }
-            }
-            else {
-                return res.status(400).json('Bad Request');
             }
         } catch (err) {
             logger.error('Internal Server Error message');
@@ -126,18 +151,27 @@ exports.BlindSpotCheck = {
         try {
             if (req.params.check_bs_id) {
                 const check_bs_id = req.params.check_bs_id;
-                const blindSpotResult = await ResultService.BlindSpotCheck.selectByCheckId(check_bs_id);
+                const blindSpotRightResult = await ResultService.BlindSpotCheck.selectResultRightByCheckId(check_bs_id);
+                const blindSpotLeftResult = await ResultService.BlindSpotCheck.selectResultLeftByCheckId(check_bs_id);
+                const blindResult = await ResultService.BlindSpotCheck.compareResult(blindSpotLeftResult, blindSpotRightResult);
 
-                if (blindSpotResult != -1) {
+                if (blindResult === 1) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if (blindResult === 0) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if (blindResult === -1) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('success');
                     return res.status(200).json({
-                        'blind_spot_detail_result': blindSpotResult
+                        'blind_spot_result': blindResult,
                     });
                 }
-                else {
-                    return res.status(400).json('Do Not Found');
-                }
-            }
-            else {
+            } else {
+                logger.error('Bad Request');
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
@@ -152,16 +186,22 @@ exports.BlindSpotCheck = {
                 const user_id = req.params.user_id;
                 const blindSpotResult = await ResultService.BlindSpotCheck.selectGroupByMonth(user_id);
 
-                if (blindSpotResult != -1) {
+                if (blindSpotResult === 1) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if (blindSpotResult === 0) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if (blindSpotResult === -1) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('success');
                     return res.status(200).json({
-                        'result_per_month': blindSpotResult
+                        'blind_spot_result': blindSpotResult,
                     });
                 }
-                else {
-                    return res.status(404).json('Do Not Found');
-                }
-            }
-            else {
+            } else {
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {
@@ -176,16 +216,23 @@ exports.BlindSpotCheck = {
                 const user_id = req.params.user_id;
                 const blindSpotResult = await ResultService.BlindSpotCheck.selectGroupByMonthDetail(user_id);
 
-                if (blindSpotResult != -1) {
+                if (blindSpotResult === 1) {
+                    logger.info('No Contents');
+                    return res.status(204).json('No Result');
+                } else if (blindSpotResult === 0) {
+                    logger.error('Do Not Found User');
+                    return res.status(404).json('Do Not Found');
+                } else if (blindSpotResult === -1) {
+                    logger.error('Bad Request');
+                    return res.status(400).json('Bad Request');
+                } else {
+                    logger.info('success');
                     return res.status(200).json({
                         'result_per_month_max_min': blindSpotResult
                     });
                 }
-                else {
-                    return res.status(404).json('Do Not Found');
-                }
-            }
-            else {
+            } else {
+                logger.error('Bad Request');
                 return res.status(400).json('Bad Request');
             }
         } catch (err) {

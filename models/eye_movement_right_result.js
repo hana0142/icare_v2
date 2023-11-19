@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     user_id: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(100),
       allowNull: true
     },
     check_id: {
@@ -47,17 +47,17 @@ module.exports = function(sequelize, DataTypes) {
     timestamps: false,
     indexes: [
       {
-        name: "eye_movement_detail_right_result_pkey",
-        unique: true,
-        fields: [
-          { name: "id" },
-        ]
-      },
-      {
         name: "eye_movement_right_result_check_id_key",
         unique: true,
         fields: [
           { name: "check_id" },
+        ]
+      },
+      {
+        name: "eye_movement_right_result_pkey",
+        unique: true,
+        fields: [
+          { name: "id" },
         ]
       },
     ]

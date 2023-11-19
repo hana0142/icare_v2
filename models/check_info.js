@@ -7,21 +7,21 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       primaryKey: true
     },
+    user_id: {
+      type: DataTypes.STRING(100),
+      allowNull: false
+    },
     check_id: {
       type: DataTypes.STRING(255),
       allowNull: true,
       unique: "check_info_check_id_key"
     },
-    user_id: {
-      type: DataTypes.STRING(100),
-      allowNull: false
+    check_category: {
+      type: DataTypes.STRING(10),
+      allowNull: true
     },
     created_date: {
       type: DataTypes.DATE,
-      allowNull: true
-    },
-    check_category: {
-      type: DataTypes.STRING(10),
       allowNull: true
     }
   }, {

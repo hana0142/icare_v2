@@ -35,7 +35,6 @@ exports.CheckInfo = {
             return isExistedResult;
         } catch (err) {
             return_result = -1;
-            console.log(err);
             return isExistedResult;
         }
     }
@@ -70,7 +69,6 @@ exports.VisionCheck = {
                 console.log(err);
                 isExistedResult = -1;
             });
-
             return isExistedResult;
         } catch (err) {
             console.log(err);

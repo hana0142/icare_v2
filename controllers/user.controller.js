@@ -4,7 +4,9 @@ const jwt = require('jsonwebtoken');
 const axios = require('axios');
 const qs = require('qs');
 const func_token = require('../middlewares/authToken');
-const url = require('url');
+// const url = require('url');
+const logger = require('../config/logger');
+const e = require('express');
 
 exports.Login = {
     sendCode: async (req, res) => {
@@ -29,8 +31,6 @@ exports.Login = {
                 })
             });
             res.send(tokenResponse.data.access_token);
-            // res.redirect('/kakao/token?token=' + tokenResponse.data.access_token);
-            // return res.status(200).json({ 'token': tokenResponse.data.access_token });
         } catch (error) {
             console.log(error);
             return res.status(500).json('Internal Server Error Occured');
@@ -38,72 +38,120 @@ exports.Login = {
     },
 
     getToken: async (req, res) => {
-        const kakaoAccessToken = req.headers.token;
+        const access_token = req.headers.token;
+        var userResponse;
 
-        //1. kakaoAccessToken으로 사용자 정보 요청하기
-        const kakaoUserInfo = await func_link.Kakao.getUserInfo(kakaoAccessToken);
-        if (kakaoUserInfo === -1) {
-            return res.status(404).json('Do Not Found')
+        try {
+            //카카오 access_token으로 사용자 정보 요청하기
+            userResponse = await axios({
+                method: "GET",
+                url: "https://kapi.kakao.com/v2/user/me",
+                headers: {
+                    Authorization: `Bearer ${access_token}`
+                }
+            });
+        } catch (error) {
+            logger.error(error);
+            return res.status(400).send('Bad Request');
         }
 
-        //2.linkedUserDB
+        //카카오에서 가져온 사용자 정보 불러오기
         const authData = {
-            ...kakaoUserInfo.data
+            ...userResponse.data
         };
         const { session, query } = req;
-        const email = await authData.kakao_account.email;
+        const result = await func_link.Kakao.linkUser(session, "kakao", authData);
 
-        try {
-            const isCheckedLinkUser = await func_link.Kakao.linkUser(session, "kakao", authData);
-        } catch (err) {
-            logger.error('error', err);
-            return res.status(400).json('Do Not Found User');
-        }
+        //서버 DB 사용자 정보 확인
+        if (result) {
+            // console.log('*********************************************', result);
+            const email = await authData.kakao_account.email;
+            // console.log(email);
+            const check_user = await UserService.SelectExistedUser(email);
+            logger.info(check_user);
 
-        //3. isExistedUser
-        try {
-            let isExistedUser = await UserService.SelectExistedUser(email);
+            //1. 가입된 사용자
+            if (check_user === 1) {
+                try {
+                    var userInfo = await UserService.SelectUserInfo(email);
+                    console.log(userInfo);
+                    userInfo = userInfo[0];
+                    const token = userInfo.token;
+                    const user_id = userInfo.user_id;
+                    const access_token = await func_token.GenerateAccessToken(email);
+                    const refresh_token = await func_token.GenerateRefreshToken(email);
+                    const storeRefreshToken = await UserService.UpdateUser(user_id, refresh_token);
 
-            //DB_Existed User
-            if (isExistedUser === 1) {
-                var userInfo = await UserService.SelectUserInfo(email);
-                userInfo = userInfo[0];
-                const user_id = userInfo.user_id;
-                const access_token = await func_token.GenerateAccessToken(email);
-                const refresh_token = await func_token.GenerateRefreshToken(email);
-                const store_refresh_token = UserService.UpdateUser(user_id, refresh_token);
+                    //리프레시 토큰 업데이트 
+                    if (storeRefreshToken === 1) {
+                        logger.info('DB UPDATE REFRESH TOKEN');
+                        return res.status(200).json({
+                            'user_info': {
+                                'user_id': user_id,
+                                'email': email,
+                                'access_token': access_token
+                            }
+                        })
+                    }
 
-                if (store_refresh_token != -1) {
-                    const redirect_url = 'http://43.200.157.0:4000/user/main?access_token=' + access_token + '&user_id=' + user_id
-                    res.redirect(redirect_url);
-                }
-                else {
-                    return res.status(500).json('fail');
+                    //토큰 업데이트 실패
+                    else if (storeRefreshToken === 0) {
+                        logger.error('Not modified');
+                        return res.status(305).send('Not modified');
+                    } else {
+                        logger.error('Bad Request');
+                        return res.status(400).send('Bad Request');
+                    }
+                } catch (err) {
+                    logger.error(err);
+                    return res.status(500).send('Internal Server Error occured');
                 }
             }
+
+
+            //2. 미가입자(DB에 없는 사용자)
             else {
-                const user_id = authData.id;
-                const email = authData.kakao_account.email;
-                const provider = 'kakao';
-                const refreshToken = func_token.GenerateRefreshToken(email);
-                const InsertUser = await UserService.InsertUser(user_id, email, provider, refreshToken);
+                try {
+                    const user_id = authData.id;
+                    const email = authData.kakao_account.email;
+                    const provider = 'kakao';
 
-                if (InsertUser != -1) {
-                    res.redirect('/user/main?access_token=' + access_token + '?user_id' + user_id);
-                    // return res.status(200).json({ 'user_id': user_id });
-                    // return res.status(200).json({
-                    //     'access_token': access_token,
-                    //     'user_id': user_id
-                    // });
-                }
-                else {
-                    return res.status(500).json('fail');
+                    const access_token = await func_token.GenerateAccessToken(email);
+                    const refresh_token = await func_token.GenerateRefreshToken(email);
+                    const insertUser = await UserService.InsertUser(user_id, email, provider, refresh_token);
+
+                    if (insertUser === 1) {
+                        logger.info('INSERT USER');
+                        return res.status(201).json({
+                            'user_info': {
+                                'user_id': user_id,
+                                'email': email,
+                                'access_token': access_token
+                            }
+                        })
+                    }
+                    else {
+                        logger.info(insertUser);
+                        return res.status(400).send('Bad Request');
+                    }
+                } catch (err) {
+                    logger.error(err);
+                    return res.status(500).send('Internal Server Error occured');
                 }
 
             }
-        } catch (err) {
-            logger.error('error', err);
-            return res.status(400).json('Bad Request');
+
+            // res.redirect('/user/?email=' + email);
+            // req.session.loginData = userResponse.data;
+            // console.info("계정에 연결되었습니다.");
+
+            // return req.session.save(() => {
+            //     res.send({ loggedIn: true, loginDate: authData });
+            //     // res.redirect('/');
+            // });
+
+        } else {
+            console.warn("이미 연결된 계정입니다.");
         }
     }
 }

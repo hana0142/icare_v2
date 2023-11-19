@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     user_id: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(100),
       allowNull: true
     },
     email: {
@@ -24,11 +24,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     created_date: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATE,
       allowNull: true
     },
     updated_date: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATE,
       allowNull: true
     }
   }, {

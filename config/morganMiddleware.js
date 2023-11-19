@@ -22,12 +22,12 @@ morgan.token("status", (req, res) => {
     return color + res.statusCode + "\x1b[35m" /*보라색*/;
 });
 
-// https://jeonghwan-kim.github.io/morgan-helper/
+
 morgan.token("request", function (req, res) {
     return "Request_" + JSON.stringify(req.body);
 });
 morgan.token("makeLine", function () {
-    let line = "-----------------------------------------------*(੭*ˊᵕˋ)੭* 응답 결과 ╰(*'v'*)╯-----------------------------------------------"
+    let line = "---------응답 결과-----------------"
     let blank = "                                   ";
     return line + "\n" + blank;
 });

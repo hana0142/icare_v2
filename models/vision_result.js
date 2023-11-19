@@ -9,12 +9,16 @@ module.exports = function(sequelize, DataTypes) {
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "vision_result_check_id_key"
     },
     user_id: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(100),
       allowNull: false
+    },
+    check_corrected: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     },
     left_eye_result: {
       type: DataTypes.REAL,
@@ -30,10 +34,6 @@ module.exports = function(sequelize, DataTypes) {
     },
     updated_date: {
       type: DataTypes.DATE,
-      allowNull: true
-    },
-    check_corrected: {
-      type: DataTypes.BOOLEAN,
       allowNull: true
     }
   }, {

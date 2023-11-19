@@ -34,7 +34,6 @@ exports.Kakao = {
         }
 
         result = true;
-
         return result;
     },
 
@@ -51,10 +50,9 @@ exports.Kakao = {
             });
             return kakaoUserInfo;
         } catch (err) {
-            console.log('error', err);
+            logger.error(err);
             isExistedResult = -1;
             return isExistedResult;
-            // return res.status(401).json('Unauthorized');
         }
 
     }

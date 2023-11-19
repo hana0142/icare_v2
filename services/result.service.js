@@ -1,3 +1,5 @@
+const sequelize = require('sequelize');
+const logger = require('../config/logger');
 const Vision_result = require('../models').vision_result;
 const Blind_spot_result = require('../models').blind_spot_result;
 const Blind_spot_left_detail_result = require('../models').blind_spot_left_result;
@@ -6,17 +8,16 @@ const Eye_movement_result = require('../models').eye_movement_result;
 const Eye_left_detail_result = require('../models').eye_movement_left_result;
 const Eye_right_detail_result = require('../models').eye_movement_right_result;
 
-const sequelize = require('sequelize');
+const ComputeResult = require('../middlewares/computeResult');
 
 exports.VisionCheck = {
     /**
      * 시력검사 결과 조회_user_id
-     * 
      * @param {String} user_id
      * @return {Number} isExistedResult
     */
     selectByUserId: async (user_id) => {
-        let isExistedResult = -2;
+        var finalResult;
 
         try {
             const visionResult = await Vision_result.findAll({
@@ -26,11 +27,12 @@ exports.VisionCheck = {
                 raw: true,
                 limit: 7
             });
-            return visionResult;
+            finalResult = await ComputeResult.ReturnResult(visionResult);
+            return finalResult;
         } catch (err) {
-            console.log(err);
+            logger.error(err);
             isExistedResult = -1;
-            return isExistedResult;
+            return finalResult;
         }
     },
 
@@ -41,7 +43,7 @@ exports.VisionCheck = {
      * @return {Number} isExistedResult
     */
     selectByCheckId: async (check_id) => {
-        var isExistedResult = -2;
+        var finalResult;
 
         try {
             const visionResult = await Vision_result.findOne({
@@ -49,11 +51,14 @@ exports.VisionCheck = {
                 attributes: ['check_id', 'check_corrected', 'left_eye_result', 'right_eye_result', 'created_date'],
                 raw: true
             });
-            return visionResult;
+
+            finalResult = await ComputeResult.ReturnResult(visionResult);
+            return finalResult;
+
         } catch (err) {
-            console.log(err);
-            isExistedResult = -1;
-            return isExistedResult;
+            logger.error(err);
+            finalResult = -1;
+            return finalResult;
         }
     },
 
@@ -64,7 +69,8 @@ exports.VisionCheck = {
      * @return {Number} isExistedResult
     */
     selectGroupByMonth: async (user_id) => {
-        let isExistedResult = -2;
+        var finalResult;
+
         try {
             const visionResult = await Vision_result.findAll({
                 where: { user_id },
@@ -80,11 +86,14 @@ exports.VisionCheck = {
                 raw: true,
                 group: [sequelize.fn('date_trunc', 'month', sequelize.col('created_date'))]
             });
-            return visionResult;
+
+            finalResult = await ComputeResult.ReturnResult(visionResult);
+            return finalResult;
+
         } catch (err) {
             console.log(err);
-            isExistedResult = -1;
-            return isExistedResult;
+            finalResult = -1;
+            return finalResult;
         }
     }
 };
@@ -97,7 +106,7 @@ exports.BlindSpotCheck = {
      * @return {Number} isExistedResult
     */
     selectByUserId: async (user_id) => {
-        let isExistedResult = -2;
+        var finalResult;
 
         try {
             const blindSpotResult = await Blind_spot_result.findAll({
@@ -106,57 +115,109 @@ exports.BlindSpotCheck = {
                 limit: 7,
                 raw: true
             });
-            return blindSpotResult;
+
+            finalResult = await DecideResult.ReturnResult(blindSpotResult);
+            return finalResult;
+
         } catch (err) {
-            console.log(err);
+            logger.error(err);
+            finalResult = -1;
+            return finalResult;
+        }
+    },
+
+    /**
+     * 암점자가인식검사 좌안 결과 조회_check_bs_id
+     * 
+     * @param {String} check_bs_id
+     * @return {Number} isExistedResult
+    */
+    selectResultRightByCheckId: async (check_bs_id) => {
+        var isExistedResult = -2;
+        let data = {};
+
+        try {
+            //암점자가인식 우안 검사 결과
+            const blindSpotRightResult =
+                await Blind_spot_right_detail_result.findOne({
+                    where: { check_id: check_bs_id },
+                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'scotoma', 'location_t', 'location_sn', 'location_in', 'location_st', 'location_it', 'location_n', 'created_date'],
+                    raw: true
+                });
+
+            if ((blindSpotRightResult) && (blindSpotRightResult.length !== 0)) {
+                logger.info('blind_spot_right_result');
+                // data['right_detail_result'] = blindSpotRightResult;
+                return blindSpotRightResult;
+            } else if (blindSpotRightResult.length === 0) {
+                isExistedResult = 1;
+                return isExistedResult;
+            } else {
+                isExistedResult = 0;
+                return isExistedResult;
+            }
+        } catch (err) {
+            console.error(err);
             isExistedResult = -1;
             return isExistedResult;
         }
     },
 
     /**
-     * 암점자가인식검사 결과 조회_check_bs_id
+     * 암점자가인식검사 좌안 결과 조회_check_bs_id
      * 
      * @param {String} check_bs_id
      * @return {Number} isExistedResult
     */
-    selectByCheckId: async (check_bs_id) => {
-        let isExistedResult = -2;
-        let data = {};
+    selectResultLeftByCheckId: async (check_bs_id) => {
+        var isExistedResult = -2;
+        // let data = {};
 
         try {
-            //암점자가인식 우안 검사 결과
-            await Blind_spot_right_detail_result.findOne({
-                where: { check_id: check_bs_id },
-                attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
-                raw: true
-            }).then(bsRightResult => {
-                data['right_detail_result'] = bsRightResult;
-            }).catch((err) => {
-                console.log(err);
-                isExistedResult = -1;
-                return isExistedResult;
-            });
-
             //암점자가인식 좌안 검사 결과
-            await Blind_spot_left_detail_result.findOne({
-                where: { check_id: check_bs_id },
-                attributes: ['check_id', 'user_id', 'blind_spot_point', 'created_date'],
-                raw: true
-            }).then((bsLeftResult) => {
-                data['left_detail_result'] = bsLeftResult;
-            }).catch((err) => {
-                console.log(err);
-                isExistedResult = -1;
-                return isExistedResult;
-            });
-            return data;
+            const blindSpotLeftResult =
+                await Blind_spot_left_detail_result.findOne({
+                    where: { check_id: check_bs_id },
+                    attributes: ['check_id', 'user_id', 'blind_spot_point', 'scotoma', 'location_t', 'location_sn', 'location_in', 'location_st', 'location_it', 'location_n', 'created_date'],
+                    raw: true
+                });
 
+            if ((blindSpotLeftResult) && (blindSpotLeftResult.length !== 0)) {
+                logger.info('blind_spot_left_result');
+                // data['left_detail_result'] = blindSpotLeftResult;
+                return blindSpotLeftResult;
+            } else if (blindSpotLeftResult.length === 0) {
+                isExistedResult = 1;
+                return isExistedResult;
+            } else {
+                isExistedResult = 0;
+                return isExistedResult;
+            }
         } catch (err) {
-            console.log(err);
+            console.error(err);
             isExistedResult = -1;
             return isExistedResult;
         }
+    },
+    compareResult: async (leftResult, rightResult) => {
+        let finalResult;
+        let data = {};
+
+        console.log(leftResult, rightResult);
+        if ((leftResult === 1) || (rightResult === 1)) {
+            finalResult = 1;
+            return finalResult;
+        } else if ((leftResult === 0) || (rightResult === 0)) {
+            finalResult = 0;
+            return finalResult;
+        } else if ((leftResult === -1) || (rightResult === -1)) {
+            return finalResult = -1;
+        } else {
+            data['left_detail_result'] = leftResult;
+            data['right_detail_result'] = rightResult;
+            return data;
+        }
+
     },
 
     /**
@@ -182,13 +243,22 @@ exports.BlindSpotCheck = {
                 //created_date 컬럼 월 기준으로 데이터 그룹화
                 group: [sequelize.fn('date_trunc', 'month', sequelize.col('created_date'))]
             });
-            return resultPerMonth;
+
+            if ((resultPerMonth) && (resultPerMonth.length !== 0)) {
+                return resultPerMonth;
+            } else if (resultPerMonth.length === 0) {
+                isExistedResult = 1;
+                return isExistedResult;
+            } else {
+                isExistedResult = 0;
+                return isExistedResult;
+            }
         } catch (err) {
-            console.log(err);
             isExistedResult = -1;
             return isExistedResult;
         }
     },
+
 
     /**
      * 암점자가인식검사 월 별 결과 최댓값, 최솟값
@@ -212,9 +282,17 @@ exports.BlindSpotCheck = {
                 raw: true,
                 group: [sequelize.fn('date_trunc', 'month', sequelize.col('created_date'))]
             });
-            return resultPerMonth;
+
+            if ((resultPerMonth) && (resultPerMonth.length !== 0)) {
+                return resultPerMonth;
+            } else if (resultPerMonth.length === 0) {
+                isExistedResult = 1;
+                return isExistedResult;
+            } else {
+                isExistedResult = 0;
+                return resultPerMonth;
+            }
         } catch (err) {
-            console.log(err);
             isExistedResult = -1;
             return isExistedResult;
         }
@@ -237,10 +315,18 @@ exports.EyeMovementCheck = {
                 attributes: ['check_id', 'user_id', 'left_vfi', 'right_vfi', 'created_date'],
                 raw: true
             });
-            return eyeMovementResult;
+
+            if ((eyeMovementResult) && (eyeMovementResult.length !== 0)) {
+                return eyeMovementResult;
+            } else if (eyeMovementResult.length === 0) {
+                isExistedResult = 1;
+                return isExistedResult;
+            } else {
+                isExistedResult = 0;
+                return isExistedResult;
+            }
 
         } catch (err) {
-            console.log(err);
             isExistedResult = -1;
             return isExistedResult;
         }

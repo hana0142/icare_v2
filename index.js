@@ -9,6 +9,7 @@ const session = require('express-session');
 const userRouter = require('./routes/user.route');
 const checkRouter = require('./routes/check.route');
 const resultRouter = require('./routes/result.route');
+const morgan = require('morgan');
 
 //logger, morgan
 global.logger || (global.logger = require('./config/logger'));

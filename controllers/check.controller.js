@@ -1,10 +1,7 @@
-
 const logger = require('../config/logger');
 const getDate = require('../middlewares/getDate');
 const UserService = require('../services/user.service');
 const CheckService = require('../services/check.service');
-const { log } = require('winston');
-
 
 //시력검사
 exports.Vision = {
@@ -24,18 +21,19 @@ exports.Vision = {
                     return res.status(200).json({
                         'check_id': check_vs_no
                     });
-                }
-
-                else {
+                } else if (isCheckedUser === 0) {
                     logger.error(`Do Not Found User_ID`);
                     return res.status(404).json('Do Not Found');
                 }
-            }
-            //params에 user_id 없음
-            else {
-                logger.error()
+                else {
+                    logger.error('in DB ERROR')
+                    return res.status(400).json('Bad Request');
+                }
+            } else {
+                logger.error('No Parameter')
                 return res.status(400).json('Bad Request');
             }
+
             //그 외 모든 오류
         } catch (err) {
             // console.log(err);
@@ -67,18 +65,15 @@ exports.Vision = {
                     send_vs_check_info = result;
                 })
 
-
-                console.log(send_vs_result, send_vs_check_info);
-
                 if ((send_vs_result === 0) && (send_vs_check_info === 0)) {
-                    // log.info('POST_CHECK_VISION')
+                    logger.info('POST_CHECK_VISION')
                     return res.status(201).json({
                         'right_result': right_result,
                         'left_result': left_result
                     });
                 }
                 else {
-                    log.error('')
+                    logger.error('FAIL INSERT DATA')
                     return res.status(400).json('fail');
                 }
             }
@@ -123,6 +118,7 @@ exports.BlindSpot = {
                 //전체 검사 결과
                 const check_bs_id = req.body.check_bs_id;
                 const user_id = req.params.user_id;
+                const check_category = 'bs';
 
                 //우안 검사 
                 const bs_right_vfi = req.body.bs_right_vfi;
@@ -134,9 +130,6 @@ exports.BlindSpot = {
                 const bs_left_spot_point = req.body.bs_left_spot_point;
                 const bs_left_location = req.body.bs_left_location;
 
-                const check_category = 'bs';
-
-                console.log(bs_left_location[0], bs_left_location[1], bs_left_location[2]);
                 // 검사 결과 보내기
                 const bs_result
                     = await CheckService.BlindSpotCheck.insertBlindResult(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point, bs_right_location, bs_left_location);
