@@ -1,274 +1,253 @@
+/**
+ * version  : 0.1
+ * filename : check.controller.js
+ * author   : @Hana
+ * comment  : 검사 관련 컨트롤러 기능 구현(라우터에 연결)
+ */
 const logger = require('../config/logger');
-const getDate = require('../middlewares/getDate');
+const getDate = require('../utils/getDate');
 const UserService = require('../services/user.service');
 const CheckService = require('../services/check.service');
 
-//시력검사
-exports.Vision = {
-    //시력검사 시작시 GET
-    getCheck: async (req, res) => {
+//#region 
+/**
+ * 시력검사 관련 모듈
+ * 
+ * @module VisionCheck
+*/
+exports.VisionCheck = {
+    /**
+     * 시력검사 완료 후 결과 데이터 DB에 전송하는 함수
+     * 
+     * @method postCheckResult
+     */
+    postCheckResult: async (req, res) => {
         try {
-            if ((req.params.user_id)) {
-                const user_id = req.params.user_id;
-                const isCheckedUser = await UserService.SelectExistedUserId(user_id);
+            if (req.params.user_id) {
+                let visionCheckId;
+                const userId = req.params.user_id;
+                const isCheckedUser = await UserService.SelectExistedUserId(userId);
 
                 if (isCheckedUser === 1) {
-                    let dateNow = await getDate.convertDate();
-                    let check_vs_no = 'vs_' + String(dateNow) + user_id;
+                    const dateNow = await getDate.convertDate();
+                    visionCheckId = 'vs_' + String(dateNow) + userId;
+                } else {
+                    logger.error('GET_CHECK_VISION : Do Not Found User ID');
+                    return res.status(404).json('Do Not Found User ID');
+                }
 
-                    //성공(200)
-                    logger.info(`GET_CHECK_VISION check_id : ${check_vs_no}`);
-                    return res.status(200).json({
-                        'check_id': check_vs_no
-                    });
-                } else if (isCheckedUser === 0) {
-                    logger.error(`Do Not Found User_ID`);
-                    return res.status(404).json('Do Not Found');
+                const isCorrected = req.body.check_corrected;
+                const leftVisionResult = req.body.left_result;
+                const rightVisionResult = req.body.right_result;
+                const visionResult = await CheckService.VisionCheck.insertResult(visionCheckId, userId, leftVisionResult, rightVisionResult, isCorrected);
+
+                if (visionResult === 0) {
+                    logger.info('POST_CHECK_VISION : success insert DB');
+                    return res.status(201).json('success');
+                } else if (visionResult === -1) {
+                    logger.error('POST_CHECK_VISION : DB ROLLBACK')
+                    return res.status(400).json('DB ROLLBACK');
                 }
                 else {
-                    logger.error('in DB ERROR')
-                    return res.status(400).json('Bad Request');
+                    logger.info('POST_CHECK_VISION : INTERNAL DB SERVER ERROR OCCURED',);
+                    return res.status(500).json('Error Occured');
                 }
             } else {
-                logger.error('No Parameter')
-                return res.status(400).json('Bad Request');
-            }
-
-            //그 외 모든 오류
-        } catch (err) {
-            // console.log(err);
-            logger.error('Internal Server Error message');
-            return res.status(500).json('Error Occured');
-        }
-    },
-
-    //시력검사 완료 후 POST
-    postCheck: async (req, res) => {
-        try {
-            if (req.body.check_id) {
-                const actoken = req.headers.access_token;
-                const user_id = req.params.user_id;
-                const check_vs_no = req.body.check_id;
-                const left_result = req.body.left_result;
-                const right_result = req.body.right_result;
-                const check_corrected = req.body.check_corrected;
-
-                let send_vs_result;
-                let send_vs_check_info;
-
-                // const send_vs_result =
-                await CheckService.VisionCheck.insertVisionResult(check_vs_no, user_id, right_result, left_result, check_corrected)
-                    .then((result) => {
-                        send_vs_result = result;
-                    })
-                await CheckService.CheckInfo.insertCheckResult('vs', check_vs_no, user_id).then((result) => {
-                    send_vs_check_info = result;
-                })
-
-                if ((send_vs_result === 0) && (send_vs_check_info === 0)) {
-                    logger.info('POST_CHECK_VISION')
-                    return res.status(201).json({
-                        'right_result': right_result,
-                        'left_result': left_result
-                    });
-                }
-                else {
-                    logger.error('FAIL INSERT DATA')
-                    return res.status(400).json('fail');
-                }
+                logger.error('POST_CHECK_VISION : No parameter');
+                return res.status(400).json('No parameter')
             }
         } catch (err) {
-            logger.error('Internal Server Error message');
-            return res.status(500).json('Error Occured');
+            logger.error('POST_CHECK_VISION', err);
+            return res.status(500).json('POST_CHECK_VISION : Error Occured');
         }
     }
 }
+//#endregion
 
-//암점자가인식검사
-exports.BlindSpot = {
-    //암점자가인식검사 시작시 GET
-    getCheck: async (req, res) => {
+//#region 
+/**
+ * 암점자가인식검사 관련 모듈
+ * 
+ * @module BlindSpotCheck
+*/
+exports.BlindSpotCheck = {
+    /**
+     * 암점자가인식 검사 고유 번호 CheckId 생성 함수
+     * 
+     * @method getCheckId
+     */
+    getCheckId: async (req, res) => {
         try {
             if (req.params.user_id) {
-                const user_id = req.params.user_id;
-                var dateNow = new Date();
+                const dateNow = new Date();
+                const userId = req.params.user_id;
                 const date = await getDate.convertDate(dateNow);
-                let check_bs_no = 'bs_' + String(date) + user_id;
+                const checkBsId = 'bs_' + String(date) + userId;
 
-                //성공(200)
+                logger.info('GET_CHECK_BLIND_SPOT : success get blind spot checkId');
+
                 return res.status(200).json({
-                    'check_id': check_bs_no
+                    'check_id': checkBsId
                 });
-            }
-            //params에 user_id 없음
-            else {
+            } else {
+                logger.error('GET_CHECK_BLIND_SPOT : no user_id')
                 return res.status(400).json('Bad Request');
             }
-            //그 외 모든 오류
         } catch (err) {
-            logger.error('Internal Server Error message');
+            logger.error('GET_CHECK_BLIND_SPOT', err);
             return res.status(500).json('Error Occured');
         }
     },
 
-    //암점자가인식검사 검사 POST
-    postCheck: async (req, res) => {
+    /**
+     * 암점자가인식 검사 완료 후 결과 데이터 DB에 전송하는 함수
+     * 
+     * @method postCheckResult
+     */
+    postCheckResult: async (req, res) => {
         try {
-            if (req.body.check_bs_id) {
-                //전체 검사 결과
-                const check_bs_id = req.body.check_bs_id;
-                const user_id = req.params.user_id;
-                const check_category = 'bs';
+            if (req.params.user_id) {
+                let blindSpotCheckId;
+                const userId = req.params.user_id;
+                const isCheckedUser = await UserService.SelectExistedUserId(userId);
 
-                //우안 검사 
-                const bs_right_vfi = req.body.bs_right_vfi;
-                const bs_right_spot_point = req.body.bs_right_spot_point;
-                const bs_right_location = req.body.bs_right_location;
+                if (isCheckedUser === 1) {
+                    const dateNow = await getDate.convertDate();
+                    blindSpotCheckId = 'bs_' + String(dateNow) + userId;
+                } else {
+                    logger.error('POST_BLIND_SPOT_CHECK : Do Not Found User ID');
+                    return res.status(404).json('POST_BLIND_SPOT_CHECK : Do Not Found User ID');
+                }
+
+                logger.info('POST_BLIND_SPOT_CHECK : success get blind spot checkId');
 
                 //좌안 검사
-                const bs_left_vfi = req.body.bs_left_vfi;
-                const bs_left_spot_point = req.body.bs_left_spot_point;
-                const bs_left_location = req.body.bs_left_location;
+                const blindSpotLeftVFI = req.body.bs_left_vfi;
+                const blindSpotLeftPoint = req.body.bs_left_spot_point;
+                const blindSpotLeftLocation = req.body.bs_left_location;
+                //우안 검사
+                const blindSpotRightVFI = req.body.bs_right_vfi;
+                const blindSpotRightPoint = req.body.bs_right_spot_point;
+                const blindSpotRightLocation = req.body.bs_right_location;
 
-                // 검사 결과 보내기
-                const bs_result
-                    = await CheckService.BlindSpotCheck.insertBlindResult(check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point, bs_right_location, bs_left_location);
+                const blindSpotLeftResults = [blindSpotLeftVFI, blindSpotLeftPoint, blindSpotLeftLocation];
+                const blindSpotRightResults = [blindSpotRightVFI, blindSpotRightPoint, blindSpotRightLocation];
+                const blindSpotResult
+                    = await CheckService.BlindSpotCheck.insertResult(blindSpotCheckId, userId, blindSpotLeftResults, blindSpotRightResults);
 
+                if (blindSpotResult === 0) {
+                    logger.info('POST_CHECK_BLIND_SPOT : success insert DB');
 
-                if (bs_result != -1) {
-                    return res.status(200).json('success');
+                    return res.status(201).json('POST_CHECK_BLIND_SPOT : success insert DB');
+                } else if (blindSpotResult === -1) {
+                    logger.error('POST_CHECK_BLIND_SPOT : FAIL_DB ROLLBACK')
+
+                    return res.status(400).json('POST_CHECK_BLIND_SPOT : DB ROLLBACK');
+                } else {
+                    logger.error('POST_CHECK_BLIND_SPOT : INTERNAL DB SERVER ERROR OCCURED');
+
+                    return res.status(500).json('POST_CHECK_BLIND_SPOT : Error Occured');
                 }
-                else {
-                    return res.status(400).json('fail');
-                }
+            } else {
+                logger.error('POST_BLIND_SPOT_RESULT : NO PARAMETER');
+
+                return res.status(400).json('POST_BLIND_SPOT_RESULT : NO PARAMETER');
             }
-        } catch (err) {
-            logger.error('Internal Server Error message');
-            return res.status(500).json('Error Occured');
+        }
+        catch (err) {
+            logger.error('POST_CHECK_BLIND_SPOT', err);
+            return res.status(500).json('POST_CHECK_BLIND_SPOT : Error Occured');
         }
     }
 }
+//#endregion
 
-//안구이동검사
-exports.EyeMovement = {
-    //안구이동검사 시작시 GET
-    getCheck: async (req, res) => {
+//#region
+/**
+ * 안구이동검사 관련 모듈
+ * 
+ * @module EyeMovementCheck
+*/
+exports.EyeMovementCheck = {
+    /**
+     * 안구이동검사 고유 번호 CheckId 생성 함수
+     * 
+     * @method getCheckId
+     */
+    getCheckId: async (req, res) => {
         try {
             if (req.params.user_id) {
-                const user_id = req.params.user_id;
-                var dateNow = new Date();
+                const dateNow = new Date();
+                const userId = req.params.user_id;
                 const date = await getDate.convertDate(dateNow);
-                let check_id = 'em_' + String(date) + user_id;
+                const checkEmId = 'em_' + String(date) + userId;
 
-                // res.cookie('check_no', check_id);
+                logger.info('GET_CHECK_EYE_MOVEMENT : success get eye movement checkId');
                 return res.status(200).json({
-                    'check_id': check_id
+                    'check_id': checkEmId
                 });
-            }
-            else {
+            } else {
+                logger.error('GET_CHECK_EYE_MOVEMENT : fail')
                 return res.status(400).json('fail');
             }
         } catch (err) {
-            logger.error('Internal Server Error message');
+            logger.error('GET_CHECK_EYE_MOVEMENT', err);
             return res.status(500).json('Error Occured');
         }
     },
-
-    //안구이동검사 결과 POST
-    postCheck: async (req, res) => {
-        // check_category, check_id, user_id
+    /**
+     * 안구이동검사 완료 후 결과 데이터 DB에 전송하는 함수
+     * 
+     * @method postCheckResult
+     */
+    postCheckResult: async (req, res) => {
         try {
-            if (req.body.check_em_id) {
-                const check_em_id = req.body.check_em_id;
-                const user_id = req.params.user_id;
-                const right_vfi = req.body.right_vfi;
-                const left_vfi = req.body.left_vfi;
-                const right_location = req.body.right_location;
-                const left_location = req.body.left_location;
-                const check_result = await CheckService.CheckInfo.insertCheckResult('em', check_em_id, user_id);
-                // console.log(check_result);
-                const result_em_check = await CheckService.EyeMovementCheck.insert_em_result(check_em_id, user_id, right_vfi, left_vfi);
-                // console.log(result_em_check);
-                const insert_em_right_result = await CheckService.EyeMovementCheck.insert_em_right_result(check_em_id, user_id, right_location);
-                // console.log(insert_em_right_result);
+            if (req.params.user_id) {
+                let eyeMovementCheckId;
+                const userId = req.params.user_id;
+                const isCheckedUser = await UserService.SelectExistedUserId(userId);
 
-                const insert_em_left_result = await CheckService.EyeMovementCheck.insert_em_left_result(check_em_id, user_id, left_location);
+                if (isCheckedUser === 1) {
+                    const dateNow = await getDate.convertDate();
+                    eyeMovementCheckId = 'em_' + String(dateNow) + userId;
+                } else {
+                    logger.error('POST_CHECK_EYE_MOVEMENT : Do Not Found User ID');
 
-                if ((result_em_check != -1) && (insert_em_right_result != -1) && (insert_em_left_result != -1)) {
-                    return res.status(200).json('success');
+                    return res.status(404).json('POST_CHECK_EYE_MOVEMENT : Do Not Found User ID');
                 }
-                else {
+                logger.info('POST_CHECK_EYE_MOVEMENT : success get eye movement checkId');
+
+                const eyeMovementLeftVFI = req.body.left_vfi;
+                const eyeMovementRightVFI = req.body.right_vfi;
+                const eyeMovementLeftLocation = req.body.left_location;
+                const eyeMovementRightLocation = req.body.right_location;
+                const eyeMovementLeftResult = [eyeMovementLeftVFI, eyeMovementLeftLocation];
+                const eyeMovementRightResult = [eyeMovementRightVFI, eyeMovementRightLocation];
+
+                const eyeMovementResult
+                    = await CheckService.EyeMovementCheck.insertResult(eyeMovementCheckId, userId, eyeMovementLeftResult, eyeMovementRightResult);
+                // console.log(eyeMovementResult);
+                if (eyeMovementResult === 0) {
+                    logger.info('POST_CHECK_EYE_MOVEMENT : success insert DB');
+
+                    return res.status(201).json('POST_CHECK_EYE_MOVEMENT : success');
+                } else if (eyeMovementResult === -1) {
+                    logger.error('POST_CHECK_BLIND_SPOT : FAIL_DB ROLLBACK')
+
                     return res.status(400).json('fail');
+                } else {
+                    logger.error('POST_CHECK_EYE_MOVEMENT : INTERNAL DB SERVER ERROR OCCURED');
+
+                    return res.status(500).json('POST_CHECK_EYE_MOVEMENT : INTERNAL DB SERVER ERROR OCCURED');
                 }
             }
-            // 
         } catch (err) {
-            logger.error('Internal Server Error message');
-            return res.status(500).json('Error Occured');
+            logger.error('POST_CHECK_EYE_MOVEMENT', err);
+
+            return res.status(500).json('POST_CHECK_EYE_MOVEMENT : Error Occured');
         }
-    },
-
-    // exports.Check = {
-    //     //시력 교정 여부 체크_클라이언트에서 저장 후 검사 결과 보낼 때 같이 전송
-    //     checkStart: async (req, res) => {
-    //         if (req.body.corrected) {
-    //             const check_corrected = req.body.corrected;
-    //             console.log(check_corrected);
-    //             return res.redirect('/api/check/vision');
-    //         }
-    //         else {
-    //             console.log('fail');
-    //             return res.status(400).json('fail');
-    //         }
-    //     }
-    // }
-
-    //암점자가인식검사 검사 POST
-    // //검사_좌우_기타
-    // postCheck: async (req, res) => {
-    //     try {
-    //         if (req.params.check_bs_no) {
-    //             const check_bs_no = req.params.check_bs_no;
-    //             const user_id = req.params.user_id;
-
-    //             //우안 검사 
-    //             const bs_right_vfi = req.body.bs_right_vfi;
-    //             const bs_right_location_t = req.body.bs_right_location_t;
-    //             const bs_right_location_st = req.body.bs_right_location_st;
-    //             const bs_right_location_it = req.body.bs_right_location_it;
-    //             const bs_right_location_sn = req.body.bs_right_location_sn;
-    //             const bs_right_location_in = req.body.bs_right_location_in;
-
-    //             //우안 검사 결과 보내기
-    //             const bs_right_result
-    //                 = await CheckService.BlindSpotCheck.insert_blind_spot_right(
-    //                     check_bs_no, user_id, bs_right_vfi, bs_right_location_t, bs_right_location_in, bs_right_location_it, bs_right_location_sn, bs_right_location_st);
-
-    //             //좌안 검사
-    //             const bs_left_vfi = req.body.bs_left_vfi;
-    //             const bs_left_location_t = req.body.bs_left_location_t;
-    //             const bs_left_location_st = req.body.bs_left_location_st;
-    //             const bs_left_location_it = req.body.bs_left_location_it;
-    //             const bs_left_location_sn = req.body.bs_left_location_sn;
-    //             const bs_left_location_in = req.body.bs_left_location_in;
-
-    //             //좌안 검사 결과 보내기
-    //             const bs_left_result
-    //                 = await CheckService.BlindSpotCheck.insert_blind_spot_left(
-    //                     check_bs_no, user_id, bs_left_vfi, bs_left_location_t, bs_left_location_st, bs_left_location_it, bs_left_location_sn, bs_left_location_in);
-
-    //             if ((bs_right_result != -1) && (bs_left_result != -1)) {
-    //                 return res.status(200).json('success');
-    //             }
-    //             else {
-    //                 return res.status(400).json('fail');
-    //             }
-    //         }
-    //     } catch (err) {
-    //         console.log(err);
-    //         return res.status(500).json('server error');
-    //     }
-    // }
+    }
 }
+//#endregion
 
 

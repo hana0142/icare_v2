@@ -9,32 +9,32 @@ module.exports = function(sequelize, DataTypes) {
     },
     user_id: {
       type: DataTypes.STRING(100),
-      allowNull: true
+      allowNull: false
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "eye_movement_right_result_check_id_key"
     },
     location_t: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_st: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_it: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_sn: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_in: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     created_date: {
       type: DataTypes.DATE,

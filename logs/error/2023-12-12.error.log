@@ -1,0 +1,35 @@
+2023-12-12 00:37:14:3714 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controllercopy4.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controllercopy4.js:55:33)
+2023-12-12 00:37:38:3738 error: GET_KAKAO_TOKEN_SEND_CODE :  res.send(...).catch is not a function 
+ Error Stack: TypeError: res.send(...).catch is not a function
+    at sendCode (/home/ec2-user/project_icare2/controllers/user.controllercopy4.js:77:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-12 01:24:26:2426 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-12 01:27:20:2720 error: No Token
+2023-12-12 02:30:10:3010 error: No Token
+2023-12-12 02:30:36:3036 error: No Token
+2023-12-12 05:56:00:560 error: tokenRequest : no access_token 
+2023-12-12 06:02:13:213 error: tokenRequest : no access_token 
+2023-12-12 06:04:55:455 error: tokenRequest : no access_token 
+2023-12-12 06:09:04:94 error: tokenRequest : no access_token 
+2023-12-12 06:11:52:1152 error: tokenRequest : no access_token 
+2023-12-12 06:12:37:1237 error: tokenRequest : no access_token 
+2023-12-12 06:30:02:302 error: tokenRequest : no access_token 
+2023-12-12 06:33:08:338 error: tokenRequest : no access_token 
+2023-12-12 06:53:05:535 error: tokenRequest : no access_token 
+2023-12-12 22:57:25:5725 error: tokenRequest : no access_token 
+2023-12-12 23:16:12:1612 error: tokenRequest : no access_token 
+2023-12-12 23:16:46:1646 error: tokenRequest : no access_token 
+2023-12-12 23:17:13:1713 error: tokenRequest : no access_token 
+2023-12-12 23:17:52:1752 error: tokenRequest : no access_token 
+2023-12-12 23:18:36:1836 error: tokenRequest : no access_token 
+2023-12-12 23:21:09:219 error: tokenRequest : no access_token 

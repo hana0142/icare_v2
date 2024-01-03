@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "eye_movement_result_check_id_key"
     },
     user_id: {

@@ -1,0 +1,483 @@
+2023-12-07 00:04:45:445 error: POST_CHECK_BLIND_SPOT userId is not defined 
+ Error Stack: ReferenceError: userId is not defined
+    at postCheckResult (/home/ec2-user/project_icare2/controllers/check.controller.js:133:77)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at checkJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:322:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 00:06:41:641 error: POST_CHECK_BLIND_SPOT userId is not defined 
+ Error Stack: ReferenceError: userId is not defined
+    at postCheckResult (/home/ec2-user/project_icare2/controllers/check.controller.js:133:77)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at checkJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:322:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 00:35:55:3555 error: GET_EYEMOVEMENT_RESULT_DETAIL :  name argument is required to req.get 
+ Error Stack: TypeError: name argument is required to req.get
+    at Object.header (/home/ec2-user/project_icare2/node_modules/express/lib/request.js:67:11)
+    at JSON.stringify (<anonymous>)
+    at getResultByCheckId (/home/ec2-user/project_icare2/controllers/result.controller.js:448:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 01:00:10:010 error: GET_EYEMOVEMENT_RESULT_DETAIL :  Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+ Error Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at getResultByCheckId (/home/ec2-user/project_icare2/controllers/result.controller.js:448:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 01:25:10:2510 error: no session
+2023-12-07 01:27:41:2741 error: no session
+2023-12-07 01:28:45:2845 error: no session
+2023-12-07 04:47:05:475 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 04:48:59:4859 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 05:10:33:1033 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:32:04:324 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:35:48:3548 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:46:31:4631 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:47:13:4713 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:49:38:4938 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:52:28:5228 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:52:57:5257 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:59:40:5940 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:02:50:250 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:10:33:1033 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:11:11:1111 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:12:03:123 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:15:45:1545 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:16:18:1618 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:17:54:1754 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:20:21:2021 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:22:16:2216 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:23:01:231 error: no session
+2023-12-07 07:32:54:3254 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:37:09:379 error: INTERNAL SERVER ERROR
+2023-12-07 07:37:42:3742 error: INTERNAL SERVER ERROR
+2023-12-07 07:38:03:383 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:290:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:38:44:3844 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:39:03:393 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:39:52:3952 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:40:14:4014 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:40:37:4037 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:41:15:4115 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:42:08:428 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:42:38:4238 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:43:02:432 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:44:26:4426 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:52:07:527 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:53:00:530 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:54:25:5425 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:55:00:550 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:55:39:5539 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:293:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:56:23:5623 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:294:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:56:57:5657 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:294:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:58:29:5829 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 09:24:35:2435 error: no session
+2023-12-07 09:28:53:2853 error: no session
+2023-12-07 09:32:37:3237 error: no session
+2023-12-07 09:33:58:3358 error: no session
+2023-12-07 09:34:41:3441 error: no session
+2023-12-07 09:34:56:3456 error: no session
+2023-12-07 09:40:48:4048 error: no session
+2023-12-07 09:57:48:5748 error: no session
+2023-12-07 09:57:48:5748 error: no session
+2023-12-07 10:06:19:619 error: no session
+2023-12-07 10:18:39:1839 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:443:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-07 10:19:14:1914 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:03:59:359 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:04:52:452 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:10:02:102 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:18:04:184 error: GET_KAKAO_TOKEN :  db is not defined 
+ Error Stack: ReferenceError: db is not defined
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:94:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:20:29:2029 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:20:44:2044 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:43:48:4348 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

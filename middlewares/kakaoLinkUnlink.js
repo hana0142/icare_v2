@@ -1,28 +1,31 @@
 // const winston = require('winston');
 const axios = require('axios');
+const UserService = require('../services/user.service');
+const logger = require('../config/logger');
 exports.Kakao = {
-    unlinkUser(session, provider, userId) {
+    async unlinkUser(user_id, unlink_id) {
         let result = false;
-
-        if (
-            session.authData &&
-            session.authData[provider] &&
-            session.authData[provider].id === userId
-        ) {
-            delete session.authData[provider];
+        logger.info(user_id, unlink_id);
+        if (user_id === unlink_id) {
+            const deleteuser = await UserService.DeleteUser(user_id);
+            console.log(deleteuser);
             result = true;
+            return result;
         }
         return result;
     },
 
 
     async linkUser(session, provider, authData) {
-        let result = false;    // console.log('session', session);
+        let result = false;
+        console.log('session', session.authData);
         // console.log('*****authData', authData);
         if (session.authData) {
+            console.log(session.authData[provider].id);
             if (session.authData[provider]) {
                 // 이미 계정에 provider 가 연결되어 있는 경우
                 user_id = session.authData.id;
+                result = true;
                 return result;
             }
 
@@ -55,5 +58,19 @@ exports.Kakao = {
             return isExistedResult;
         }
 
+    },
+
+    async callAxios(method, uri, param, header) {
+        try {
+            rtn = await axios({
+                method: method,
+                url: uri,
+                headers: header,
+                data: param
+            })
+        } catch (err) {
+            rtn = err.response;
+        }
+        return rtn.data;
     }
 }

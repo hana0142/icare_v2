@@ -1,0 +1,876 @@
+2023-12-13 00:01:14:114 info: [object Object]
+2023-12-13 00:01:14:114 info: no access_token  :
+2023-12-13 00:01:14:114 info: [object Object],[object Object]
+2023-12-13 00:01:14:114 info: GET_RESULT_VISION_MONTH : success
+2023-12-13 00:08:59:859 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:10:45:1045 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:10:51:1051 info: undefined
+2023-12-13 00:10:51:1051 info: undefined
+2023-12-13 00:12:31:1231 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:12:44:1244 info: undefined
+2023-12-13 00:12:44:1244 error: no session
+2023-12-13 00:12:56:1256 info: undefined
+2023-12-13 00:12:56:1256 error: no session
+2023-12-13 00:15:23:1523 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:15:29:1529 info: undefined
+2023-12-13 00:15:29:1529 error: no session
+2023-12-13 00:15:53:1553 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:16:20:1620 info: undefined
+2023-12-13 00:16:20:1620 error: no session
+2023-12-13 00:16:51:1651 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:17:16:1716 info: undefined
+2023-12-13 00:17:16:1716 error: no session
+2023-12-13 00:17:25:1725 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:17:42:1742 info: undefined
+2023-12-13 00:17:42:1742 error: no session
+2023-12-13 00:20:20:2020 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:20:26:2026 info: undefined
+2023-12-13 00:26:05:265 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:26:13:2613 info: undefined
+2023-12-13 00:26:13:2613 info: undefined
+2023-12-13 00:26:13:2613 info: success
+2023-12-13 00:32:23:3223 error: kakaoAccessToken is not defined 
+ Error Stack: ReferenceError: kakaoAccessToken is not defined
+    at kakaoCallback (/home/ec2-user/project_icare2/controllers/user.controller.js:52:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 00:33:40:3340 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 00:38:40:3840 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 01:13:29:1329 info: [object Object]
+2023-12-13 01:13:29:1329 info: no access_token  :
+2023-12-13 01:13:29:1329 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 01:13:29:1329 info: POST_CHECK_VISION : success insert DB
+2023-12-13 01:14:32:1432 info: [object Object]
+2023-12-13 01:14:32:1432 info: no access_token  :
+2023-12-13 01:14:32:1432 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 01:14:32:1432 info: POST_CHECK_VISION : success insert DB
+2023-12-13 01:58:56:5856 info: INSERT USER
+2023-12-13 02:03:02:32 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:03:15:315 info: [object Object]
+2023-12-13 02:03:15:315 info: no access_token  :
+2023-12-13 02:03:15:315 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 02:03:15:315 info: [object Object]
+2023-12-13 02:03:15:315 info: no access_token  :
+2023-12-13 02:03:15:315 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:03:22:322 info: [object Object]
+2023-12-13 02:03:22:322 info: no access_token  :
+2023-12-13 02:03:22:322 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 02:03:22:322 info: [object Object]
+2023-12-13 02:03:22:322 info: no access_token  :
+2023-12-13 02:03:22:322 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 02:04:49:449 info: [object Object]
+2023-12-13 02:04:49:449 info: no access_token  :
+2023-12-13 02:04:49:449 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 02:04:54:454 info: GET TOTAL RESULT : success
+2023-12-13 02:04:54:454 info: [object Object]
+2023-12-13 02:04:54:454 info: no access_token  :
+2023-12-13 02:04:54:454 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 02:04:54:454 info: [object Object]
+2023-12-13 02:04:54:454 info: no access_token  :
+2023-12-13 02:04:54:454 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:04:54:454 info: [object Object]
+2023-12-13 02:04:54:454 info: no access_token  :
+2023-12-13 02:04:54:454 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 02:04:55:455 info: [object Object]
+2023-12-13 02:04:55:455 info: no access_token  :
+2023-12-13 02:04:55:455 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:10:45:1045 info: [object Object]
+2023-12-13 02:10:45:1045 info: no access_token  :
+2023-12-13 02:10:45:1045 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 02:10:45:1045 info: [object Object]
+2023-12-13 02:10:45:1045 info: no access_token  :
+2023-12-13 02:10:45:1045 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 02:10:53:1053 info: [object Object]
+2023-12-13 02:10:53:1053 info: no access_token  :
+2023-12-13 02:10:53:1053 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 02:12:03:123 info: [object Object]
+2023-12-13 02:12:03:123 info: no access_token  :
+2023-12-13 02:12:04:124 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 02:12:18:1218 info: [object Object]
+2023-12-13 02:12:18:1218 info: no access_token  :
+2023-12-13 02:12:18:1218 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 02:12:44:1244 info: [object Object]
+2023-12-13 02:12:44:1244 info: no access_token  :
+2023-12-13 02:12:44:1244 info: POST_CHECK_EYE_MOVEMENT : success get eye movement checkId
+2023-12-13 02:12:44:1244 info: POST_CHECK_EYE_MOVEMENT : success insert DB
+2023-12-13 02:19:15:1915 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:22:37:2237 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:23:14:2314 error: no session
+2023-12-13 02:23:15:2315 error: no session
+2023-12-13 02:23:15:2315 error: no session
+2023-12-13 02:23:15:2315 error: no session
+2023-12-13 02:23:15:2315 error: no session
+2023-12-13 02:23:15:2315 error: no session
+2023-12-13 02:23:21:2321 info: [object Object]
+2023-12-13 02:23:21:2321 info: no access_token  :
+2023-12-13 02:23:21:2321 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 02:23:21:2321 info: [object Object]
+2023-12-13 02:23:21:2321 info: no access_token  :
+2023-12-13 02:23:21:2321 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:24:32:2432 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:24:55:2455 info: [object Object]
+2023-12-13 02:24:55:2455 info: no access_token  :
+2023-12-13 02:24:55:2455 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 02:24:55:2455 info: [object Object]
+2023-12-13 02:24:55:2455 info: no access_token  :
+2023-12-13 02:24:56:2456 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 02:25:42:2542 info: [object Object]
+2023-12-13 02:25:42:2542 info: no access_token  :
+2023-12-13 02:25:42:2542 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 02:25:42:2542 info: [object Object]
+2023-12-13 02:25:42:2542 info: no access_token  :
+2023-12-13 02:25:42:2542 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:25:46:2546 info: [object Object]
+2023-12-13 02:25:46:2546 info: no access_token  :
+2023-12-13 02:25:46:2546 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:25:48:2548 info: [object Object]
+2023-12-13 02:25:48:2548 info: no access_token  :
+2023-12-13 02:25:48:2548 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 02:26:36:2636 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:26:48:2648 error: no session
+2023-12-13 02:27:08:278 error: no session
+2023-12-13 02:27:08:278 error: no session
+2023-12-13 02:27:09:279 error: no session
+2023-12-13 02:27:10:2710 error: no session
+2023-12-13 02:27:10:2710 error: no session
+2023-12-13 02:27:10:2710 error: no session
+2023-12-13 02:27:10:2710 error: no session
+2023-12-13 02:27:10:2710 error: no session
+2023-12-13 02:27:11:2711 error: no session
+2023-12-13 02:27:11:2711 error: no session
+2023-12-13 02:27:11:2711 error: no session
+2023-12-13 02:27:12:2712 error: no session
+2023-12-13 02:27:16:2716 error: no session
+2023-12-13 02:27:17:2717 error: no session
+2023-12-13 02:27:17:2717 error: no session
+2023-12-13 02:27:22:2722 error: no session
+2023-12-13 02:27:41:2741 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:27:44:2744 error: no session
+2023-12-13 02:27:44:2744 error: no session
+2023-12-13 02:27:44:2744 error: no session
+2023-12-13 02:27:44:2744 error: no session
+2023-12-13 02:27:45:2745 error: no session
+2023-12-13 02:29:34:2934 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 02:31:09:319 error: no session
+2023-12-13 02:31:09:319 error: no session
+2023-12-13 02:31:09:319 error: no session
+2023-12-13 02:31:10:3110 error: no session
+2023-12-13 02:31:10:3110 error: no session
+2023-12-13 02:31:10:3110 error: no session
+2023-12-13 02:31:11:3111 error: no session
+2023-12-13 02:31:11:3111 error: no session
+2023-12-13 02:31:11:3111 error: no session
+2023-12-13 02:31:12:3112 error: no session
+2023-12-13 02:31:13:3113 error: no session
+2023-12-13 02:31:14:3114 error: no session
+2023-12-13 03:45:11:4511 info: "3036689912"
+2023-12-13 03:45:11:4511 info: success
+2023-12-13 03:46:30:4630 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 03:46:35:4635 info: undefined
+2023-12-13 03:46:35:4635 info: success
+2023-12-13 03:53:49:5349 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 03:54:28:5428 info: undefined
+2023-12-13 03:54:28:5428 info: success
+2023-12-13 03:54:37:5437 info: undefined
+2023-12-13 03:54:37:5437 info: success
+2023-12-13 03:58:10:5810 error: no session
+2023-12-13 03:58:11:5811 error: no session
+2023-12-13 03:58:11:5811 error: no session
+2023-12-13 03:58:11:5811 error: no session
+2023-12-13 03:58:11:5811 error: no session
+2023-12-13 03:58:11:5811 error: no session
+2023-12-13 03:58:12:5812 error: no session
+2023-12-13 03:58:12:5812 error: no session
+2023-12-13 03:58:12:5812 error: no session
+2023-12-13 03:58:12:5812 error: no session
+2023-12-13 03:58:12:5812 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:13:5813 error: no session
+2023-12-13 03:58:14:5814 error: no session
+2023-12-13 03:58:14:5814 error: no session
+2023-12-13 03:58:14:5814 error: no session
+2023-12-13 03:58:14:5814 error: no session
+2023-12-13 03:58:14:5814 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:15:5815 error: no session
+2023-12-13 03:58:16:5816 error: no session
+2023-12-13 04:01:00:10 error: no session
+2023-12-13 04:01:01:11 error: no session
+2023-12-13 04:01:01:11 error: no session
+2023-12-13 04:01:13:113 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 04:01:40:140 error: Cannot read properties of undefined (reading 'user_id') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'user_id')
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:336:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 04:01:58:158 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 04:02:16:216 info: [object Object]
+2023-12-13 04:02:16:216 info: no access_token  :
+2023-12-13 04:02:16:216 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 04:02:42:242 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 04:02:46:246 info: [object Object]
+2023-12-13 04:02:46:246 info: no access_token  :
+2023-12-13 04:02:46:246 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 04:03:05:35 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 04:03:08:38 error: no session
+2023-12-13 04:03:08:38 error: no session
+2023-12-13 04:03:09:39 error: no session
+2023-12-13 04:03:09:39 error: no session
+2023-12-13 04:03:10:310 error: no session
+2023-12-13 04:03:10:310 error: no session
+2023-12-13 04:03:10:310 error: no session
+2023-12-13 04:03:11:311 error: no session
+2023-12-13 04:03:11:311 error: no session
+2023-12-13 04:03:11:311 error: no session
+2023-12-13 04:03:11:311 error: no session
+2023-12-13 04:03:11:311 error: no session
+2023-12-13 04:03:31:331 info: GET TOTAL RESULT : success
+2023-12-13 04:03:31:331 info: [object Object]
+2023-12-13 04:03:31:331 info: no access_token  :
+2023-12-13 04:03:31:331 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:32:332 info: GET TOTAL RESULT : success
+2023-12-13 04:03:32:332 info: [object Object]
+2023-12-13 04:03:32:332 info: no access_token  :
+2023-12-13 04:03:32:332 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:32:332 info: GET TOTAL RESULT : success
+2023-12-13 04:03:32:332 info: [object Object]
+2023-12-13 04:03:32:332 info: no access_token  :
+2023-12-13 04:03:32:332 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:32:332 info: GET TOTAL RESULT : success
+2023-12-13 04:03:32:332 info: [object Object]
+2023-12-13 04:03:32:332 info: no access_token  :
+2023-12-13 04:03:32:332 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:32:332 info: GET TOTAL RESULT : success
+2023-12-13 04:03:32:332 info: [object Object]
+2023-12-13 04:03:32:332 info: no access_token  :
+2023-12-13 04:03:32:332 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:32:332 info: GET TOTAL RESULT : success
+2023-12-13 04:03:32:332 info: [object Object]
+2023-12-13 04:03:32:332 info: no access_token  :
+2023-12-13 04:03:32:332 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:03:33:333 info: GET TOTAL RESULT : success
+2023-12-13 04:03:33:333 info: [object Object]
+2023-12-13 04:03:33:333 info: no access_token  :
+2023-12-13 04:03:33:333 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:04:05:45 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 04:04:12:412 info: [object Object]
+2023-12-13 04:04:12:412 info: no access_token  :
+2023-12-13 04:04:12:412 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 04:04:13:413 info: [object Object]
+2023-12-13 04:04:13:413 info: no access_token  :
+2023-12-13 04:04:13:413 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:04:25:425 info: [object Object]
+2023-12-13 04:04:25:425 info: no access_token  :
+2023-12-13 04:04:25:425 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 04:04:26:426 info: [object Object]
+2023-12-13 04:04:26:426 info: no access_token  :
+2023-12-13 04:04:26:426 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 04:05:10:510 info: [object Object]
+2023-12-13 04:05:10:510 info: no access_token  :
+2023-12-13 04:05:10:510 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 04:05:26:526 error: no session
+2023-12-13 04:12:06:126 error: no session
+2023-12-13 04:13:23:1323 error: no session
+2023-12-13 04:13:24:1324 error: no session
+2023-12-13 04:13:24:1324 error: no session
+2023-12-13 04:13:25:1325 error: no session
+2023-12-13 04:13:25:1325 error: no session
+2023-12-13 04:13:26:1326 error: no session
+2023-12-13 04:13:26:1326 error: no session
+2023-12-13 04:13:29:1329 error: no session
+2023-12-13 04:13:30:1330 error: no session
+2023-12-13 04:27:12:2712 error: no session
+2023-12-13 04:28:37:2837 info: [object Object]
+2023-12-13 04:28:37:2837 info: no access_token  :
+2023-12-13 04:28:37:2837 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 04:29:10:2910 info: GET TOTAL RESULT : success
+2023-12-13 04:29:10:2910 info: [object Object]
+2023-12-13 04:29:10:2910 info: no access_token  :
+2023-12-13 04:29:10:2910 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:29:10:2910 info: [object Object]
+2023-12-13 04:29:10:2910 info: no access_token  :
+2023-12-13 04:29:10:2910 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 04:29:10:2910 info: [object Object]
+2023-12-13 04:29:10:2910 info: no access_token  :
+2023-12-13 04:29:10:2910 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:29:10:2910 info: [object Object]
+2023-12-13 04:29:10:2910 info: no access_token  :
+2023-12-13 04:29:10:2910 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 04:34:55:3455 info: [object Object]
+2023-12-13 04:34:55:3455 info: no access_token  :
+2023-12-13 04:34:55:3455 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 04:34:55:3455 info: POST_CHECK_VISION : success insert DB
+2023-12-13 04:35:13:3513 info: [object Object]
+2023-12-13 04:35:13:3513 info: no access_token  :
+2023-12-13 04:35:14:3514 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 04:39:04:394 info: [object Object]
+2023-12-13 04:39:04:394 info: no access_token  :
+2023-12-13 04:39:04:394 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 04:39:04:394 info: [object Object]
+2023-12-13 04:39:04:394 info: no access_token  :
+2023-12-13 04:39:04:394 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 04:39:13:3913 info: [object Object]
+2023-12-13 04:39:13:3913 info: no access_token  :
+2023-12-13 04:39:13:3913 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:04:25:425 info: INSERT USER
+2023-12-13 05:07:33:733 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:08:05:85 error: no session
+2023-12-13 05:10:53:1053 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:11:03:113 info: undefined
+2023-12-13 05:11:03:113 info: success
+2023-12-13 05:18:34:1834 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:18:37:1837 info: [object Object]
+2023-12-13 05:18:37:1837 info: no access_token  :
+2023-12-13 05:18:37:1837 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 05:18:38:1838 info: [object Object]
+2023-12-13 05:18:38:1838 info: no access_token  :
+2023-12-13 05:18:38:1838 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:18:52:1852 info: [object Object]
+2023-12-13 05:18:52:1852 info: no access_token  :
+2023-12-13 05:18:52:1852 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:19:01:191 error: no session
+2023-12-13 05:19:44:1944 error: no session
+2023-12-13 05:19:45:1945 error: no session
+2023-12-13 05:19:45:1945 error: no session
+2023-12-13 05:19:45:1945 error: no session
+2023-12-13 05:19:45:1945 error: no session
+2023-12-13 05:19:59:1959 info: GET TOTAL RESULT : success
+2023-12-13 05:19:59:1959 info: [object Object]
+2023-12-13 05:19:59:1959 info: no access_token  :
+2023-12-13 05:19:59:1959 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:19:59:1959 info: [object Object]
+2023-12-13 05:19:59:1959 info: no access_token  :
+2023-12-13 05:19:59:1959 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:19:59:1959 info: [object Object]
+2023-12-13 05:19:59:1959 info: no access_token  :
+2023-12-13 05:20:00:200 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:20:00:200 info: [object Object]
+2023-12-13 05:20:00:200 info: no access_token  :
+2023-12-13 05:20:00:200 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:23:42:2342 info: [object Object]
+2023-12-13 05:23:42:2342 info: no access_token  :
+2023-12-13 05:23:42:2342 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 05:23:42:2342 info: [object Object]
+2023-12-13 05:23:42:2342 info: no access_token  :
+2023-12-13 05:23:42:2342 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:23:49:2349 info: GET TOTAL RESULT : success
+2023-12-13 05:23:49:2349 info: [object Object]
+2023-12-13 05:23:49:2349 info: no access_token  :
+2023-12-13 05:23:49:2349 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:23:49:2349 info: [object Object]
+2023-12-13 05:23:49:2349 info: no access_token  :
+2023-12-13 05:23:49:2349 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:23:49:2349 info: [object Object]
+2023-12-13 05:23:49:2349 info: no access_token  :
+2023-12-13 05:23:49:2349 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:23:49:2349 info: [object Object]
+2023-12-13 05:23:49:2349 info: no access_token  :
+2023-12-13 05:23:49:2349 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:24:07:247 info: GET TOTAL RESULT : success
+2023-12-13 05:24:07:247 info: [object Object]
+2023-12-13 05:24:07:247 info: no access_token  :
+2023-12-13 05:24:07:247 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:24:07:247 info: [object Object]
+2023-12-13 05:24:07:247 info: no access_token  :
+2023-12-13 05:24:07:247 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:24:07:247 info: [object Object]
+2023-12-13 05:24:07:247 info: no access_token  :
+2023-12-13 05:24:07:247 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:24:07:247 info: [object Object]
+2023-12-13 05:24:07:247 info: no access_token  :
+2023-12-13 05:24:07:247 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:25:48:2548 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:26:41:2641 info: [object Object]
+2023-12-13 05:26:41:2641 info: no access_token  :
+2023-12-13 05:26:41:2641 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 05:26:41:2641 info: POST_CHECK_VISION : success insert DB
+2023-12-13 05:26:49:2649 info: [object Object]
+2023-12-13 05:26:49:2649 info: no access_token  :
+2023-12-13 05:26:49:2649 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:27:13:2713 error: no session
+2023-12-13 05:27:38:2738 info: GET TOTAL RESULT : success
+2023-12-13 05:27:38:2738 info: [object Object]
+2023-12-13 05:27:38:2738 info: no access_token  :
+2023-12-13 05:27:38:2738 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:27:38:2738 info: [object Object]
+2023-12-13 05:27:38:2738 info: no access_token  :
+2023-12-13 05:27:38:2738 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:27:38:2738 info: [object Object]
+2023-12-13 05:27:38:2738 info: no access_token  :
+2023-12-13 05:27:38:2738 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:27:38:2738 info: [object Object]
+2023-12-13 05:27:38:2738 info: no access_token  :
+2023-12-13 05:27:38:2738 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:27:44:2744 info: [object Object]
+2023-12-13 05:27:44:2744 info: no access_token  :
+2023-12-13 05:27:44:2744 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:30:41:3041 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:31:13:3113 info: undefined
+2023-12-13 05:31:13:3113 info: success
+2023-12-13 05:32:19:3219 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:36:10:3610 info: [object Object]
+2023-12-13 05:36:10:3610 info: no access_token  :
+2023-12-13 05:36:10:3610 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 05:36:10:3610 info: [object Object]
+2023-12-13 05:36:10:3610 info: no access_token  :
+2023-12-13 05:36:10:3610 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:36:19:3619 info: [object Object]
+2023-12-13 05:36:19:3619 info: no access_token  :
+2023-12-13 05:36:19:3619 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-13 05:36:28:3628 info: [object Object]
+2023-12-13 05:36:28:3628 info: no access_token  :
+2023-12-13 05:36:28:3628 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 05:36:28:3628 info: [object Object]
+2023-12-13 05:36:28:3628 info: no access_token  :
+2023-12-13 05:36:28:3628 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:36:37:3637 info: [object Object]
+2023-12-13 05:36:37:3637 info: no access_token  :
+2023-12-13 05:36:37:3637 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-13 05:36:42:3642 info: [object Object]
+2023-12-13 05:36:42:3642 info: no access_token  :
+2023-12-13 05:36:42:3642 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 05:36:42:3642 info: [object Object]
+2023-12-13 05:36:42:3642 info: no access_token  :
+2023-12-13 05:36:42:3642 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:36:51:3651 info: [object Object]
+2023-12-13 05:36:51:3651 info: no access_token  :
+2023-12-13 05:36:51:3651 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-13 05:37:21:3721 info: [object Object]
+2023-12-13 05:37:21:3721 info: no access_token  :
+2023-12-13 05:37:21:3721 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:37:23:3723 info: [object Object]
+2023-12-13 05:37:23:3723 info: no access_token  :
+2023-12-13 05:37:23:3723 info: [object Object],[object Object]
+2023-12-13 05:37:23:3723 info: GET_RESULT_VISION_MONTH : success
+2023-12-13 05:38:41:3841 info: [object Object]
+2023-12-13 05:38:41:3841 info: no access_token  :
+2023-12-13 05:38:41:3841 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 05:38:41:3841 info: [object Object]
+2023-12-13 05:38:41:3841 info: no access_token  :
+2023-12-13 05:38:41:3841 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:38:47:3847 info: [object Object]
+2023-12-13 05:38:47:3847 info: no access_token  :
+2023-12-13 05:38:47:3847 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-13 05:38:55:3855 info: [object Object]
+2023-12-13 05:38:55:3855 info: no access_token  :
+2023-12-13 05:38:55:3855 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 05:38:55:3855 info: [object Object]
+2023-12-13 05:38:55:3855 info: no access_token  :
+2023-12-13 05:38:55:3855 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:39:01:391 info: [object Object]
+2023-12-13 05:39:01:391 info: no access_token  :
+2023-12-13 05:39:01:391 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-13 05:41:23:4123 info: GET TOTAL RESULT : success
+2023-12-13 05:41:23:4123 info: [object Object]
+2023-12-13 05:41:23:4123 info: no access_token  :
+2023-12-13 05:41:23:4123 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:41:23:4123 info: [object Object]
+2023-12-13 05:41:23:4123 info: no access_token  :
+2023-12-13 05:41:23:4123 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:41:23:4123 info: [object Object]
+2023-12-13 05:41:23:4123 info: no access_token  :
+2023-12-13 05:41:23:4123 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 05:41:23:4123 info: [object Object]
+2023-12-13 05:41:23:4123 info: no access_token  :
+2023-12-13 05:41:23:4123 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:41:28:4128 info: [object Object]
+2023-12-13 05:41:28:4128 info: no access_token  :
+2023-12-13 05:41:28:4128 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 05:41:28:4128 info: [object Object]
+2023-12-13 05:41:28:4128 info: no access_token  :
+2023-12-13 05:41:28:4128 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:41:31:4131 info: [object Object]
+2023-12-13 05:41:31:4131 info: no access_token  :
+2023-12-13 05:41:31:4131 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-13 05:41:50:4150 info: [object Object]
+2023-12-13 05:41:50:4150 info: no access_token  :
+2023-12-13 05:41:50:4150 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 05:41:51:4151 info: [object Object]
+2023-12-13 05:41:51:4151 info: no access_token  :
+2023-12-13 05:41:51:4151 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:41:56:4156 info: [object Object]
+2023-12-13 05:41:56:4156 info: no access_token  :
+2023-12-13 05:41:56:4156 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-13 05:41:57:4157 info: [object Object]
+2023-12-13 05:41:57:4157 info: no access_token  :
+2023-12-13 05:41:57:4157 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 05:41:57:4157 info: [object Object]
+2023-12-13 05:41:57:4157 info: no access_token  :
+2023-12-13 05:41:57:4157 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 05:41:58:4158 info: [object Object]
+2023-12-13 05:41:58:4158 info: no access_token  :
+2023-12-13 05:41:58:4158 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-13 05:43:53:4353 info: [object Object]
+2023-12-13 05:43:53:4353 info: no access_token  :
+2023-12-13 05:43:53:4353 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 05:49:08:498 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:57:58:5758 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 05:58:04:584 info: [object Object]
+2023-12-13 05:58:04:584 info: no access_token  :
+2023-12-13 05:58:04:584 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:00:33:033 info: [object Object]
+2023-12-13 06:00:33:033 info: no access_token  :
+2023-12-13 06:00:33:033 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 06:00:33:033 info: POST_CHECK_VISION : success insert DB
+2023-12-13 06:00:38:038 info: [object Object]
+2023-12-13 06:00:38:038 info: no access_token  :
+2023-12-13 06:00:38:038 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:04:55:455 info: [object Object]
+2023-12-13 06:04:55:455 info: no access_token  :
+2023-12-13 06:04:55:455 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 06:04:55:455 info: POST_CHECK_VISION : success insert DB
+2023-12-13 06:05:01:51 info: [object Object]
+2023-12-13 06:05:01:51 info: no access_token  :
+2023-12-13 06:05:01:51 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:09:27:927 info: [object Object]
+2023-12-13 06:09:27:927 info: no access_token  :
+2023-12-13 06:09:27:927 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-13 06:09:27:927 info: POST_CHECK_VISION : success insert DB
+2023-12-13 06:09:36:936 info: [object Object]
+2023-12-13 06:09:36:936 info: no access_token  :
+2023-12-13 06:09:36:936 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:19:57:1957 info: [object Object]
+2023-12-13 06:19:57:1957 info: no access_token  :
+2023-12-13 06:19:57:1957 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-13 06:19:57:1957 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-13 06:20:01:201 info: [object Object]
+2023-12-13 06:20:01:201 info: no access_token  :
+2023-12-13 06:20:01:201 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 06:20:01:201 info: [object Object]
+2023-12-13 06:20:01:201 info: no access_token  :
+2023-12-13 06:20:01:201 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:20:42:2042 info: [object Object]
+2023-12-13 06:20:42:2042 info: no access_token  :
+2023-12-13 06:20:42:2042 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:07:217 info: [object Object]
+2023-12-13 06:21:07:217 info: no access_token  :
+2023-12-13 06:21:07:217 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:07:217 info: [object Object]
+2023-12-13 06:21:07:217 info: no access_token  :
+2023-12-13 06:21:07:217 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:10:2110 info: [object Object]
+2023-12-13 06:21:10:2110 info: no access_token  :
+2023-12-13 06:21:10:2110 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:17:2117 info: [object Object]
+2023-12-13 06:21:17:2117 info: no access_token  :
+2023-12-13 06:21:17:2117 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:20:2120 info: [object Object]
+2023-12-13 06:21:20:2120 info: no access_token  :
+2023-12-13 06:21:20:2120 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:21:31:2131 info: [object Object]
+2023-12-13 06:21:31:2131 info: no access_token  :
+2023-12-13 06:21:31:2131 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 06:21:31:2131 info: [object Object]
+2023-12-13 06:21:31:2131 info: no access_token  :
+2023-12-13 06:21:31:2131 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:25:46:2546 info: [object Object]
+2023-12-13 06:25:46:2546 info: no access_token  :
+2023-12-13 06:25:46:2546 info: POST_CHECK_EYE_MOVEMENT : success get eye movement checkId
+2023-12-13 06:25:46:2546 info: POST_CHECK_EYE_MOVEMENT : success insert DB
+2023-12-13 06:25:47:2547 info: [object Object]
+2023-12-13 06:25:47:2547 info: no access_token  :
+2023-12-13 06:25:47:2547 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 06:25:47:2547 info: [object Object]
+2023-12-13 06:25:47:2547 info: no access_token  :
+2023-12-13 06:25:47:2547 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:25:56:2556 info: GET TOTAL RESULT : success
+2023-12-13 06:25:56:2556 info: [object Object]
+2023-12-13 06:25:56:2556 info: no access_token  :
+2023-12-13 06:25:56:2556 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:25:57:2557 info: [object Object]
+2023-12-13 06:25:57:2557 info: no access_token  :
+2023-12-13 06:25:57:2557 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:25:57:2557 info: [object Object]
+2023-12-13 06:25:57:2557 info: no access_token  :
+2023-12-13 06:25:57:2557 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:25:57:2557 info: [object Object]
+2023-12-13 06:25:57:2557 info: no access_token  :
+2023-12-13 06:25:57:2557 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:26:19:2619 error: no session
+2023-12-13 06:26:19:2619 error: no session
+2023-12-13 06:26:20:2620 error: no session
+2023-12-13 06:26:20:2620 error: no session
+2023-12-13 06:26:21:2621 error: no session
+2023-12-13 06:26:22:2622 error: no session
+2023-12-13 06:26:22:2622 error: no session
+2023-12-13 06:26:23:2623 error: no session
+2023-12-13 06:26:23:2623 error: no session
+2023-12-13 06:26:23:2623 error: no session
+2023-12-13 06:26:23:2623 error: no session
+2023-12-13 06:26:23:2623 error: no session
+2023-12-13 06:26:24:2624 error: no session
+2023-12-13 06:26:24:2624 error: no session
+2023-12-13 06:26:24:2624 error: no session
+2023-12-13 06:26:24:2624 error: no session
+2023-12-13 06:26:36:2636 info: GET TOTAL RESULT : success
+2023-12-13 06:26:36:2636 info: [object Object]
+2023-12-13 06:26:36:2636 info: no access_token  :
+2023-12-13 06:26:36:2636 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:26:36:2636 info: [object Object]
+2023-12-13 06:26:36:2636 info: no access_token  :
+2023-12-13 06:26:36:2636 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:26:36:2636 info: [object Object]
+2023-12-13 06:26:36:2636 info: no access_token  :
+2023-12-13 06:26:36:2636 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:26:36:2636 info: [object Object]
+2023-12-13 06:26:36:2636 info: no access_token  :
+2023-12-13 06:26:36:2636 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:28:50:2850 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 06:50:44:5044 info: INSERT USER
+2023-12-13 06:51:48:5148 info: INSERT USER
+2023-12-13 06:52:31:5231 info: GET TOTAL RESULT : success
+2023-12-13 06:52:31:5231 info: [object Object]
+2023-12-13 06:52:32:5232 info: no access_token  :
+2023-12-13 06:52:32:5232 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:52:32:5232 info: [object Object]
+2023-12-13 06:52:32:5232 info: no access_token  :
+2023-12-13 06:52:32:5232 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:52:32:5232 info: [object Object]
+2023-12-13 06:52:32:5232 info: no access_token  :
+2023-12-13 06:52:32:5232 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:52:32:5232 info: [object Object]
+2023-12-13 06:52:32:5232 info: no access_token  :
+2023-12-13 06:52:32:5232 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:52:36:5236 info: [object Object]
+2023-12-13 06:52:36:5236 info: no access_token  :
+2023-12-13 06:52:36:5236 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 06:52:36:5236 info: [object Object]
+2023-12-13 06:52:36:5236 info: no access_token  :
+2023-12-13 06:52:36:5236 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:52:37:5237 error: no session
+2023-12-13 06:52:40:5240 info: [object Object]
+2023-12-13 06:52:40:5240 info: no access_token  :
+2023-12-13 06:52:40:5240 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 06:52:40:5240 info: [object Object]
+2023-12-13 06:52:40:5240 info: no access_token  :
+2023-12-13 06:52:40:5240 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:52:43:5243 info: [object Object]
+2023-12-13 06:52:43:5243 info: no access_token  :
+2023-12-13 06:52:43:5243 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:52:45:5245 info: [object Object]
+2023-12-13 06:52:45:5245 info: no access_token  :
+2023-12-13 06:52:45:5245 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-13 06:52:52:5252 info: [object Object]
+2023-12-13 06:52:52:5252 info: no access_token  :
+2023-12-13 06:52:52:5252 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:53:08:538 error: no session
+2023-12-13 06:53:08:538 error: no session
+2023-12-13 06:53:12:5312 info: [object Object]
+2023-12-13 06:53:12:5312 info: no access_token  :
+2023-12-13 06:53:12:5312 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 06:53:23:5323 info: [object Object]
+2023-12-13 06:53:23:5323 info: no access_token  :
+2023-12-13 06:53:23:5323 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 06:53:23:5323 info: [object Object]
+2023-12-13 06:53:23:5323 info: no access_token  :
+2023-12-13 06:53:23:5323 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:57:33:5733 info: GET TOTAL RESULT : success
+2023-12-13 06:57:33:5733 info: [object Object]
+2023-12-13 06:57:33:5733 info: no access_token  :
+2023-12-13 06:57:33:5733 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:57:33:5733 info: [object Object]
+2023-12-13 06:57:33:5733 info: no access_token  :
+2023-12-13 06:57:33:5733 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:57:33:5733 info: [object Object]
+2023-12-13 06:57:33:5733 info: no access_token  :
+2023-12-13 06:57:33:5733 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:57:33:5733 info: [object Object]
+2023-12-13 06:57:33:5733 info: no access_token  :
+2023-12-13 06:57:33:5733 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:57:45:5745 info: INSERT USER
+2023-12-13 06:57:52:5752 info: GET TOTAL RESULT : success
+2023-12-13 06:57:52:5752 info: [object Object]
+2023-12-13 06:57:52:5752 info: no access_token  :
+2023-12-13 06:57:52:5752 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:57:52:5752 info: [object Object]
+2023-12-13 06:57:52:5752 info: no access_token  :
+2023-12-13 06:57:52:5752 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:57:52:5752 info: [object Object]
+2023-12-13 06:57:52:5752 info: no access_token  :
+2023-12-13 06:57:52:5752 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 06:57:52:5752 info: [object Object]
+2023-12-13 06:57:52:5752 info: no access_token  :
+2023-12-13 06:57:52:5752 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 06:58:05:585 info: [object Object]
+2023-12-13 06:58:05:585 info: no access_token  :
+2023-12-13 06:58:05:585 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 06:58:06:586 info: [object Object]
+2023-12-13 06:58:06:586 info: no access_token  :
+2023-12-13 06:58:06:586 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:03:04:34 info: GET TOTAL RESULT : success
+2023-12-13 07:03:04:34 info: [object Object]
+2023-12-13 07:03:04:34 info: no access_token  :
+2023-12-13 07:03:04:34 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:04:34 info: [object Object]
+2023-12-13 07:03:04:34 info: no access_token  :
+2023-12-13 07:03:04:34 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:03:04:34 info: [object Object]
+2023-12-13 07:03:04:34 info: no access_token  :
+2023-12-13 07:03:04:34 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:04:34 info: [object Object]
+2023-12-13 07:03:04:34 info: no access_token  :
+2023-12-13 07:03:04:34 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:03:25:325 info: [object Object]
+2023-12-13 07:03:25:325 info: no access_token  :
+2023-12-13 07:03:25:325 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 07:03:26:326 info: [object Object]
+2023-12-13 07:03:26:326 info: no access_token  :
+2023-12-13 07:03:26:326 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:34:334 info: [object Object]
+2023-12-13 07:03:34:334 info: no access_token  :
+2023-12-13 07:03:34:334 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 07:03:41:341 info: [object Object]
+2023-12-13 07:03:41:341 info: no access_token  :
+2023-12-13 07:03:41:341 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 07:03:41:341 info: [object Object]
+2023-12-13 07:03:41:341 info: no access_token  :
+2023-12-13 07:03:41:341 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:51:351 info: GET TOTAL RESULT : success
+2023-12-13 07:03:51:351 info: [object Object]
+2023-12-13 07:03:51:351 info: no access_token  :
+2023-12-13 07:03:51:351 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:51:351 info: [object Object]
+2023-12-13 07:03:51:351 info: no access_token  :
+2023-12-13 07:03:51:351 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:03:51:351 info: [object Object]
+2023-12-13 07:03:51:351 info: no access_token  :
+2023-12-13 07:03:51:351 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:03:51:351 info: [object Object]
+2023-12-13 07:03:51:351 info: no access_token  :
+2023-12-13 07:03:51:351 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:07:26:726 info: [object Object]
+2023-12-13 07:07:26:726 info: no access_token  :
+2023-12-13 07:07:26:726 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 07:07:26:726 info: [object Object]
+2023-12-13 07:07:26:726 info: no access_token  :
+2023-12-13 07:07:26:726 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:07:54:754 info: [object Object]
+2023-12-13 07:07:54:754 info: no access_token  :
+2023-12-13 07:07:54:754 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 07:07:55:755 info: [object Object]
+2023-12-13 07:07:55:755 info: no access_token  :
+2023-12-13 07:07:55:755 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:07:59:759 info: GET TOTAL RESULT : success
+2023-12-13 07:08:00:80 info: [object Object]
+2023-12-13 07:08:00:80 info: no access_token  :
+2023-12-13 07:08:00:80 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:08:00:80 info: [object Object]
+2023-12-13 07:08:00:80 info: no access_token  :
+2023-12-13 07:08:00:80 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:08:00:80 info: [object Object]
+2023-12-13 07:08:00:80 info: no access_token  :
+2023-12-13 07:08:00:80 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:08:00:80 info: [object Object]
+2023-12-13 07:08:00:80 info: no access_token  :
+2023-12-13 07:08:00:80 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:09:52:952 info: [object Object]
+2023-12-13 07:09:52:952 info: no access_token  :
+2023-12-13 07:09:52:952 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 07:09:53:953 info: [object Object]
+2023-12-13 07:09:53:953 info: no access_token  :
+2023-12-13 07:09:53:953 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:31:1031 info: [object Object]
+2023-12-13 07:10:31:1031 info: no access_token  :
+2023-12-13 07:10:31:1031 info: GET_RESULT_BLIND_SPOT : success
+2023-12-13 07:10:31:1031 info: [object Object]
+2023-12-13 07:10:31:1031 info: no access_token  :
+2023-12-13 07:10:31:1031 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:37:1037 info: GET TOTAL RESULT : success
+2023-12-13 07:10:37:1037 info: [object Object]
+2023-12-13 07:10:37:1037 info: no access_token  :
+2023-12-13 07:10:37:1037 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:37:1037 info: [object Object]
+2023-12-13 07:10:37:1037 info: no access_token  :
+2023-12-13 07:10:37:1037 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:10:37:1037 info: [object Object]
+2023-12-13 07:10:37:1037 info: no access_token  :
+2023-12-13 07:10:37:1037 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:37:1037 info: [object Object]
+2023-12-13 07:10:37:1037 info: no access_token  :
+2023-12-13 07:10:37:1037 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:10:42:1042 info: GET TOTAL RESULT : success
+2023-12-13 07:10:42:1042 info: [object Object]
+2023-12-13 07:10:42:1042 info: no access_token  :
+2023-12-13 07:10:42:1042 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:42:1042 info: [object Object]
+2023-12-13 07:10:42:1042 info: no access_token  :
+2023-12-13 07:10:42:1042 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:10:42:1042 info: [object Object]
+2023-12-13 07:10:42:1042 info: no access_token  :
+2023-12-13 07:10:42:1042 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:10:42:1042 info: [object Object]
+2023-12-13 07:10:42:1042 info: no access_token  :
+2023-12-13 07:10:42:1042 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:12:23:1223 info: [object Object]
+2023-12-13 07:12:23:1223 info: no access_token  :
+2023-12-13 07:12:23:1223 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-13 07:12:24:1224 info: [object Object]
+2023-12-13 07:12:24:1224 info: no access_token  :
+2023-12-13 07:12:24:1224 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:12:28:1228 info: GET TOTAL RESULT : success
+2023-12-13 07:12:28:1228 info: [object Object]
+2023-12-13 07:12:28:1228 info: no access_token  :
+2023-12-13 07:12:28:1228 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:12:28:1228 info: [object Object]
+2023-12-13 07:12:28:1228 info: no access_token  :
+2023-12-13 07:12:28:1228 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:12:28:1228 info: [object Object]
+2023-12-13 07:12:28:1228 info: no access_token  :
+2023-12-13 07:12:28:1228 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-13 07:12:28:1228 info: [object Object]
+2023-12-13 07:12:28:1228 info: no access_token  :
+2023-12-13 07:12:28:1228 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-13 07:29:51:2951 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:30:08:308 error: no session
+2023-12-13 07:30:42:3042 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:30:51:3051 info: undefined
+2023-12-13 07:30:51:3051 info: success
+2023-12-13 07:33:13:3313 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:33:21:3321 info: undefined
+2023-12-13 07:33:21:3321 info: success
+2023-12-13 07:44:57:4457 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:45:23:4523 info: [object Object]
+2023-12-13 07:45:23:4523 info: no access_token  :
+2023-12-13 07:45:23:4523 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 07:46:39:4639 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:46:48:4648 error: no session
+2023-12-13 07:48:22:4822 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 07:49:57:4957 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:05:41:541 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:05:49:549 info: [object Object]
+2023-12-13 23:05:49:549 info: no access_token  :
+2023-12-13 23:05:49:549 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-13 23:06:45:645 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:09:47:947 error: no session
+2023-12-13 23:10:59:1059 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:11:02:112 error: no session
+2023-12-13 23:16:18:1618 error: INTERNAL SERVER ERROR id is not defined 
+ Error Stack: ReferenceError: id is not defined
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:207:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 23:16:19:1619 error: INTERNAL SERVER ERROR id is not defined 
+ Error Stack: ReferenceError: id is not defined
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:207:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 23:16:36:1636 error: INTERNAL SERVER ERROR id is not defined 
+ Error Stack: ReferenceError: id is not defined
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:207:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 23:16:36:1636 error: INTERNAL SERVER ERROR id is not defined 
+ Error Stack: ReferenceError: id is not defined
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:207:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-13 23:38:03:383 error: no session
+2023-12-13 23:39:14:3914 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:39:18:3918 error: no session
+2023-12-13 23:41:11:4111 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:41:38:4138 error: no session
+2023-12-13 23:45:17:4517 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-13 23:45:20:4520 error: no session
+2023-12-13 23:46:21:4621 error: no session

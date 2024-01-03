@@ -1,0 +1,1593 @@
+2023-12-07 00:00:14:014 info: check access token :
+2023-12-07 00:00:14:014 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:00:14:014 info: check access token :
+2023-12-07 00:00:14:014 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:00:58:058 info: check access token :
+2023-12-07 00:00:58:058 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:00:58:058 info: check access token :
+2023-12-07 00:00:58:058 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:02:02:22 info: check access token :
+2023-12-07 00:02:02:22 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:02:02:22 info: check access token :
+2023-12-07 00:02:02:22 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:02:35:235 info: check access token :
+2023-12-07 00:02:35:235 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:02:35:235 info: check access token :
+2023-12-07 00:02:35:235 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:03:08:38 info: check access token :
+2023-12-07 00:03:08:38 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:03:09:39 info: check access token :
+2023-12-07 00:03:09:39 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:04:45:445 info: check access token :
+2023-12-07 00:04:45:445 error: POST_CHECK_BLIND_SPOT userId is not defined 
+ Error Stack: ReferenceError: userId is not defined
+    at postCheckResult (/home/ec2-user/project_icare2/controllers/check.controller.js:133:77)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at checkJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:322:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 00:06:41:641 info: check access token :
+2023-12-07 00:06:41:641 error: POST_CHECK_BLIND_SPOT userId is not defined 
+ Error Stack: ReferenceError: userId is not defined
+    at postCheckResult (/home/ec2-user/project_icare2/controllers/check.controller.js:133:77)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at checkJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:322:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 00:07:49:749 info: check access token :
+2023-12-07 00:07:49:749 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:07:49:749 info: check access token :
+2023-12-07 00:07:49:749 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:09:52:952 info: check access token :
+2023-12-07 00:09:52:952 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 00:09:56:956 info: check access token :
+2023-12-07 00:09:56:956 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:09:56:956 info: check access token :
+2023-12-07 00:09:56:956 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:10:05:105 info: check access token :
+2023-12-07 00:10:05:105 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-07 00:10:05:105 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-07 00:10:14:1014 info: check access token :
+2023-12-07 00:10:14:1014 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:10:14:1014 info: check access token :
+2023-12-07 00:10:14:1014 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:12:31:1231 info: check access token :
+2023-12-07 00:12:31:1231 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 00:13:21:1321 info: [object Object]
+2023-12-07 00:13:21:1321 info: check access token :
+2023-12-07 00:13:21:1321 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 00:13:51:1351 info: [object Object]
+2023-12-07 00:13:51:1351 info: check access token :
+2023-12-07 00:13:51:1351 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 00:14:04:144 info: [object Object]
+2023-12-07 00:14:04:144 info: check access token :
+2023-12-07 00:14:04:144 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 00:15:04:154 info: [object Object]
+2023-12-07 00:15:04:154 info: check access token :
+2023-12-07 00:15:04:154 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:16:04:164 info: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNjk4ODAwNDY3LCJleHAiOjE3MTQzNTI0Njd9.kUEDPB1Jk7RWkNMXywBPO-LeG-W2xh8pjiMvbzXAg0o","user-agent":"PostmanRuntime/7.35.0","accept":"*/*","cache-control":"no-cache","postman-token":"d0ea8013-31e6-4d21-b14b-5c2c619ef3f6","host":"43.200.157.0:4000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"key=s%3AHMp4CyRR5Ly0QmBWiIYVHBb97T46p_QG.LbqkrdLvUlp9k%2BFXiFtEr4pTeQiPMb%2FmcIqldCc4PiA"}
+2023-12-07 00:16:04:164 info: check access token :
+2023-12-07 00:16:04:164 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:16:53:1653 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701908164305,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA4MTA0LCJleHAiOjE3MTc0NjAxMDR9.g5JXvjutQIwPo3uyGjFHqh1Y2HLtyhBYDHksxKqWgWQ","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:15:04.682Z"}}
+2023-12-07 00:16:53:1653 info: check access token :
+2023-12-07 00:16:53:1653 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:19:00:190 info: check access token :
+2023-12-07 00:19:00:190 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:20:14:2014 info: check access token :
+2023-12-07 00:20:14:2014 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-07 00:20:14:2014 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-07 00:21:51:2151 info: check access token :
+2023-12-07 00:21:51:2151 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:21:51:2151 info: check access token :
+2023-12-07 00:21:51:2151 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:23:05:235 info: [object Object]
+2023-12-07 00:23:05:235 info: check access token :
+2023-12-07 00:23:05:235 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:25:49:2549 info: [object Object]
+2023-12-07 00:25:49:2549 info: check access token :
+2023-12-07 00:25:49:2549 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:25:49:2549 info: [object Object]
+2023-12-07 00:25:49:2549 info: check access token :
+2023-12-07 00:25:49:2549 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:26:02:262 info: [object Object]
+2023-12-07 00:26:02:262 info: check access token :
+2023-12-07 00:26:02:262 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:26:02:262 info: [object Object]
+2023-12-07 00:26:02:262 info: check access token :
+2023-12-07 00:26:02:262 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:26:32:2632 info: [object Object]
+2023-12-07 00:26:32:2632 info: check access token :
+2023-12-07 00:26:32:2632 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:26:32:2632 info: [object Object]
+2023-12-07 00:26:32:2632 info: check access token :
+2023-12-07 00:26:32:2632 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:27:20:2720 info: [object Object]
+2023-12-07 00:27:20:2720 info: check access token :
+2023-12-07 00:27:20:2720 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:27:20:2720 info: [object Object]
+2023-12-07 00:27:20:2720 info: check access token :
+2023-12-07 00:27:20:2720 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:28:06:286 info: [object Object]
+2023-12-07 00:28:06:286 info: check access token :
+2023-12-07 00:28:06:286 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:28:06:286 info: [object Object]
+2023-12-07 00:28:06:286 info: check access token :
+2023-12-07 00:28:06:286 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:33:58:3358 info: [object Object]
+2023-12-07 00:33:58:3358 info: check access token :
+2023-12-07 00:33:58:3358 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:33:58:3358 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701908585247,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA4NTg1LCJleHAiOjE3MTc0NjA1ODV9.R_DoWdcWpPbWc7Xlc21thsCrINL-Xw1JMEwCpyq8F-E","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:23:05.222Z"}}
+2023-12-07 00:33:58:3358 info: "Header"
+2023-12-07 00:35:17:3517 info: [object Object]
+2023-12-07 00:35:17:3517 info: check access token :
+2023-12-07 00:35:18:3518 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:35:18:3518 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909238186,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5MjM4LCJleHAiOjE3MTc0NjEyMzh9.qcTbF5Q61qpJtlI89f6sHixIDcDms23aDEv5YU3kiss","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:33:58.159Z"}}
+2023-12-07 00:35:18:3518 info: "Header"
+2023-12-07 00:35:31:3531 info: [object Object]
+2023-12-07 00:35:31:3531 info: check access token :
+2023-12-07 00:35:31:3531 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:35:31:3531 info: [object Object]
+2023-12-07 00:35:31:3531 info: check access token :
+2023-12-07 00:35:31:3531 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:35:55:3555 info: [object Object]
+2023-12-07 00:35:55:3555 info: check access token :
+2023-12-07 00:35:55:3555 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:35:55:3555 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909318014,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5MzE3LCJleHAiOjE3MTc0NjEzMTd9.1zk47UamaIiFwCyRn3OVaA_Nb-LCrES5jubbQUEPWKo","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:35:17.988Z"}}
+2023-12-07 00:35:55:3555 error: GET_EYEMOVEMENT_RESULT_DETAIL :  name argument is required to req.get 
+ Error Stack: TypeError: name argument is required to req.get
+    at Object.header (/home/ec2-user/project_icare2/node_modules/express/lib/request.js:67:11)
+    at JSON.stringify (<anonymous>)
+    at getResultByCheckId (/home/ec2-user/project_icare2/controllers/result.controller.js:448:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 00:35:58:3558 info: [object Object]
+2023-12-07 00:35:58:3558 info: check access token :
+2023-12-07 00:35:58:3558 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 00:36:08:368 info: [object Object]
+2023-12-07 00:36:08:368 info: check access token :
+2023-12-07 00:36:08:368 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 00:36:47:3647 info: [object Object]
+2023-12-07 00:36:47:3647 info: check access token :
+2023-12-07 00:36:47:3647 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:36:47:3647 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909355147,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5MzU1LCJleHAiOjE3MTc0NjEzNTV9.jvL5L1nAwrbeQFa5iCEoWEEM4mXby6Ncfq95rCo3jLc","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:35:55.120Z"}}
+2023-12-07 00:36:47:3647 info: undefined
+2023-12-07 00:36:52:3652 info: [object Object]
+2023-12-07 00:36:52:3652 info: check access token :
+2023-12-07 00:36:52:3652 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:36:52:3652 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909407140,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5NDA3LCJleHAiOjE3MTc0NjE0MDd9.UbKoCVeGLfU3KvrKE4fEHhSnRdGkBguRZtLpe1Zisho","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:36:47.114Z"}}
+2023-12-07 00:36:52:3652 info: undefined
+2023-12-07 00:38:57:3857 info: [object Object]
+2023-12-07 00:38:57:3857 info: check access token :
+2023-12-07 00:38:58:3858 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:38:58:3858 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909412083,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5NDEyLCJleHAiOjE3MTc0NjE0MTJ9.sDU6WiIiM7vM8-CdoGXE7WB7B-_3DbpFzew4U_Boatc","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:36:52.073Z"}}
+2023-12-07 00:38:58:3858 info: {"headers":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNjk4ODAwNDY3LCJleHAiOjE3MTQzNTI0Njd9.kUEDPB1Jk7RWkNMXywBPO-LeG-W2xh8pjiMvbzXAg0o","user-agent":"PostmanRuntime/7.35.0","accept":"*/*","cache-control":"no-cache","postman-token":"44b77a28-5d1d-4288-b9a7-281b44eea5e6","host":"43.200.157.0:4000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"key=s%3AHMp4CyRR5Ly0QmBWiIYVHBb97T46p_QG.LbqkrdLvUlp9k%2BFXiFtEr4pTeQiPMb%2FmcIqldCc4PiA"}}
+2023-12-07 00:44:30:4430 info: [object Object]
+2023-12-07 00:44:30:4430 info: check access token :
+2023-12-07 00:44:30:4430 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:44:30:4430 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701909538051,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5NTM4LCJleHAiOjE3MTc0NjE1Mzh9.WE_9Qu-FGQMu-lih4qGOuQNTpgq1orlQ0d6xngXK7Is","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:38:58.025Z"}}
+2023-12-07 00:44:30:4430 info: {"headers":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNjk4ODAwNDY3LCJleHAiOjE3MTQzNTI0Njd9.kUEDPB1Jk7RWkNMXywBPO-LeG-W2xh8pjiMvbzXAg0o","user-agent":"PostmanRuntime/7.35.0","accept":"*/*","cache-control":"no-cache","postman-token":"796f41da-14bd-48cf-afbc-2fa4ed9257d5","host":"43.200.157.0:4000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"key=s%3AHMp4CyRR5Ly0QmBWiIYVHBb97T46p_QG.LbqkrdLvUlp9k%2BFXiFtEr4pTeQiPMb%2FmcIqldCc4PiA"}}
+2023-12-07 00:50:45:5045 info: [object Object]
+2023-12-07 00:50:45:5045 info: check access token :
+2023-12-07 00:50:45:5045 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:50:45:5045 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTA5ODcwLCJleHAiOjE3MTc0NjE4NzB9.rHO98tqvvl_fpf5VAvv3-LQTwNtMaEaiE_G9n9Rv1CE","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T00:44:30.659Z"}}
+2023-12-07 00:50:45:5045 info: {"headers":{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNjk4ODAwNDY3LCJleHAiOjE3MTQzNTI0Njd9.kUEDPB1Jk7RWkNMXywBPO-LeG-W2xh8pjiMvbzXAg0o","user-agent":"PostmanRuntime/7.35.0","accept":"*/*","cache-control":"no-cache","postman-token":"d513e1c2-33a5-4299-86a6-13183c170d81","host":"43.200.157.0:4000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"key=s%3AHMp4CyRR5Ly0QmBWiIYVHBb97T46p_QG.LbqkrdLvUlp9k%2BFXiFtEr4pTeQiPMb%2FmcIqldCc4PiA"}}
+2023-12-07 00:59:24:5924 info: [object Object]
+2023-12-07 00:59:24:5924 info: check access token :
+2023-12-07 00:59:24:5924 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 00:59:24:5924 info: {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNjk4ODAwNDY3LCJleHAiOjE3MTQzNTI0Njd9.kUEDPB1Jk7RWkNMXywBPO-LeG-W2xh8pjiMvbzXAg0o","user-agent":"PostmanRuntime/7.35.0","accept":"*/*","cache-control":"no-cache","postman-token":"08aed5ee-6ad4-42c0-9e87-cae54220886d","host":"43.200.157.0:4000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"key=s%3Anhn7f6F-HGhCp3ZnhgDCPqMwC0mNCJxi.wu2HIMYpNyX0suft2eeHqQh740fJuzxaKn23Nx%2B5TX8"}
+2023-12-07 01:00:10:010 info: [object Object]
+2023-12-07 01:00:10:010 info: check access token :
+2023-12-07 01:00:10:010 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:00:10:010 error: GET_EYEMOVEMENT_RESULT_DETAIL :  Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+ Error Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at getResultByCheckId (/home/ec2-user/project_icare2/controllers/result.controller.js:448:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 01:01:10:110 info: [object Object]
+2023-12-07 01:01:10:110 info: check access token :
+2023-12-07 01:01:10:110 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:01:10:110 info: "Header"
+2023-12-07 01:02:05:25 info: [object Object]
+2023-12-07 01:02:05:25 info: check access token :
+2023-12-07 01:02:05:25 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:02:05:25 info: "Header"
+2023-12-07 01:02:35:235 info: [object Object]
+2023-12-07 01:02:35:235 info: check access token :
+2023-12-07 01:02:35:235 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:02:35:235 info: "Header"
+2023-12-07 01:04:34:434 info: [object Object]
+2023-12-07 01:04:34:434 info: check access token :
+2023-12-07 01:04:34:434 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:06:01:61 info: [object Object]
+2023-12-07 01:06:01:61 info: check access token :
+2023-12-07 01:06:02:62 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-07 01:07:53:753 info: [object Object]
+2023-12-07 01:07:53:753 info: check access token :
+2023-12-07 01:07:53:753 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 01:12:34:1234 info: [object Object]
+2023-12-07 01:12:34:1234 info: check access token :
+2023-12-07 01:12:34:1234 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-07 01:13:41:1341 info: [object Object]
+2023-12-07 01:13:41:1341 info: check access token :
+2023-12-07 01:13:41:1341 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 01:14:36:1436 info: [object Object]
+2023-12-07 01:14:36:1436 info: check access token :
+2023-12-07 01:14:36:1436 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 01:15:07:157 info: 1
+2023-12-07 01:15:07:157 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 01:15:07:157 info: session
+2023-12-07 01:17:17:1717 info: session
+2023-12-07 01:17:33:1733 info: session
+2023-12-07 01:18:04:184 info: [object Object]
+2023-12-07 01:18:17:1817 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTExNjIxLCJleHAiOjE3MTc0NjM2MjF9.Arn_SrVgcxCHYKpl-FltJFUmrMs5aAFpLq3vC85uS0M","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T01:13:41.516Z"},"__lastAccess":1701911707388,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true,"user_id":"3036689912"}
+2023-12-07 01:22:04:224 info: logout
+2023-12-07 01:22:15:2215 info: [object Object]
+2023-12-07 01:22:15:2215 info: check access token :
+2023-12-07 01:22:15:2215 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 01:24:45:2445 info: [object Object]
+2023-12-07 01:24:45:2445 info: check access token :
+2023-12-07 01:24:45:2445 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:25:10:2510 error: no session
+2023-12-07 01:27:41:2741 error: no session
+2023-12-07 01:28:10:2810 info: 1
+2023-12-07 01:28:10:2810 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 01:28:10:2810 info: session
+2023-12-07 01:28:18:2818 info: [object Object]
+2023-12-07 01:28:18:2818 info: check access token :
+2023-12-07 01:28:18:2818 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-07 01:28:24:2824 info: [object Object]
+2023-12-07 01:28:24:2824 info: check access token :
+2023-12-07 01:28:24:2824 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-07 01:28:45:2845 error: no session
+2023-12-07 01:30:49:3049 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTEyNDk4LCJleHAiOjE3MTc0NjQ0OTh9._fD3ax6hVWqdWnqcpv6uBvDADvuKiobxFdSr3hyptqE","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T01:28:18.030Z"},"__lastAccess":1701912504098,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true,"user_id":"3036689912"}
+2023-12-07 01:31:21:3121 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"user":{"id":6,"user_id":"3036689912","email":"idynamics@kakao.com","provider":"KAKAO","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAxOTEyNDk4LCJleHAiOjE3MTc0NjQ0OTh9._fD3ax6hVWqdWnqcpv6uBvDADvuKiobxFdSr3hyptqE","created_date":"2023-12-01T07:54:51.042Z","updated_date":"2023-12-07T01:28:18.030Z"},"__lastAccess":1701912649906,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true,"user_id":"3036689912"}
+2023-12-07 01:31:26:3126 info: [object Object]
+2023-12-07 01:31:26:3126 info: check access token :
+2023-12-07 01:31:26:3126 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 01:31:34:3134 info: logout
+2023-12-07 01:33:08:338 info: 1
+2023-12-07 01:33:08:338 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 01:33:20:3320 info: [object Object]
+2023-12-07 01:33:20:3320 info: check access token :
+2023-12-07 01:33:21:3321 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-07 01:33:28:3328 info: [object Object]
+2023-12-07 01:33:28:3328 info: check access token :
+2023-12-07 01:33:28:3328 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-07 01:33:35:3335 info: logout
+2023-12-07 01:33:50:3350 info: [object Object]
+2023-12-07 01:33:50:3350 info: check access token :
+2023-12-07 01:33:50:3350 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 02:00:17:017 info: [object Object]
+2023-12-07 02:00:17:017 info: check access token :
+2023-12-07 02:00:18:018 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 02:00:31:031 info: [object Object]
+2023-12-07 02:00:31:031 info: check access token :
+2023-12-07 02:00:31:031 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 02:00:38:038 info: [object Object]
+2023-12-07 02:00:38:038 info: check access token :
+2023-12-07 02:00:38:038 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-07 02:00:47:047 info: [object Object]
+2023-12-07 02:00:47:047 info: check access token :
+2023-12-07 02:00:47:047 info: GET_RESULT_EYE_MOVEMENT_MONTH_DETAIL : success
+2023-12-07 02:01:05:15 info: [object Object]
+2023-12-07 02:01:05:15 info: check access token :
+2023-12-07 02:01:05:15 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 02:01:20:120 info: [object Object]
+2023-12-07 02:01:20:120 info: check access token :
+2023-12-07 02:01:20:120 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-07 02:01:20:120 info: GET_RESULT_VISION_MONTH : success
+2023-12-07 02:15:41:1541 info: [object Object]
+2023-12-07 02:15:41:1541 info: check access token :
+2023-12-07 02:15:41:1541 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:15:41:1541 info: [object Object]
+2023-12-07 02:15:41:1541 info: check access token :
+2023-12-07 02:15:41:1541 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:15:55:1555 info: [object Object]
+2023-12-07 02:15:55:1555 info: check access token :
+2023-12-07 02:15:55:1555 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:15:55:1555 info: [object Object]
+2023-12-07 02:15:55:1555 info: check access token :
+2023-12-07 02:15:55:1555 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:19:44:1944 info: [object Object]
+2023-12-07 02:19:44:1944 info: check access token :
+2023-12-07 02:19:44:1944 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:19:45:1945 info: [object Object]
+2023-12-07 02:19:45:1945 info: check access token :
+2023-12-07 02:19:45:1945 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:20:31:2031 info: [object Object]
+2023-12-07 02:20:31:2031 info: check access token :
+2023-12-07 02:20:31:2031 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:20:31:2031 info: [object Object]
+2023-12-07 02:20:31:2031 info: check access token :
+2023-12-07 02:20:31:2031 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:21:39:2139 info: [object Object]
+2023-12-07 02:21:39:2139 info: check access token :
+2023-12-07 02:21:39:2139 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:21:39:2139 info: [object Object]
+2023-12-07 02:21:39:2139 info: check access token :
+2023-12-07 02:21:40:2140 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:22:26:2226 info: [object Object]
+2023-12-07 02:22:26:2226 info: check access token :
+2023-12-07 02:22:26:2226 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:22:26:2226 info: [object Object]
+2023-12-07 02:22:26:2226 info: check access token :
+2023-12-07 02:22:26:2226 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:23:17:2317 info: [object Object]
+2023-12-07 02:23:17:2317 info: check access token :
+2023-12-07 02:23:17:2317 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:23:18:2318 info: [object Object]
+2023-12-07 02:23:18:2318 info: check access token :
+2023-12-07 02:23:18:2318 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:23:42:2342 info: [object Object]
+2023-12-07 02:23:42:2342 info: check access token :
+2023-12-07 02:23:42:2342 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:23:42:2342 info: [object Object]
+2023-12-07 02:23:42:2342 info: check access token :
+2023-12-07 02:23:42:2342 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:24:09:249 info: [object Object]
+2023-12-07 02:24:09:249 info: check access token :
+2023-12-07 02:24:09:249 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:24:09:249 info: [object Object]
+2023-12-07 02:24:09:249 info: check access token :
+2023-12-07 02:24:09:249 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:24:41:2441 info: [object Object]
+2023-12-07 02:24:41:2441 info: check access token :
+2023-12-07 02:24:41:2441 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:24:42:2442 info: [object Object]
+2023-12-07 02:24:42:2442 info: check access token :
+2023-12-07 02:24:42:2442 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:25:03:253 info: [object Object]
+2023-12-07 02:25:03:253 info: check access token :
+2023-12-07 02:25:03:253 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:25:03:253 info: [object Object]
+2023-12-07 02:25:03:253 info: check access token :
+2023-12-07 02:25:03:253 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:27:51:2751 info: [object Object]
+2023-12-07 02:27:51:2751 info: check access token :
+2023-12-07 02:27:51:2751 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:27:51:2751 info: [object Object]
+2023-12-07 02:27:51:2751 info: check access token :
+2023-12-07 02:27:51:2751 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:28:50:2850 info: [object Object]
+2023-12-07 02:28:50:2850 info: check access token :
+2023-12-07 02:28:50:2850 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:28:51:2851 info: [object Object]
+2023-12-07 02:28:51:2851 info: check access token :
+2023-12-07 02:28:51:2851 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:29:16:2916 info: [object Object]
+2023-12-07 02:29:16:2916 info: check access token :
+2023-12-07 02:29:16:2916 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:29:16:2916 info: [object Object]
+2023-12-07 02:29:16:2916 info: check access token :
+2023-12-07 02:29:16:2916 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:29:45:2945 info: [object Object]
+2023-12-07 02:29:45:2945 info: check access token :
+2023-12-07 02:29:45:2945 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:29:45:2945 info: [object Object]
+2023-12-07 02:29:45:2945 info: check access token :
+2023-12-07 02:29:45:2945 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:30:03:303 info: [object Object]
+2023-12-07 02:30:03:303 info: check access token :
+2023-12-07 02:30:03:303 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:30:04:304 info: [object Object]
+2023-12-07 02:30:04:304 info: check access token :
+2023-12-07 02:30:04:304 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 02:30:33:3033 info: [object Object]
+2023-12-07 02:30:33:3033 info: check access token :
+2023-12-07 02:30:33:3033 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 02:30:33:3033 info: [object Object]
+2023-12-07 02:30:33:3033 info: check access token :
+2023-12-07 02:30:33:3033 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 03:47:38:4738 info: [object Object]
+2023-12-07 03:47:39:4739 info: check access token :
+2023-12-07 03:47:39:4739 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 03:47:43:4743 info: [object Object]
+2023-12-07 03:47:43:4743 info: check access token :
+2023-12-07 03:47:43:4743 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-07 03:47:43:4743 info: GET_RESULT_VISION_MONTH : success
+2023-12-07 03:47:47:4747 info: [object Object]
+2023-12-07 03:47:47:4747 info: check access token :
+2023-12-07 03:47:47:4747 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 03:48:42:4842 info: [object Object]
+2023-12-07 03:48:42:4842 info: check access token :
+2023-12-07 03:48:42:4842 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 03:49:16:4916 info: [object Object]
+2023-12-07 03:49:16:4916 info: check access token :
+2023-12-07 03:49:16:4916 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 03:49:16:4916 info: [object Object]
+2023-12-07 03:49:16:4916 info: check access token :
+2023-12-07 03:49:16:4916 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 03:50:35:5035 info: [object Object]
+2023-12-07 03:50:35:5035 info: check access token :
+2023-12-07 03:50:35:5035 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 03:50:35:5035 info: [object Object]
+2023-12-07 03:50:35:5035 info: check access token :
+2023-12-07 03:50:35:5035 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 03:51:02:512 info: [object Object]
+2023-12-07 03:51:02:512 info: check access token :
+2023-12-07 03:51:02:512 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 03:51:03:513 info: [object Object]
+2023-12-07 03:51:03:513 info: check access token :
+2023-12-07 03:51:03:513 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:10:09:109 info: [object Object]
+2023-12-07 04:10:09:109 info: check access token :
+2023-12-07 04:10:09:109 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 04:10:09:109 info: [object Object]
+2023-12-07 04:10:09:109 info: check access token :
+2023-12-07 04:10:09:109 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:10:30:1030 info: [object Object]
+2023-12-07 04:10:30:1030 info: check access token :
+2023-12-07 04:10:30:1030 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 04:10:30:1030 info: [object Object]
+2023-12-07 04:10:30:1030 info: check access token :
+2023-12-07 04:10:30:1030 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:11:08:118 info: [object Object]
+2023-12-07 04:11:08:118 info: check access token :
+2023-12-07 04:11:08:118 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 04:11:08:118 info: [object Object]
+2023-12-07 04:11:08:118 info: check access token :
+2023-12-07 04:11:08:118 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:24:01:241 info: [object Object]
+2023-12-07 04:24:01:241 info: check access token :
+2023-12-07 04:24:01:241 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:24:01:241 info: [object Object]
+2023-12-07 04:24:01:241 info: check access token :
+2023-12-07 04:24:01:241 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:24:34:2434 info: [object Object]
+2023-12-07 04:24:34:2434 info: check access token :
+2023-12-07 04:24:34:2434 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:24:34:2434 info: [object Object]
+2023-12-07 04:24:34:2434 info: check access token :
+2023-12-07 04:24:34:2434 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:32:36:3236 info: [object Object]
+2023-12-07 04:32:36:3236 info: check access token :
+2023-12-07 04:32:36:3236 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:32:37:3237 info: [object Object]
+2023-12-07 04:32:37:3237 info: check access token :
+2023-12-07 04:32:37:3237 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:33:16:3316 info: [object Object]
+2023-12-07 04:33:16:3316 info: check access token :
+2023-12-07 04:33:16:3316 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:33:16:3316 info: [object Object]
+2023-12-07 04:33:16:3316 info: check access token :
+2023-12-07 04:33:16:3316 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:39:02:392 info: [object Object]
+2023-12-07 04:39:02:392 info: check access token :
+2023-12-07 04:39:02:392 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 04:39:08:398 info: [object Object]
+2023-12-07 04:39:08:398 info: check access token :
+2023-12-07 04:39:08:398 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:39:08:398 info: [object Object]
+2023-12-07 04:39:08:398 info: check access token :
+2023-12-07 04:39:08:398 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:39:13:3913 info: [object Object]
+2023-12-07 04:39:13:3913 info: check access token :
+2023-12-07 04:39:13:3913 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 04:39:13:3913 info: [object Object]
+2023-12-07 04:39:13:3913 info: check access token :
+2023-12-07 04:39:13:3913 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:39:22:3922 info: [object Object]
+2023-12-07 04:39:22:3922 info: check access token :
+2023-12-07 04:39:22:3922 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 04:39:28:3928 info: [object Object]
+2023-12-07 04:39:28:3928 info: check access token :
+2023-12-07 04:39:28:3928 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 04:39:28:3928 info: [object Object]
+2023-12-07 04:39:28:3928 info: check access token :
+2023-12-07 04:39:28:3928 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:39:33:3933 info: [object Object]
+2023-12-07 04:39:33:3933 info: check access token :
+2023-12-07 04:39:33:3933 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 04:47:05:475 info: 1
+2023-12-07 04:47:05:475 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 04:47:05:475 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 04:47:09:479 info: GET TOTAL RESULT : success
+2023-12-07 04:47:09:479 info: [object Object]
+2023-12-07 04:47:09:479 info: check access token :
+2023-12-07 04:47:09:479 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 04:48:59:4859 info: 1
+2023-12-07 04:48:59:4859 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 04:48:59:4859 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 04:56:19:5619 info: [object Object]
+2023-12-07 04:56:19:5619 info: check access token :
+2023-12-07 04:56:19:5619 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 04:56:19:5619 info: [object Object]
+2023-12-07 04:56:19:5619 info: check access token :
+2023-12-07 04:56:19:5619 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 04:57:13:5713 info: [object Object]
+2023-12-07 04:57:13:5713 info: check access token :
+2023-12-07 04:57:14:5714 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:10:33:1033 info: 1
+2023-12-07 05:10:33:1033 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 05:10:33:1033 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 05:10:50:1050 info: GET TOTAL RESULT : success
+2023-12-07 05:10:50:1050 info: [object Object]
+2023-12-07 05:10:50:1050 info: check access token :
+2023-12-07 05:10:50:1050 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 05:10:51:1051 info: GET TOTAL RESULT : success
+2023-12-07 05:10:51:1051 info: [object Object]
+2023-12-07 05:10:51:1051 info: check access token :
+2023-12-07 05:10:51:1051 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 05:12:53:1253 info: [object Object]
+2023-12-07 05:12:53:1253 info: check access token :
+2023-12-07 05:12:53:1253 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:13:18:1318 info: [object Object]
+2023-12-07 05:13:18:1318 info: check access token :
+2023-12-07 05:13:18:1318 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 05:13:18:1318 info: [object Object]
+2023-12-07 05:13:18:1318 info: check access token :
+2023-12-07 05:13:18:1318 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 05:13:39:1339 info: [object Object]
+2023-12-07 05:13:39:1339 info: check access token :
+2023-12-07 05:13:39:1339 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:14:09:149 info: [object Object]
+2023-12-07 05:14:09:149 info: check access token :
+2023-12-07 05:14:09:149 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:15:14:1514 info: [object Object]
+2023-12-07 05:15:14:1514 info: check access token :
+2023-12-07 05:15:14:1514 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:25:02:252 info: [object Object]
+2023-12-07 05:25:02:252 info: check access token :
+2023-12-07 05:25:02:252 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-07 05:25:02:252 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-07 05:27:23:2723 info: GET TOTAL RESULT : success
+2023-12-07 05:27:23:2723 info: [object Object]
+2023-12-07 05:27:23:2723 info: check access token :
+2023-12-07 05:27:23:2723 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 05:27:25:2725 info: GET TOTAL RESULT : success
+2023-12-07 05:27:25:2725 info: [object Object]
+2023-12-07 05:27:25:2725 info: check access token :
+2023-12-07 05:27:25:2725 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 05:27:36:2736 info: GET TOTAL RESULT : success
+2023-12-07 05:27:36:2736 info: [object Object]
+2023-12-07 05:27:36:2736 info: check access token :
+2023-12-07 05:27:36:2736 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 05:27:46:2746 info: GET TOTAL RESULT : success
+2023-12-07 05:27:46:2746 info: [object Object]
+2023-12-07 05:27:46:2746 info: check access token :
+2023-12-07 05:27:46:2746 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 05:33:02:332 info: GET TOTAL RESULT : success
+2023-12-07 05:33:02:332 info: [object Object]
+2023-12-07 05:33:02:332 info: check access token :
+2023-12-07 05:33:02:332 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 05:40:18:4018 info: [object Object]
+2023-12-07 05:40:18:4018 info: check access token :
+2023-12-07 05:40:18:4018 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 05:41:38:4138 info: [object Object]
+2023-12-07 05:41:38:4138 info: check access token :
+2023-12-07 05:41:38:4138 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 05:41:38:4138 info: [object Object]
+2023-12-07 05:41:38:4138 info: check access token :
+2023-12-07 05:41:38:4138 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 05:43:06:436 info: [object Object]
+2023-12-07 05:43:06:436 info: check access token :
+2023-12-07 05:43:06:436 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:43:14:4314 info: [object Object]
+2023-12-07 05:43:14:4314 info: check access token :
+2023-12-07 05:43:14:4314 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 05:43:35:4335 info: [object Object]
+2023-12-07 05:43:35:4335 info: check access token :
+2023-12-07 05:43:35:4335 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 05:47:08:478 info: [object Object]
+2023-12-07 05:47:08:478 info: check access token :
+2023-12-07 05:47:08:478 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 05:47:29:4729 info: [object Object]
+2023-12-07 05:47:29:4729 info: check access token :
+2023-12-07 05:47:29:4729 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 05:48:19:4819 info: [object Object]
+2023-12-07 05:48:19:4819 info: check access token :
+2023-12-07 05:48:19:4819 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 05:49:04:494 info: GET TOTAL RESULT : success
+2023-12-07 05:49:05:495 info: GET TOTAL RESULT : success
+2023-12-07 05:49:07:497 info: [object Object]
+2023-12-07 05:49:07:497 info: check access token :
+2023-12-07 05:49:07:497 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 05:51:03:513 info: GET TOTAL RESULT : success
+2023-12-07 05:51:03:513 info: [object Object]
+2023-12-07 05:51:03:513 info: check access token :
+2023-12-07 05:51:03:513 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 05:51:05:515 info: [object Object]
+2023-12-07 05:51:05:515 info: check access token :
+2023-12-07 05:51:05:515 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 05:59:10:5910 info: [object Object]
+2023-12-07 05:59:10:5910 info: check access token :
+2023-12-07 05:59:10:5910 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 05:59:11:5911 info: [object Object]
+2023-12-07 05:59:11:5911 info: check access token :
+2023-12-07 05:59:11:5911 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 06:32:03:323 info: 1
+2023-12-07 06:32:03:323 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:32:04:324 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:32:06:326 info: [object Object]
+2023-12-07 06:32:06:326 info: check access token :
+2023-12-07 06:32:06:326 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 06:32:10:3210 info: [object Object]
+2023-12-07 06:32:10:3210 info: check access token :
+2023-12-07 06:32:10:3210 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 06:32:10:3210 info: [object Object]
+2023-12-07 06:32:10:3210 info: check access token :
+2023-12-07 06:32:10:3210 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 06:33:32:3332 info: [object Object]
+2023-12-07 06:33:32:3332 info: check access token :
+2023-12-07 06:33:32:3332 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:35:48:3548 info: 1
+2023-12-07 06:35:48:3548 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:35:48:3548 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:45:54:4554 info: 1
+2023-12-07 06:45:54:4554 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:45:56:4556 info: [object Object]
+2023-12-07 06:45:56:4556 info: check access token :
+2023-12-07 06:45:56:4556 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:46:31:4631 info: 1
+2023-12-07 06:46:31:4631 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:46:31:4631 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:46:32:4632 info: [object Object]
+2023-12-07 06:46:32:4632 info: check access token :
+2023-12-07 06:46:32:4632 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:47:13:4713 info: 1
+2023-12-07 06:47:13:4713 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:47:13:4713 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:47:15:4715 info: [object Object]
+2023-12-07 06:47:15:4715 info: check access token :
+2023-12-07 06:47:15:4715 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 06:47:19:4719 info: [object Object]
+2023-12-07 06:47:19:4719 info: check access token :
+2023-12-07 06:47:19:4719 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 06:47:19:4719 info: [object Object]
+2023-12-07 06:47:19:4719 info: check access token :
+2023-12-07 06:47:19:4719 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 06:47:27:4727 info: GET TOTAL RESULT : success
+2023-12-07 06:47:28:4728 info: GET TOTAL RESULT : success
+2023-12-07 06:47:29:4729 info: GET TOTAL RESULT : success
+2023-12-07 06:47:30:4730 info: GET TOTAL RESULT : success
+2023-12-07 06:47:31:4731 info: [object Object]
+2023-12-07 06:47:31:4731 info: check access token :
+2023-12-07 06:47:31:4731 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:48:28:4828 info: [object Object]
+2023-12-07 06:48:28:4828 info: check access token :
+2023-12-07 06:48:28:4828 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:48:41:4841 info: [object Object]
+2023-12-07 06:48:41:4841 info: check access token :
+2023-12-07 06:48:41:4841 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:48:48:4848 info: GET TOTAL RESULT : success
+2023-12-07 06:48:49:4849 info: GET TOTAL RESULT : success
+2023-12-07 06:48:50:4850 info: [object Object]
+2023-12-07 06:48:50:4850 info: check access token :
+2023-12-07 06:48:50:4850 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 06:49:38:4938 info: 1
+2023-12-07 06:49:38:4938 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:49:38:4938 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:49:39:4939 info: [object Object]
+2023-12-07 06:49:39:4939 info: check access token :
+2023-12-07 06:49:39:4939 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:52:28:5228 info: 1
+2023-12-07 06:52:28:5228 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:52:28:5228 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:52:31:5231 info: [object Object]
+2023-12-07 06:52:31:5231 info: check access token :
+2023-12-07 06:52:31:5231 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 06:52:57:5257 info: 1
+2023-12-07 06:52:57:5257 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:52:57:5257 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:58:40:5840 info: [object Object]
+2023-12-07 06:58:40:5840 info: check access token :
+2023-12-07 06:58:40:5840 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 06:59:40:5940 info: 1
+2023-12-07 06:59:40:5940 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 06:59:40:5940 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 06:59:41:5941 info: [object Object]
+2023-12-07 06:59:41:5941 info: check access token :
+2023-12-07 06:59:41:5941 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 07:02:50:250 info: 1
+2023-12-07 07:02:50:250 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:02:50:250 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:02:52:252 info: [object Object]
+2023-12-07 07:02:52:252 info: check access token :
+2023-12-07 07:02:52:252 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:02:52:252 info: [object Object]
+2023-12-07 07:02:52:252 info: check access token :
+2023-12-07 07:02:52:252 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:03:02:32 info: [object Object]
+2023-12-07 07:03:02:32 info: check access token :
+2023-12-07 07:03:02:32 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:03:07:37 info: [object Object]
+2023-12-07 07:03:07:37 info: check access token :
+2023-12-07 07:03:07:37 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:03:07:37 info: [object Object]
+2023-12-07 07:03:07:37 info: check access token :
+2023-12-07 07:03:07:37 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:03:53:353 info: [object Object]
+2023-12-07 07:03:53:353 info: check access token :
+2023-12-07 07:03:53:353 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:03:53:353 info: [object Object]
+2023-12-07 07:03:53:353 info: check access token :
+2023-12-07 07:03:53:353 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:03:58:358 info: [object Object]
+2023-12-07 07:03:58:358 info: check access token :
+2023-12-07 07:03:58:358 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 07:03:59:359 info: [object Object]
+2023-12-07 07:03:59:359 info: check access token :
+2023-12-07 07:03:59:359 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:05:36:536 info: [object Object]
+2023-12-07 07:05:36:536 info: check access token :
+2023-12-07 07:05:36:536 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:07:01:71 info: [object Object]
+2023-12-07 07:07:01:71 info: check access token :
+2023-12-07 07:07:01:71 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:07:01:71 info: [object Object]
+2023-12-07 07:07:01:71 info: check access token :
+2023-12-07 07:07:01:71 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:07:08:78 info: GET TOTAL RESULT : success
+2023-12-07 07:10:33:1033 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:11:11:1111 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:12:03:123 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:15:45:1545 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:16:18:1618 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:17:54:1754 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:18:55:1855 info: 1
+2023-12-07 07:18:55:1855 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:19:09:199 info: [object Object]
+2023-12-07 07:19:09:199 info: check access token :
+2023-12-07 07:19:09:199 info: GET_RESULT_BLIND_SPOT_MONTH_DETAIL: success
+2023-12-07 07:20:21:2021 info: 1
+2023-12-07 07:20:21:2021 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:20:21:2021 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:20:49:2049 info: [object Object]
+2023-12-07 07:20:49:2049 info: check access token :
+2023-12-07 07:20:49:2049 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:21:10:2110 info: 1
+2023-12-07 07:21:10:2110 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:22:15:2215 info: 1
+2023-12-07 07:22:15:2215 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:22:16:2216 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:22:58:2258 info: [object Object]
+2023-12-07 07:22:58:2258 info: check access token :
+2023-12-07 07:22:58:2258 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:22:58:2258 info: [object Object]
+2023-12-07 07:22:58:2258 info: check access token :
+2023-12-07 07:22:58:2258 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:23:01:231 error: no session
+2023-12-07 07:24:05:245 info: 1
+2023-12-07 07:24:05:245 info: {"cookie":{"originalMaxAge":86400,"expires":86400,"secure":true,"httpOnly":true,"path":"/"},"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}}}
+2023-12-07 07:24:06:246 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:24:24:2424 info: GET TOTAL RESULT : success
+2023-12-07 07:24:24:2424 info: [object Object]
+2023-12-07 07:24:24:2424 info: check access token :
+2023-12-07 07:24:24:2424 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:24:26:2426 info: [object Object]
+2023-12-07 07:24:26:2426 info: check access token :
+2023-12-07 07:24:26:2426 info: GET_RESULT_EYE_MOVEMENT: No Result
+2023-12-07 07:31:41:3141 info: 1
+2023-12-07 07:31:41:3141 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:32:54:3254 info: 1
+2023-12-07 07:32:54:3254 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:32:54:3254 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:33:04:334 info: [object Object]
+2023-12-07 07:33:04:334 info: check access token :
+2023-12-07 07:33:04:334 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:35:42:3542 info: 1
+2023-12-07 07:35:42:3542 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:35:49:3549 info: [object Object]
+2023-12-07 07:35:49:3549 info: check access token :
+2023-12-07 07:35:49:3549 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 07:35:56:3556 info: [object Object]
+2023-12-07 07:35:56:3556 info: check access token :
+2023-12-07 07:35:56:3556 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:36:06:366 info: GET TOTAL RESULT : success
+2023-12-07 07:37:01:371 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934542499,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:37:09:379 info: logout
+2023-12-07 07:37:09:379 error: INTERNAL SERVER ERROR
+2023-12-07 07:37:42:3742 info: logout
+2023-12-07 07:37:42:3742 error: INTERNAL SERVER ERROR
+2023-12-07 07:38:03:383 info: logout
+2023-12-07 07:38:03:383 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:290:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:38:44:3844 info: logout
+2023-12-07 07:38:44:3844 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:39:03:393 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934724566,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:39:03:393 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:39:52:3952 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934743708,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:39:52:3952 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:40:07:407 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934792234,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:40:14:4014 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934807839,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:40:14:4014 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:40:28:4028 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934814042,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:40:37:4037 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934828190,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:40:37:4037 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:41:03:413 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934837159,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:41:15:4115 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934863822,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:41:15:4115 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:291:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:42:08:428 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934875782,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:42:08:428 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:42:38:4238 info: 1
+2023-12-07 07:42:38:4238 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:42:38:4238 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:42:42:4242 info: [object Object]
+2023-12-07 07:42:42:4242 info: check access token :
+2023-12-07 07:42:42:4242 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 07:43:02:432 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934928744,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:43:02:432 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:44:10:4410 info: GET TOTAL RESULT : success
+2023-12-07 07:44:26:4426 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701934982640,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:44:26:4426 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:44:30:4430 info: [object Object]
+2023-12-07 07:44:30:4430 info: check access token :
+2023-12-07 07:44:31:4431 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:44:56:4456 info: GET TOTAL RESULT : success
+2023-12-07 07:45:16:4516 info: [object Object]
+2023-12-07 07:45:16:4516 info: check access token :
+2023-12-07 07:45:16:4516 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:46:56:4656 info: GET TOTAL RESULT : success
+2023-12-07 07:47:20:4720 info: [object Object]
+2023-12-07 07:47:20:4720 info: check access token :
+2023-12-07 07:47:20:4720 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:47:43:4743 info: [object Object]
+2023-12-07 07:47:43:4743 info: check access token :
+2023-12-07 07:47:43:4743 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:52:07:527 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701935066965,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:52:07:527 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:53:00:530 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701935527407,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:53:00:530 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:53:11:5311 info: GET TOTAL RESULT : success
+2023-12-07 07:53:11:5311 info: [object Object]
+2023-12-07 07:53:11:5311 info: check access token :
+2023-12-07 07:53:11:5311 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:53:11:5311 info: [object Object]
+2023-12-07 07:53:11:5311 info: check access token :
+2023-12-07 07:53:11:5311 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:53:11:5311 info: [object Object]
+2023-12-07 07:53:11:5311 info: check access token :
+2023-12-07 07:53:11:5311 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:53:11:5311 info: [object Object]
+2023-12-07 07:53:11:5311 info: check access token :
+2023-12-07 07:53:11:5311 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:54:25:5425 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701935580221,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:54:25:5425 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:55:00:550 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701935665480,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:55:00:550 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:292:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:55:39:5539 info: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"__lastAccess":1701935700616,"authData":{"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}},"isLoggedIn":true}
+2023-12-07 07:55:39:5539 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:293:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:56:23:5623 info: {"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}}
+2023-12-07 07:56:23:5623 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:294:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:56:57:5657 info: 3036689912
+2023-12-07 07:56:57:5657 error: INTERNAL SERVER ERROR Cannot set properties of undefined (setting 'user_id') 
+ Error Stack: TypeError: Cannot set properties of undefined (setting 'user_id')
+    at deleteSession (/home/ec2-user/project_icare2/controllers/user.controller.js:294:46)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:280:10)
+2023-12-07 07:57:35:5735 info: 3036689912
+2023-12-07 07:57:35:5735 info: success
+2023-12-07 07:57:42:5742 info: 1
+2023-12-07 07:57:42:5742 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:58:29:5829 info: 1
+2023-12-07 07:58:29:5829 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 07:58:29:5829 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 07:59:16:5916 info: GET TOTAL RESULT : success
+2023-12-07 07:59:16:5916 info: [object Object]
+2023-12-07 07:59:16:5916 info: check access token :
+2023-12-07 07:59:16:5916 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:59:16:5916 info: [object Object]
+2023-12-07 07:59:16:5916 info: check access token :
+2023-12-07 07:59:16:5916 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 07:59:16:5916 info: [object Object]
+2023-12-07 07:59:16:5916 info: check access token :
+2023-12-07 07:59:16:5916 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 07:59:16:5916 info: [object Object]
+2023-12-07 07:59:16:5916 info: check access token :
+2023-12-07 07:59:16:5916 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 08:03:55:355 info: [object Object]
+2023-12-07 08:03:55:355 info: check access token :
+2023-12-07 08:03:55:355 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 08:03:55:355 info: [object Object]
+2023-12-07 08:03:55:355 info: check access token :
+2023-12-07 08:03:55:355 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 08:04:04:44 info: [object Object]
+2023-12-07 08:04:04:44 info: check access token :
+2023-12-07 08:04:04:44 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 08:04:09:49 info: [object Object]
+2023-12-07 08:04:09:49 info: check access token :
+2023-12-07 08:04:09:49 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 08:04:09:49 info: [object Object]
+2023-12-07 08:04:09:49 info: check access token :
+2023-12-07 08:04:09:49 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 09:23:52:2352 info: 1
+2023-12-07 09:23:52:2352 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:24:35:2435 error: no session
+2023-12-07 09:27:05:275 info: 1
+2023-12-07 09:27:05:275 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:27:05:275 info: 1
+2023-12-07 09:27:05:275 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:28:21:2821 info: 1
+2023-12-07 09:28:21:2821 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:28:45:2845 info: [object Object]
+2023-12-07 09:28:45:2845 info: check access token :
+2023-12-07 09:28:45:2845 info: GET_RESULT_BLIND_SPOT_MONTH_DETAIL: success
+2023-12-07 09:28:53:2853 error: no session
+2023-12-07 09:30:00:300 info: 1
+2023-12-07 09:30:00:300 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:32:27:3227 info: 1
+2023-12-07 09:32:27:3227 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:32:37:3237 error: no session
+2023-12-07 09:33:54:3354 info: 1
+2023-12-07 09:33:54:3354 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:33:58:3358 error: no session
+2023-12-07 09:34:41:3441 info: undefined
+2023-12-07 09:34:41:3441 error: no session
+2023-12-07 09:34:50:3450 info: 1
+2023-12-07 09:34:50:3450 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:34:56:3456 info: undefined
+2023-12-07 09:34:56:3456 error: no session
+2023-12-07 09:39:56:3956 info: 1
+2023-12-07 09:39:56:3956 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:40:44:4044 info: 1
+2023-12-07 09:40:44:4044 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 09:40:48:4048 info: undefined
+2023-12-07 09:40:48:4048 error: no session
+2023-12-07 09:57:48:5748 info: undefined
+2023-12-07 09:57:48:5748 error: no session
+2023-12-07 09:57:48:5748 info: undefined
+2023-12-07 09:57:48:5748 error: no session
+2023-12-07 10:06:19:619 info: undefined
+2023-12-07 10:06:19:619 error: no session
+2023-12-07 10:07:44:744 info: [object Object]
+2023-12-07 10:07:44:744 info: check access token :
+2023-12-07 10:07:44:744 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:07:47:747 info: [object Object]
+2023-12-07 10:07:47:747 info: check access token :
+2023-12-07 10:07:47:747 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:07:47:747 info: [object Object]
+2023-12-07 10:07:47:747 info: check access token :
+2023-12-07 10:07:47:747 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:07:54:754 info: [object Object]
+2023-12-07 10:07:54:754 info: check access token :
+2023-12-07 10:07:54:754 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:07:54:754 info: [object Object]
+2023-12-07 10:07:54:754 info: check access token :
+2023-12-07 10:07:54:754 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:07:57:757 info: GET TOTAL RESULT : success
+2023-12-07 10:07:57:757 info: [object Object]
+2023-12-07 10:07:57:757 info: check access token :
+2023-12-07 10:07:57:757 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:07:57:757 info: [object Object]
+2023-12-07 10:07:57:757 info: check access token :
+2023-12-07 10:07:57:757 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:07:57:757 info: [object Object]
+2023-12-07 10:07:57:757 info: check access token :
+2023-12-07 10:07:57:757 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:07:57:757 info: [object Object]
+2023-12-07 10:07:57:757 info: check access token :
+2023-12-07 10:07:57:757 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:18:11:1811 info: [object Object]
+2023-12-07 10:18:11:1811 info: check access token :
+2023-12-07 10:18:11:1811 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:18:12:1812 info: [object Object]
+2023-12-07 10:18:12:1812 info: check access token :
+2023-12-07 10:18:12:1812 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:18:39:1839 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:443:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-07 10:19:14:1914 info: 1
+2023-12-07 10:19:14:1914 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 10:19:14:1914 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 10:19:15:1915 info: GET TOTAL RESULT : success
+2023-12-07 10:19:15:1915 info: [object Object]
+2023-12-07 10:19:15:1915 info: check access token :
+2023-12-07 10:19:15:1915 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:19:15:1915 info: [object Object]
+2023-12-07 10:19:15:1915 info: check access token :
+2023-12-07 10:19:15:1915 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:19:16:1916 info: [object Object]
+2023-12-07 10:19:16:1916 info: check access token :
+2023-12-07 10:19:16:1916 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:19:16:1916 info: [object Object]
+2023-12-07 10:19:16:1916 info: check access token :
+2023-12-07 10:19:16:1916 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:19:18:1918 info: [object Object]
+2023-12-07 10:19:18:1918 info: check access token :
+2023-12-07 10:19:18:1918 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:19:36:1936 info: [object Object]
+2023-12-07 10:19:36:1936 info: check access token :
+2023-12-07 10:19:36:1936 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:19:36:1936 info: [object Object]
+2023-12-07 10:19:36:1936 info: check access token :
+2023-12-07 10:19:36:1936 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:19:56:1956 info: [object Object]
+2023-12-07 10:19:56:1956 info: check access token :
+2023-12-07 10:19:56:1956 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:19:56:1956 info: [object Object]
+2023-12-07 10:19:56:1956 info: check access token :
+2023-12-07 10:19:56:1956 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:20:06:206 info: GET TOTAL RESULT : success
+2023-12-07 10:20:06:206 info: [object Object]
+2023-12-07 10:20:06:206 info: check access token :
+2023-12-07 10:20:06:206 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:20:06:206 info: [object Object]
+2023-12-07 10:20:06:206 info: check access token :
+2023-12-07 10:20:06:206 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:20:07:207 info: [object Object]
+2023-12-07 10:20:07:207 info: check access token :
+2023-12-07 10:20:07:207 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:20:07:207 info: [object Object]
+2023-12-07 10:20:07:207 info: check access token :
+2023-12-07 10:20:07:207 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:22:49:2249 info: GET TOTAL RESULT : success
+2023-12-07 10:22:49:2249 info: [object Object]
+2023-12-07 10:22:49:2249 info: check access token :
+2023-12-07 10:22:49:2249 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:22:49:2249 info: [object Object]
+2023-12-07 10:22:49:2249 info: check access token :
+2023-12-07 10:22:49:2249 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:22:49:2249 info: [object Object]
+2023-12-07 10:22:49:2249 info: check access token :
+2023-12-07 10:22:49:2249 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:22:49:2249 info: [object Object]
+2023-12-07 10:22:49:2249 info: check access token :
+2023-12-07 10:22:49:2249 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:22:55:2255 info: [object Object]
+2023-12-07 10:22:55:2255 info: check access token :
+2023-12-07 10:22:55:2255 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:32:46:3246 info: [object Object]
+2023-12-07 10:32:46:3246 info: check access token :
+2023-12-07 10:32:46:3246 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:34:15:3415 info: [object Object]
+2023-12-07 10:34:15:3415 info: check access token :
+2023-12-07 10:34:15:3415 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:34:41:3441 info: [object Object]
+2023-12-07 10:34:41:3441 info: check access token :
+2023-12-07 10:34:41:3441 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:35:09:359 info: [object Object]
+2023-12-07 10:35:09:359 info: check access token :
+2023-12-07 10:35:09:359 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:40:32:4032 info: [object Object]
+2023-12-07 10:40:32:4032 info: check access token :
+2023-12-07 10:40:32:4032 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:42:51:4251 info: [object Object]
+2023-12-07 10:42:51:4251 info: check access token :
+2023-12-07 10:42:51:4251 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:42:53:4253 info: [object Object]
+2023-12-07 10:42:53:4253 info: check access token :
+2023-12-07 10:42:53:4253 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:43:35:4335 info: [object Object]
+2023-12-07 10:43:35:4335 info: check access token :
+2023-12-07 10:43:35:4335 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:43:38:4338 info: [object Object]
+2023-12-07 10:43:38:4338 info: check access token :
+2023-12-07 10:43:38:4338 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:43:38:4338 info: [object Object]
+2023-12-07 10:43:38:4338 info: check access token :
+2023-12-07 10:43:38:4338 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:43:47:4347 info: [object Object]
+2023-12-07 10:43:47:4347 info: check access token :
+2023-12-07 10:43:47:4347 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:43:47:4347 info: [object Object]
+2023-12-07 10:43:47:4347 info: check access token :
+2023-12-07 10:43:47:4347 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:44:12:4412 info: [object Object]
+2023-12-07 10:44:12:4412 info: check access token :
+2023-12-07 10:44:12:4412 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:44:18:4418 info: [object Object]
+2023-12-07 10:44:18:4418 info: check access token :
+2023-12-07 10:44:18:4418 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:44:18:4418 info: [object Object]
+2023-12-07 10:44:18:4418 info: check access token :
+2023-12-07 10:44:18:4418 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:44:29:4429 info: [object Object]
+2023-12-07 10:44:29:4429 info: check access token :
+2023-12-07 10:44:29:4429 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:44:29:4429 info: [object Object]
+2023-12-07 10:44:29:4429 info: check access token :
+2023-12-07 10:44:29:4429 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:51:17:5117 info: [object Object]
+2023-12-07 10:51:17:5117 info: check access token :
+2023-12-07 10:51:17:5117 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:52:02:522 info: [object Object]
+2023-12-07 10:52:02:522 info: check access token :
+2023-12-07 10:52:02:522 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:52:11:5211 info: [object Object]
+2023-12-07 10:52:11:5211 info: check access token :
+2023-12-07 10:52:11:5211 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 10:52:13:5213 info: [object Object]
+2023-12-07 10:52:13:5213 info: check access token :
+2023-12-07 10:52:13:5213 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 10:52:13:5213 info: [object Object]
+2023-12-07 10:52:13:5213 info: check access token :
+2023-12-07 10:52:13:5213 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:52:28:5228 info: [object Object]
+2023-12-07 10:52:28:5228 info: check access token :
+2023-12-07 10:52:28:5228 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:52:29:5229 info: [object Object]
+2023-12-07 10:52:29:5229 info: check access token :
+2023-12-07 10:52:29:5229 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:53:02:532 info: GET TOTAL RESULT : success
+2023-12-07 10:53:02:532 info: [object Object]
+2023-12-07 10:53:02:532 info: check access token :
+2023-12-07 10:53:02:532 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:53:02:532 info: [object Object]
+2023-12-07 10:53:02:532 info: check access token :
+2023-12-07 10:53:02:532 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:53:02:532 info: [object Object]
+2023-12-07 10:53:02:532 info: check access token :
+2023-12-07 10:53:02:532 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 10:53:02:532 info: [object Object]
+2023-12-07 10:53:02:532 info: check access token :
+2023-12-07 10:53:02:532 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 10:55:01:551 info: [object Object]
+2023-12-07 10:55:01:551 info: check access token :
+2023-12-07 10:55:01:551 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 10:55:02:552 info: [object Object]
+2023-12-07 10:55:02:552 info: check access token :
+2023-12-07 10:55:02:552 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 11:44:21:4421 info: [object Object]
+2023-12-07 11:44:21:4421 info: check access token :
+2023-12-07 11:44:21:4421 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 11:44:33:4433 info: [object Object]
+2023-12-07 11:44:33:4433 info: check access token :
+2023-12-07 11:44:33:4433 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 11:44:33:4433 info: [object Object]
+2023-12-07 11:44:33:4433 info: check access token :
+2023-12-07 11:44:33:4433 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 11:44:39:4439 info: [object Object]
+2023-12-07 11:44:39:4439 info: check access token :
+2023-12-07 11:44:39:4439 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 11:44:39:4439 info: [object Object]
+2023-12-07 11:44:39:4439 info: check access token :
+2023-12-07 11:44:39:4439 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 11:44:48:4448 info: GET TOTAL RESULT : success
+2023-12-07 11:44:48:4448 info: [object Object]
+2023-12-07 11:44:48:4448 info: check access token :
+2023-12-07 11:44:48:4448 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 11:44:48:4448 info: [object Object]
+2023-12-07 11:44:48:4448 info: check access token :
+2023-12-07 11:44:48:4448 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 11:44:48:4448 info: [object Object]
+2023-12-07 11:44:48:4448 info: check access token :
+2023-12-07 11:44:48:4448 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 11:44:48:4448 info: [object Object]
+2023-12-07 11:44:48:4448 info: check access token :
+2023-12-07 11:44:48:4448 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-07 23:03:59:359 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:04:52:452 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:05:34:534 info: 1
+2023-12-07 23:05:34:534 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:10:01:101 info: 1
+2023-12-07 23:10:01:101 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:10:02:102 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 23:10:16:1016 info: [object Object]
+2023-12-07 23:10:16:1016 info: check access token :
+2023-12-07 23:10:16:1016 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 23:10:16:1016 info: [object Object]
+2023-12-07 23:10:16:1016 info: check access token :
+2023-12-07 23:10:16:1016 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 23:10:37:1037 info: [object Object]
+2023-12-07 23:10:37:1037 info: check access token :
+2023-12-07 23:10:37:1037 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-07 23:10:46:1046 info: GET TOTAL RESULT : success
+2023-12-07 23:10:47:1047 info: GET TOTAL RESULT : success
+2023-12-07 23:10:50:1050 info: [object Object]
+2023-12-07 23:10:50:1050 info: check access token :
+2023-12-07 23:10:50:1050 info: GET_RESULT_BLIND_SPOT : success
+2023-12-07 23:10:50:1050 info: [object Object]
+2023-12-07 23:10:50:1050 info: check access token :
+2023-12-07 23:10:50:1050 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-07 23:18:04:184 info: 1
+2023-12-07 23:18:04:184 error: GET_KAKAO_TOKEN :  db is not defined 
+ Error Stack: ReferenceError: db is not defined
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:94:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:20:29:2029 info: 1
+2023-12-07 23:20:29:2029 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:20:29:2029 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:20:44:2044 info: 1
+2023-12-07 23:20:44:2044 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:20:44:2044 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:22:07:227 info: 1
+2023-12-07 23:22:07:227 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:23:51:2351 info: {"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}}
+2023-12-07 23:24:04:244 info: [object Object]
+2023-12-07 23:24:04:244 info: check access token :
+2023-12-07 23:24:04:244 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 23:28:05:285 info: [object Object]
+2023-12-07 23:28:05:285 info: check access token :
+2023-12-07 23:28:05:285 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-07 23:28:05:285 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-07 23:28:17:2817 info: true
+2023-12-07 23:28:17:2817 info: "3036689912"
+2023-12-07 23:28:17:2817 info: success
+2023-12-07 23:28:57:2857 info: 1
+2023-12-07 23:28:57:2857 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:43:04:434 info: {"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}}
+2023-12-07 23:43:15:4315 info: [object Object]
+2023-12-07 23:43:15:4315 info: check access token :
+2023-12-07 23:43:15:4315 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 23:43:21:4321 info: true
+2023-12-07 23:43:21:4321 info: "3036689912"
+2023-12-07 23:43:21:4321 info: success
+2023-12-07 23:43:39:4339 info: [object Object]
+2023-12-07 23:43:39:4339 info: check access token :
+2023-12-07 23:43:39:4339 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-07 23:43:48:4348 info: 1
+2023-12-07 23:43:48:4348 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-07 23:43:48:4348 error: GET_KAKAO_TOKEN :  Cannot set headers after they are sent to the client 
+ Error Stack: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:405:5)
+    at ServerResponse.setHeader (node:_http_outgoing:648:11)
+    at ServerResponse.header (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/ec2-user/project_icare2/node_modules/express/lib/response.js:278:15)
+    at getKakaoToken (/home/ec2-user/project_icare2/controllers/user.controller.js:137:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 23:44:41:4441 info: {"kakao":{"id":3036689912,"connected_at":"2023-09-25T05:16:02Z","kakao_account":{"has_email":true,"email_needs_agreement":false,"is_email_valid":true,"is_email_verified":true,"email":"idynamics@kakao.com"}}}

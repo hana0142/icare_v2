@@ -1,0 +1,1342 @@
+2023-12-11 00:42:40:4240 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:23:29:2329 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:23:53:2353 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:50:53:5053 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:52:55:5255 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 02:03:15:315 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 02:07:00:70 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 04:07:31:731 info: [object Object]
+2023-12-11 04:07:31:731 info: check access token :
+2023-12-11 04:07:31:731 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:07:32:732 info: [object Object]
+2023-12-11 04:07:32:732 info: check access token :
+2023-12-11 04:07:32:732 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:07:32:732 info: [object Object]
+2023-12-11 04:07:32:732 info: check access token :
+2023-12-11 04:07:32:732 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:07:34:734 info: [object Object]
+2023-12-11 04:07:34:734 info: check access token :
+2023-12-11 04:07:34:734 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:07:34:734 info: [object Object]
+2023-12-11 04:07:34:734 info: check access token :
+2023-12-11 04:07:34:734 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:07:46:746 info: [object Object]
+2023-12-11 04:07:46:746 info: check access token :
+2023-12-11 04:07:46:746 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:08:47:847 info: [object Object]
+2023-12-11 04:08:47:847 info: check access token :
+2023-12-11 04:08:47:847 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-11 04:08:47:847 info: GET_RESULT_VISION_MONTH : success
+2023-12-11 04:09:50:950 info: [object Object]
+2023-12-11 04:09:50:950 info: check access token :
+2023-12-11 04:09:50:950 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:10:08:108 info: [object Object]
+2023-12-11 04:10:08:108 info: check access token :
+2023-12-11 04:10:08:108 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:10:08:108 info: [object Object]
+2023-12-11 04:10:08:108 info: check access token :
+2023-12-11 04:10:08:108 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:10:08:108 info: [object Object]
+2023-12-11 04:10:08:108 info: check access token :
+2023-12-11 04:10:08:108 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:10:10:1010 info: [object Object]
+2023-12-11 04:10:10:1010 info: check access token :
+2023-12-11 04:10:10:1010 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:10:10:1010 info: [object Object]
+2023-12-11 04:10:10:1010 info: check access token :
+2023-12-11 04:10:10:1010 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:14:09:149 info: [object Object]
+2023-12-11 04:14:09:149 info: check access token :
+2023-12-11 04:14:09:149 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-11 04:14:09:149 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-11 04:14:09:149 info: [object Object]
+2023-12-11 04:14:09:149 info: check access token :
+2023-12-11 04:14:09:149 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:14:10:1410 info: [object Object]
+2023-12-11 04:14:10:1410 info: check access token :
+2023-12-11 04:14:10:1410 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:14:10:1410 info: [object Object]
+2023-12-11 04:14:10:1410 info: check access token :
+2023-12-11 04:14:10:1410 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:14:11:1411 info: [object Object]
+2023-12-11 04:14:11:1411 info: check access token :
+2023-12-11 04:14:11:1411 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:14:12:1412 info: [object Object]
+2023-12-11 04:14:12:1412 info: check access token :
+2023-12-11 04:14:12:1412 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:14:15:1415 info: [object Object]
+2023-12-11 04:14:15:1415 info: check access token :
+2023-12-11 04:14:15:1415 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:14:15:1415 info: [object Object]
+2023-12-11 04:14:15:1415 info: check access token :
+2023-12-11 04:14:15:1415 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:01:151 info: [object Object]
+2023-12-11 04:15:01:151 info: check access token :
+2023-12-11 04:15:01:151 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:02:152 info: [object Object]
+2023-12-11 04:15:02:152 info: check access token :
+2023-12-11 04:15:02:152 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:07:157 info: [object Object]
+2023-12-11 04:15:07:157 info: check access token :
+2023-12-11 04:15:07:157 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:08:158 info: [object Object]
+2023-12-11 04:15:08:158 info: check access token :
+2023-12-11 04:15:08:158 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:10:1510 info: [object Object]
+2023-12-11 04:15:10:1510 info: check access token :
+2023-12-11 04:15:10:1510 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:15:16:1516 info: [object Object]
+2023-12-11 04:15:16:1516 info: check access token :
+2023-12-11 04:15:16:1516 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:16:02:162 info: [object Object]
+2023-12-11 04:16:02:162 info: check access token :
+2023-12-11 04:16:02:162 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:17:50:1750 info: [object Object]
+2023-12-11 04:17:50:1750 info: check access token :
+2023-12-11 04:17:50:1750 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:17:58:1758 info: [object Object]
+2023-12-11 04:17:58:1758 info: check access token :
+2023-12-11 04:17:58:1758 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:18:05:185 info: [object Object]
+2023-12-11 04:18:05:185 info: check access token :
+2023-12-11 04:18:05:185 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:18:05:185 info: [object Object]
+2023-12-11 04:18:05:185 info: check access token :
+2023-12-11 04:18:05:185 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:18:06:186 info: [object Object]
+2023-12-11 04:18:06:186 info: check access token :
+2023-12-11 04:18:06:186 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:18:07:187 info: [object Object]
+2023-12-11 04:18:07:187 info: check access token :
+2023-12-11 04:18:07:187 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:18:07:187 info: [object Object]
+2023-12-11 04:18:07:187 info: check access token :
+2023-12-11 04:18:07:187 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:18:09:189 info: [object Object]
+2023-12-11 04:18:09:189 info: check access token :
+2023-12-11 04:18:09:189 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:18:09:189 info: [object Object]
+2023-12-11 04:18:09:189 info: check access token :
+2023-12-11 04:18:09:189 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:18:15:1815 info: [object Object]
+2023-12-11 04:18:15:1815 info: check access token :
+2023-12-11 04:18:15:1815 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:18:44:1844 info: [object Object]
+2023-12-11 04:18:44:1844 info: check access token :
+2023-12-11 04:18:45:1845 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:18:45:1845 info: [object Object]
+2023-12-11 04:18:45:1845 info: check access token :
+2023-12-11 04:18:45:1845 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:18:45:1845 info: [object Object]
+2023-12-11 04:18:45:1845 info: check access token :
+2023-12-11 04:18:45:1845 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:18:46:1846 info: [object Object]
+2023-12-11 04:18:46:1846 info: check access token :
+2023-12-11 04:18:46:1846 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:18:47:1847 info: [object Object]
+2023-12-11 04:18:47:1847 info: check access token :
+2023-12-11 04:18:47:1847 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:18:55:1855 info: [object Object]
+2023-12-11 04:18:55:1855 info: check access token :
+2023-12-11 04:18:55:1855 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:18:56:1856 info: [object Object]
+2023-12-11 04:18:56:1856 info: check access token :
+2023-12-11 04:18:56:1856 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:19:32:1932 info: [object Object]
+2023-12-11 04:19:32:1932 info: check access token :
+2023-12-11 04:19:32:1932 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:19:33:1933 info: [object Object]
+2023-12-11 04:19:33:1933 info: check access token :
+2023-12-11 04:19:33:1933 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:19:33:1933 info: [object Object]
+2023-12-11 04:19:33:1933 info: check access token :
+2023-12-11 04:19:33:1933 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:19:34:1934 info: [object Object]
+2023-12-11 04:19:34:1934 info: check access token :
+2023-12-11 04:19:34:1934 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:19:34:1934 info: [object Object]
+2023-12-11 04:19:34:1934 info: check access token :
+2023-12-11 04:19:34:1934 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:19:38:1938 info: undefined
+2023-12-11 04:19:38:1938 info: undefined
+2023-12-11 04:20:18:2018 info: [object Object]
+2023-12-11 04:20:18:2018 info: check access token :
+2023-12-11 04:20:18:2018 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:20:18:2018 info: [object Object]
+2023-12-11 04:20:18:2018 info: check access token :
+2023-12-11 04:20:18:2018 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:20:19:2019 info: [object Object]
+2023-12-11 04:20:19:2019 info: check access token :
+2023-12-11 04:20:19:2019 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:20:20:2020 info: [object Object]
+2023-12-11 04:20:20:2020 info: check access token :
+2023-12-11 04:20:20:2020 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:20:20:2020 info: [object Object]
+2023-12-11 04:20:20:2020 info: check access token :
+2023-12-11 04:20:20:2020 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:20:26:2026 info: [object Object]
+2023-12-11 04:20:26:2026 info: check access token :
+2023-12-11 04:20:26:2026 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:20:26:2026 info: [object Object]
+2023-12-11 04:20:26:2026 info: check access token :
+2023-12-11 04:20:26:2026 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:20:58:2058 info: [object Object]
+2023-12-11 04:20:58:2058 info: check access token :
+2023-12-11 04:20:58:2058 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 04:21:05:215 info: [object Object]
+2023-12-11 04:21:05:215 info: check access token :
+2023-12-11 04:21:05:215 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:21:05:215 info: [object Object]
+2023-12-11 04:21:05:215 info: check access token :
+2023-12-11 04:21:05:215 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:21:30:2130 info: [object Object]
+2023-12-11 04:21:30:2130 info: check access token :
+2023-12-11 04:21:30:2130 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:21:31:2131 info: [object Object]
+2023-12-11 04:21:31:2131 info: check access token :
+2023-12-11 04:21:31:2131 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:21:31:2131 info: [object Object]
+2023-12-11 04:21:31:2131 info: check access token :
+2023-12-11 04:21:31:2131 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:21:32:2132 info: [object Object]
+2023-12-11 04:21:32:2132 info: check access token :
+2023-12-11 04:21:32:2132 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:21:32:2132 info: [object Object]
+2023-12-11 04:21:32:2132 info: check access token :
+2023-12-11 04:21:32:2132 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:21:34:2134 info: [object Object]
+2023-12-11 04:21:34:2134 info: check access token :
+2023-12-11 04:21:34:2134 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:21:35:2135 info: [object Object]
+2023-12-11 04:21:35:2135 info: check access token :
+2023-12-11 04:21:35:2135 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:23:58:2358 info: [object Object]
+2023-12-11 04:23:58:2358 info: check access token :
+2023-12-11 04:23:58:2358 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:23:59:2359 info: [object Object]
+2023-12-11 04:23:59:2359 info: check access token :
+2023-12-11 04:23:59:2359 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:23:59:2359 info: [object Object]
+2023-12-11 04:23:59:2359 info: check access token :
+2023-12-11 04:23:59:2359 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:24:00:240 info: [object Object]
+2023-12-11 04:24:00:240 info: check access token :
+2023-12-11 04:24:00:240 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:24:00:240 info: [object Object]
+2023-12-11 04:24:00:240 info: check access token :
+2023-12-11 04:24:00:240 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:24:02:242 info: GET TOTAL RESULT : success
+2023-12-11 04:24:02:242 info: [object Object]
+2023-12-11 04:24:02:242 info: check access token :
+2023-12-11 04:24:02:242 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:24:02:242 info: [object Object]
+2023-12-11 04:24:02:242 info: check access token :
+2023-12-11 04:24:02:242 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:24:02:242 info: [object Object]
+2023-12-11 04:24:02:242 info: check access token :
+2023-12-11 04:24:02:242 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:24:02:242 info: [object Object]
+2023-12-11 04:24:02:242 info: check access token :
+2023-12-11 04:24:02:242 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:25:44:2544 info: [object Object]
+2023-12-11 04:25:44:2544 info: check access token :
+2023-12-11 04:25:44:2544 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:25:44:2544 info: [object Object]
+2023-12-11 04:25:44:2544 info: check access token :
+2023-12-11 04:25:44:2544 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:25:44:2544 info: [object Object]
+2023-12-11 04:25:44:2544 info: check access token :
+2023-12-11 04:25:44:2544 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:25:46:2546 info: [object Object]
+2023-12-11 04:25:46:2546 info: check access token :
+2023-12-11 04:25:46:2546 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:25:46:2546 info: [object Object]
+2023-12-11 04:25:46:2546 info: check access token :
+2023-12-11 04:25:46:2546 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:25:50:2550 info: [object Object]
+2023-12-11 04:25:50:2550 info: check access token :
+2023-12-11 04:25:50:2550 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:25:53:2553 info: [object Object]
+2023-12-11 04:25:53:2553 info: check access token :
+2023-12-11 04:25:53:2553 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-11 04:25:53:2553 info: GET_RESULT_VISION_MONTH : success
+2023-12-11 04:25:55:2555 info: [object Object]
+2023-12-11 04:25:55:2555 info: check access token :
+2023-12-11 04:25:55:2555 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:26:07:267 info: [object Object]
+2023-12-11 04:26:07:267 info: check access token :
+2023-12-11 04:26:07:267 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:26:08:268 info: [object Object]
+2023-12-11 04:26:08:268 info: check access token :
+2023-12-11 04:26:08:268 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:26:08:268 info: [object Object]
+2023-12-11 04:26:08:268 info: check access token :
+2023-12-11 04:26:08:268 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:26:09:269 info: [object Object]
+2023-12-11 04:26:09:269 info: check access token :
+2023-12-11 04:26:09:269 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:26:10:2610 info: [object Object]
+2023-12-11 04:26:10:2610 info: check access token :
+2023-12-11 04:26:10:2610 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:28:06:286 info: [object Object]
+2023-12-11 04:28:06:286 info: check access token :
+2023-12-11 04:28:06:286 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-11 04:28:06:286 info: POST_CHECK_VISION : success insert DB
+2023-12-11 04:28:06:286 info: [object Object]
+2023-12-11 04:28:06:286 info: check access token :
+2023-12-11 04:28:06:286 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:28:06:286 info: [object Object]
+2023-12-11 04:28:06:286 info: check access token :
+2023-12-11 04:28:06:286 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:28:07:287 info: [object Object]
+2023-12-11 04:28:07:287 info: check access token :
+2023-12-11 04:28:07:287 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:28:08:288 info: [object Object]
+2023-12-11 04:28:08:288 info: check access token :
+2023-12-11 04:28:08:288 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:28:08:288 info: [object Object]
+2023-12-11 04:28:08:288 info: check access token :
+2023-12-11 04:28:08:288 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:28:33:2833 info: [object Object]
+2023-12-11 04:28:33:2833 info: check access token :
+2023-12-11 04:28:33:2833 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:30:33:3033 info: [object Object]
+2023-12-11 04:30:33:3033 info: check access token :
+2023-12-11 04:30:33:3033 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:30:33:3033 info: [object Object]
+2023-12-11 04:30:33:3033 info: check access token :
+2023-12-11 04:30:33:3033 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:30:34:3034 info: [object Object]
+2023-12-11 04:30:34:3034 info: check access token :
+2023-12-11 04:30:34:3034 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:30:35:3035 info: [object Object]
+2023-12-11 04:30:35:3035 info: check access token :
+2023-12-11 04:30:35:3035 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:30:36:3036 info: [object Object]
+2023-12-11 04:30:36:3036 info: check access token :
+2023-12-11 04:30:36:3036 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:35:26:3526 info: [object Object]
+2023-12-11 04:35:26:3526 info: check access token :
+2023-12-11 04:35:26:3526 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-11 04:35:26:3526 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-11 04:35:26:3526 info: [object Object]
+2023-12-11 04:35:26:3526 info: check access token :
+2023-12-11 04:35:26:3526 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:35:27:3527 info: [object Object]
+2023-12-11 04:35:27:3527 info: check access token :
+2023-12-11 04:35:27:3527 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:35:27:3527 info: [object Object]
+2023-12-11 04:35:27:3527 info: check access token :
+2023-12-11 04:35:27:3527 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:35:29:3529 info: [object Object]
+2023-12-11 04:35:29:3529 info: check access token :
+2023-12-11 04:35:29:3529 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:35:29:3529 info: [object Object]
+2023-12-11 04:35:29:3529 info: check access token :
+2023-12-11 04:35:29:3529 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:35:34:3534 info: [object Object]
+2023-12-11 04:35:34:3534 info: check access token :
+2023-12-11 04:35:34:3534 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:35:34:3534 info: [object Object]
+2023-12-11 04:35:34:3534 info: check access token :
+2023-12-11 04:35:34:3534 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:35:36:3536 info: [object Object]
+2023-12-11 04:35:36:3536 info: check access token :
+2023-12-11 04:35:36:3536 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:35:37:3537 info: [object Object]
+2023-12-11 04:35:37:3537 info: check access token :
+2023-12-11 04:35:37:3537 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:35:37:3537 info: [object Object]
+2023-12-11 04:35:37:3537 info: check access token :
+2023-12-11 04:35:37:3537 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:35:38:3538 info: [object Object]
+2023-12-11 04:35:38:3538 info: check access token :
+2023-12-11 04:35:38:3538 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:35:39:3539 info: [object Object]
+2023-12-11 04:35:39:3539 info: check access token :
+2023-12-11 04:35:39:3539 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:35:40:3540 info: [object Object]
+2023-12-11 04:35:40:3540 info: check access token :
+2023-12-11 04:35:40:3540 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:35:40:3540 info: [object Object]
+2023-12-11 04:35:40:3540 info: check access token :
+2023-12-11 04:35:40:3540 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:35:47:3547 info: [object Object]
+2023-12-11 04:35:47:3547 info: check access token :
+2023-12-11 04:35:47:3547 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 04:35:48:3548 info: [object Object]
+2023-12-11 04:35:48:3548 info: check access token :
+2023-12-11 04:35:48:3548 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:35:48:3548 info: [object Object]
+2023-12-11 04:35:48:3548 info: check access token :
+2023-12-11 04:35:48:3548 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:52:50:5250 info: [object Object]
+2023-12-11 04:52:50:5250 info: check access token :
+2023-12-11 04:52:50:5250 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:54:46:5446 info: [object Object]
+2023-12-11 04:54:46:5446 info: check access token :
+2023-12-11 04:54:46:5446 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:54:47:5447 info: [object Object]
+2023-12-11 04:54:47:5447 info: check access token :
+2023-12-11 04:54:47:5447 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:54:47:5447 info: [object Object]
+2023-12-11 04:54:47:5447 info: check access token :
+2023-12-11 04:54:47:5447 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:54:48:5448 info: [object Object]
+2023-12-11 04:54:48:5448 info: check access token :
+2023-12-11 04:54:48:5448 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:54:49:5449 info: [object Object]
+2023-12-11 04:54:49:5449 info: check access token :
+2023-12-11 04:54:49:5449 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 04:55:17:5517 info: [object Object]
+2023-12-11 04:55:17:5517 info: check access token :
+2023-12-11 04:55:17:5517 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 04:55:18:5518 info: [object Object]
+2023-12-11 04:55:18:5518 info: check access token :
+2023-12-11 04:55:18:5518 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 04:55:18:5518 info: [object Object]
+2023-12-11 04:55:18:5518 info: check access token :
+2023-12-11 04:55:18:5518 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 04:55:20:5520 info: [object Object]
+2023-12-11 04:55:20:5520 info: check access token :
+2023-12-11 04:55:20:5520 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 04:55:20:5520 info: [object Object]
+2023-12-11 04:55:20:5520 info: check access token :
+2023-12-11 04:55:20:5520 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:00:20:020 info: [object Object]
+2023-12-11 05:00:20:020 info: check access token :
+2023-12-11 05:00:20:020 info: POST_BLIND_SPOT_CHECK : success get blind spot checkId
+2023-12-11 05:00:20:020 info: POST_CHECK_BLIND_SPOT : success insert DB
+2023-12-11 05:00:20:020 info: [object Object]
+2023-12-11 05:00:20:020 info: check access token :
+2023-12-11 05:00:20:020 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:00:20:020 info: [object Object]
+2023-12-11 05:00:20:020 info: check access token :
+2023-12-11 05:00:20:020 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:00:20:020 info: [object Object]
+2023-12-11 05:00:20:020 info: check access token :
+2023-12-11 05:00:21:021 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:00:22:022 info: [object Object]
+2023-12-11 05:00:22:022 info: check access token :
+2023-12-11 05:00:22:022 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:00:22:022 info: [object Object]
+2023-12-11 05:00:22:022 info: check access token :
+2023-12-11 05:00:22:022 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:00:24:024 info: [object Object]
+2023-12-11 05:00:24:024 info: check access token :
+2023-12-11 05:00:24:024 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:00:24:024 info: [object Object]
+2023-12-11 05:00:24:024 info: check access token :
+2023-12-11 05:00:24:024 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:00:27:027 info: [object Object]
+2023-12-11 05:00:27:027 info: check access token :
+2023-12-11 05:00:27:027 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:02:29:229 info: [object Object]
+2023-12-11 05:02:29:229 info: check access token :
+2023-12-11 05:02:29:229 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:02:32:232 info: [object Object]
+2023-12-11 05:02:32:232 info: check access token :
+2023-12-11 05:02:32:232 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:02:32:232 info: [object Object]
+2023-12-11 05:02:32:232 info: check access token :
+2023-12-11 05:02:32:232 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:02:32:232 info: [object Object]
+2023-12-11 05:02:32:232 info: check access token :
+2023-12-11 05:02:32:232 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:02:33:233 info: [object Object]
+2023-12-11 05:02:33:233 info: check access token :
+2023-12-11 05:02:33:233 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:02:34:234 info: [object Object]
+2023-12-11 05:02:34:234 info: check access token :
+2023-12-11 05:02:34:234 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:02:39:239 info: [object Object]
+2023-12-11 05:02:39:239 info: check access token :
+2023-12-11 05:02:39:239 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:02:39:239 info: [object Object]
+2023-12-11 05:02:39:239 info: check access token :
+2023-12-11 05:02:39:239 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:02:51:251 info: [object Object]
+2023-12-11 05:02:51:251 info: check access token :
+2023-12-11 05:02:51:251 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:02:53:253 info: [object Object]
+2023-12-11 05:02:53:253 info: check access token :
+2023-12-11 05:02:53:253 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:03:12:312 info: [object Object]
+2023-12-11 05:03:12:312 info: check access token :
+2023-12-11 05:03:12:312 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:03:14:314 info: [object Object]
+2023-12-11 05:03:14:314 info: check access token :
+2023-12-11 05:03:14:314 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:03:36:336 info: [object Object]
+2023-12-11 05:03:36:336 info: check access token :
+2023-12-11 05:03:36:336 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:03:37:337 info: [object Object]
+2023-12-11 05:03:37:337 info: check access token :
+2023-12-11 05:03:37:337 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 05:04:10:410 info: [object Object]
+2023-12-11 05:04:10:410 info: check access token :
+2023-12-11 05:04:10:410 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:10:410 info: [object Object]
+2023-12-11 05:04:10:410 info: check access token :
+2023-12-11 05:04:10:410 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:12:412 info: [object Object]
+2023-12-11 05:04:12:412 info: check access token :
+2023-12-11 05:04:12:412 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 05:04:13:413 info: [object Object]
+2023-12-11 05:04:13:413 info: check access token :
+2023-12-11 05:04:13:413 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:14:414 info: [object Object]
+2023-12-11 05:04:14:414 info: check access token :
+2023-12-11 05:04:14:414 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:16:416 info: [object Object]
+2023-12-11 05:04:16:416 info: check access token :
+2023-12-11 05:04:16:416 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 05:04:17:417 info: [object Object]
+2023-12-11 05:04:17:417 info: check access token :
+2023-12-11 05:04:17:417 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:18:418 info: [object Object]
+2023-12-11 05:04:18:418 info: check access token :
+2023-12-11 05:04:18:418 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:23:423 info: [object Object]
+2023-12-11 05:04:23:423 info: check access token :
+2023-12-11 05:04:23:423 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:04:23:423 info: [object Object]
+2023-12-11 05:04:23:423 info: check access token :
+2023-12-11 05:04:23:423 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:24:424 info: [object Object]
+2023-12-11 05:04:24:424 info: check access token :
+2023-12-11 05:04:24:424 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:25:425 info: [object Object]
+2023-12-11 05:04:25:425 info: check access token :
+2023-12-11 05:04:25:425 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:04:25:425 info: [object Object]
+2023-12-11 05:04:25:425 info: check access token :
+2023-12-11 05:04:25:425 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:04:28:428 info: [object Object]
+2023-12-11 05:04:28:428 info: check access token :
+2023-12-11 05:04:28:428 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:04:29:429 info: [object Object]
+2023-12-11 05:04:29:429 info: check access token :
+2023-12-11 05:04:29:429 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:04:32:432 info: [object Object]
+2023-12-11 05:04:32:432 info: check access token :
+2023-12-11 05:04:32:432 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:04:32:432 info: [object Object]
+2023-12-11 05:04:32:432 info: check access token :
+2023-12-11 05:04:32:432 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:33:433 info: [object Object]
+2023-12-11 05:04:33:433 info: check access token :
+2023-12-11 05:04:33:433 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:34:434 info: [object Object]
+2023-12-11 05:04:34:434 info: check access token :
+2023-12-11 05:04:34:434 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:04:34:434 info: [object Object]
+2023-12-11 05:04:34:434 info: check access token :
+2023-12-11 05:04:34:434 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:04:36:436 info: GET TOTAL RESULT : success
+2023-12-11 05:04:36:436 info: [object Object]
+2023-12-11 05:04:36:436 info: check access token :
+2023-12-11 05:04:36:436 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:36:436 info: [object Object]
+2023-12-11 05:04:36:436 info: check access token :
+2023-12-11 05:04:36:436 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:04:36:436 info: [object Object]
+2023-12-11 05:04:36:436 info: check access token :
+2023-12-11 05:04:36:436 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:36:436 info: [object Object]
+2023-12-11 05:04:36:436 info: check access token :
+2023-12-11 05:04:36:436 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:04:37:437 info: [object Object]
+2023-12-11 05:04:37:437 info: check access token :
+2023-12-11 05:04:37:437 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:04:38:438 info: [object Object]
+2023-12-11 05:04:38:438 info: check access token :
+2023-12-11 05:04:38:438 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:04:38:438 info: [object Object]
+2023-12-11 05:04:38:438 info: check access token :
+2023-12-11 05:04:38:438 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:04:39:439 info: [object Object]
+2023-12-11 05:04:39:439 info: check access token :
+2023-12-11 05:04:39:439 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:04:39:439 info: [object Object]
+2023-12-11 05:04:39:439 info: check access token :
+2023-12-11 05:04:39:439 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:22:13:2213 info: [object Object]
+2023-12-11 05:22:13:2213 info: check access token :
+2023-12-11 05:22:13:2213 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:22:14:2214 info: [object Object]
+2023-12-11 05:22:14:2214 info: check access token :
+2023-12-11 05:22:14:2214 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:22:14:2214 info: [object Object]
+2023-12-11 05:22:14:2214 info: check access token :
+2023-12-11 05:22:14:2214 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:22:15:2215 info: [object Object]
+2023-12-11 05:22:15:2215 info: check access token :
+2023-12-11 05:22:16:2216 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:22:16:2216 info: [object Object]
+2023-12-11 05:22:16:2216 info: check access token :
+2023-12-11 05:22:16:2216 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:23:39:2339 info: [object Object]
+2023-12-11 05:23:39:2339 info: check access token :
+2023-12-11 05:23:39:2339 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:23:40:2340 info: [object Object]
+2023-12-11 05:23:40:2340 info: check access token :
+2023-12-11 05:23:40:2340 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:23:40:2340 info: [object Object]
+2023-12-11 05:23:40:2340 info: check access token :
+2023-12-11 05:23:40:2340 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:23:41:2341 info: [object Object]
+2023-12-11 05:23:41:2341 info: check access token :
+2023-12-11 05:23:41:2341 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:23:42:2342 info: [object Object]
+2023-12-11 05:23:42:2342 info: check access token :
+2023-12-11 05:23:42:2342 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 05:24:38:2438 info: [object Object]
+2023-12-11 05:24:38:2438 info: check access token :
+2023-12-11 05:24:38:2438 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 05:24:40:2440 info: [object Object]
+2023-12-11 05:24:40:2440 info: check access token :
+2023-12-11 05:24:40:2440 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 05:24:40:2440 info: [object Object]
+2023-12-11 05:24:40:2440 info: check access token :
+2023-12-11 05:24:40:2440 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 05:24:42:2442 info: [object Object]
+2023-12-11 05:24:42:2442 info: check access token :
+2023-12-11 05:24:42:2442 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 05:24:42:2442 info: [object Object]
+2023-12-11 05:24:42:2442 info: check access token :
+2023-12-11 05:24:42:2442 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:11:03:113 info: [object Object]
+2023-12-11 06:11:03:113 info: check access token :
+2023-12-11 06:11:03:113 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:11:04:114 info: [object Object]
+2023-12-11 06:11:04:114 info: check access token :
+2023-12-11 06:11:04:114 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:11:04:114 info: [object Object]
+2023-12-11 06:11:04:114 info: check access token :
+2023-12-11 06:11:04:114 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:11:05:115 info: [object Object]
+2023-12-11 06:11:05:115 info: check access token :
+2023-12-11 06:11:05:115 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:11:06:116 info: [object Object]
+2023-12-11 06:11:06:116 info: check access token :
+2023-12-11 06:11:06:116 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:13:51:1351 info: [object Object]
+2023-12-11 06:13:51:1351 info: check access token :
+2023-12-11 06:13:51:1351 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:13:52:1352 info: [object Object]
+2023-12-11 06:13:52:1352 info: check access token :
+2023-12-11 06:13:52:1352 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:13:52:1352 info: [object Object]
+2023-12-11 06:13:52:1352 info: check access token :
+2023-12-11 06:13:52:1352 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:13:53:1353 info: [object Object]
+2023-12-11 06:13:53:1353 info: check access token :
+2023-12-11 06:13:53:1353 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:13:54:1354 info: [object Object]
+2023-12-11 06:13:54:1354 info: check access token :
+2023-12-11 06:13:54:1354 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:23:27:2327 info: [object Object]
+2023-12-11 06:23:27:2327 info: check access token :
+2023-12-11 06:23:27:2327 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:23:28:2328 info: [object Object]
+2023-12-11 06:23:28:2328 info: check access token :
+2023-12-11 06:23:28:2328 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:23:28:2328 info: [object Object]
+2023-12-11 06:23:28:2328 info: check access token :
+2023-12-11 06:23:28:2328 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:23:29:2329 info: [object Object]
+2023-12-11 06:23:29:2329 info: check access token :
+2023-12-11 06:23:29:2329 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:23:30:2330 info: [object Object]
+2023-12-11 06:23:30:2330 info: check access token :
+2023-12-11 06:23:30:2330 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:25:52:2552 info: [object Object]
+2023-12-11 06:25:52:2552 info: check access token :
+2023-12-11 06:25:52:2552 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:25:53:2553 info: [object Object]
+2023-12-11 06:25:53:2553 info: check access token :
+2023-12-11 06:25:53:2553 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:25:54:2554 info: [object Object]
+2023-12-11 06:25:54:2554 info: check access token :
+2023-12-11 06:25:54:2554 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:25:56:2556 info: [object Object]
+2023-12-11 06:25:56:2556 info: check access token :
+2023-12-11 06:25:56:2556 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:25:56:2556 info: [object Object]
+2023-12-11 06:25:56:2556 info: check access token :
+2023-12-11 06:25:56:2556 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:30:12:3012 info: [object Object]
+2023-12-11 06:30:12:3012 info: check access token :
+2023-12-11 06:30:12:3012 info: POST CHECK VISION : INSERT VISION RESULT SUCCESS
+2023-12-11 06:30:12:3012 info: POST_CHECK_VISION : success insert DB
+2023-12-11 06:30:12:3012 info: [object Object]
+2023-12-11 06:30:12:3012 info: check access token :
+2023-12-11 06:30:12:3012 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:30:13:3013 info: [object Object]
+2023-12-11 06:30:13:3013 info: check access token :
+2023-12-11 06:30:13:3013 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:30:13:3013 info: [object Object]
+2023-12-11 06:30:13:3013 info: check access token :
+2023-12-11 06:30:13:3013 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:30:14:3014 info: [object Object]
+2023-12-11 06:30:14:3014 info: check access token :
+2023-12-11 06:30:14:3014 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:30:15:3015 info: [object Object]
+2023-12-11 06:30:15:3015 info: check access token :
+2023-12-11 06:30:15:3015 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:30:16:3016 info: [object Object]
+2023-12-11 06:30:16:3016 info: check access token :
+2023-12-11 06:30:16:3016 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:32:36:3236 info: [object Object]
+2023-12-11 06:32:36:3236 info: check access token :
+2023-12-11 06:32:36:3236 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-11 06:32:36:3236 info: GET_RESULT_VISION_MONTH : success
+2023-12-11 06:32:42:3242 info: [object Object]
+2023-12-11 06:32:42:3242 info: check access token :
+2023-12-11 06:32:42:3242 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:32:42:3242 info: [object Object]
+2023-12-11 06:32:42:3242 info: check access token :
+2023-12-11 06:32:42:3242 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:32:43:3243 info: [object Object]
+2023-12-11 06:32:43:3243 info: check access token :
+2023-12-11 06:32:43:3243 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:32:44:3244 info: [object Object]
+2023-12-11 06:32:44:3244 info: check access token :
+2023-12-11 06:32:44:3244 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:32:44:3244 info: [object Object]
+2023-12-11 06:32:44:3244 info: check access token :
+2023-12-11 06:32:44:3244 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:39:25:3925 info: [object Object]
+2023-12-11 06:39:25:3925 info: check access token :
+2023-12-11 06:39:25:3925 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:39:25:3925 info: [object Object]
+2023-12-11 06:39:25:3925 info: check access token :
+2023-12-11 06:39:25:3925 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:39:25:3925 info: [object Object]
+2023-12-11 06:39:25:3925 info: check access token :
+2023-12-11 06:39:25:3925 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:39:27:3927 info: [object Object]
+2023-12-11 06:39:27:3927 info: check access token :
+2023-12-11 06:39:27:3927 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:39:27:3927 info: [object Object]
+2023-12-11 06:39:27:3927 info: check access token :
+2023-12-11 06:39:27:3927 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 06:44:52:4452 info: [object Object]
+2023-12-11 06:44:52:4452 info: check access token :
+2023-12-11 06:44:52:4452 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 06:44:53:4453 info: [object Object]
+2023-12-11 06:44:53:4453 info: check access token :
+2023-12-11 06:44:53:4453 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 06:44:53:4453 info: [object Object]
+2023-12-11 06:44:53:4453 info: check access token :
+2023-12-11 06:44:53:4453 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 06:44:55:4455 info: [object Object]
+2023-12-11 06:44:55:4455 info: check access token :
+2023-12-11 06:44:55:4455 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 06:44:55:4455 info: [object Object]
+2023-12-11 06:44:55:4455 info: check access token :
+2023-12-11 06:44:55:4455 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 07:00:18:018 info: [object Object]
+2023-12-11 07:00:18:018 info: check access token :
+2023-12-11 07:00:18:018 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 07:00:19:019 info: [object Object]
+2023-12-11 07:00:19:019 info: check access token :
+2023-12-11 07:00:19:019 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 07:00:19:019 info: [object Object]
+2023-12-11 07:00:19:019 info: check access token :
+2023-12-11 07:00:19:019 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 07:00:21:021 info: [object Object]
+2023-12-11 07:00:21:021 info: check access token :
+2023-12-11 07:00:21:021 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 07:00:21:021 info: [object Object]
+2023-12-11 07:00:21:021 info: check access token :
+2023-12-11 07:00:21:021 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 07:11:11:1111 info: [object Object]
+2023-12-11 07:11:11:1111 info: check access token :
+2023-12-11 07:11:11:1111 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 07:11:12:1112 info: [object Object]
+2023-12-11 07:11:12:1112 info: check access token :
+2023-12-11 07:11:12:1112 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 07:11:12:1112 info: [object Object]
+2023-12-11 07:11:12:1112 info: check access token :
+2023-12-11 07:11:12:1112 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 07:11:13:1113 info: [object Object]
+2023-12-11 07:11:13:1113 info: check access token :
+2023-12-11 07:11:13:1113 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 07:11:13:1113 info: [object Object]
+2023-12-11 07:11:13:1113 info: check access token :
+2023-12-11 07:11:13:1113 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 07:35:41:3541 info: [object Object]
+2023-12-11 07:35:41:3541 info: check access token :
+2023-12-11 07:35:41:3541 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 07:35:41:3541 info: [object Object]
+2023-12-11 07:35:41:3541 info: check access token :
+2023-12-11 07:35:41:3541 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 07:35:42:3542 info: [object Object]
+2023-12-11 07:35:42:3542 info: check access token :
+2023-12-11 07:35:42:3542 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 07:35:43:3543 info: [object Object]
+2023-12-11 07:35:43:3543 info: check access token :
+2023-12-11 07:35:43:3543 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 07:35:43:3543 info: [object Object]
+2023-12-11 07:35:43:3543 info: check access token :
+2023-12-11 07:35:43:3543 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 07:42:23:4223 info: [object Object]
+2023-12-11 07:42:23:4223 info: check access token :
+2023-12-11 07:42:23:4223 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 07:42:24:4224 info: [object Object]
+2023-12-11 07:42:24:4224 info: check access token :
+2023-12-11 07:42:24:4224 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 07:42:24:4224 info: [object Object]
+2023-12-11 07:42:24:4224 info: check access token :
+2023-12-11 07:42:24:4224 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 07:42:25:4225 info: [object Object]
+2023-12-11 07:42:25:4225 info: check access token :
+2023-12-11 07:42:25:4225 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 07:42:26:4226 info: [object Object]
+2023-12-11 07:42:26:4226 info: check access token :
+2023-12-11 07:42:26:4226 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 07:47:08:478 info: [object Object]
+2023-12-11 07:47:08:478 info: check access token :
+2023-12-11 07:47:08:478 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 07:47:09:479 info: [object Object]
+2023-12-11 07:47:09:479 info: check access token :
+2023-12-11 07:47:09:479 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 07:47:09:479 info: [object Object]
+2023-12-11 07:47:09:479 info: check access token :
+2023-12-11 07:47:09:479 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 07:47:11:4711 info: [object Object]
+2023-12-11 07:47:11:4711 info: check access token :
+2023-12-11 07:47:11:4711 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 07:47:11:4711 info: [object Object]
+2023-12-11 07:47:11:4711 info: check access token :
+2023-12-11 07:47:11:4711 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 08:02:10:210 info: [object Object]
+2023-12-11 08:02:10:210 info: check access token :
+2023-12-11 08:02:10:210 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 08:02:11:211 info: [object Object]
+2023-12-11 08:02:11:211 info: check access token :
+2023-12-11 08:02:11:211 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 08:02:11:211 info: [object Object]
+2023-12-11 08:02:11:211 info: check access token :
+2023-12-11 08:02:11:211 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 08:02:14:214 info: [object Object]
+2023-12-11 08:02:14:214 info: check access token :
+2023-12-11 08:02:14:214 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 08:02:14:214 info: [object Object]
+2023-12-11 08:02:14:214 info: check access token :
+2023-12-11 08:02:14:214 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:23:3123 info: [object Object]
+2023-12-11 13:31:23:3123 info: check access token :
+2023-12-11 13:31:23:3123 info: [object Object]
+2023-12-11 13:31:23:3123 info: check access token :
+2023-12-11 13:31:23:3123 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 13:31:23:3123 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 13:31:24:3124 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:24:3124 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:24:3124 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: [object Object]
+2023-12-11 13:31:24:3124 info: check access token :
+2023-12-11 13:31:24:3124 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:24:3124 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:47:3147 info: [object Object]
+2023-12-11 13:31:47:3147 info: check access token :
+2023-12-11 13:31:47:3147 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 13:31:47:3147 info: [object Object]
+2023-12-11 13:31:47:3147 info: check access token :
+2023-12-11 13:31:47:3147 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 13:31:48:3148 info: [object Object]
+2023-12-11 13:31:48:3148 info: check access token :
+2023-12-11 13:31:48:3148 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:48:3148 info: [object Object]
+2023-12-11 13:31:48:3148 info: check access token :
+2023-12-11 13:31:48:3148 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:48:3148 info: [object Object]
+2023-12-11 13:31:48:3148 info: check access token :
+2023-12-11 13:31:48:3148 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:49:3149 info: [object Object]
+2023-12-11 13:31:49:3149 info: check access token :
+2023-12-11 13:31:49:3149 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:49:3149 info: [object Object]
+2023-12-11 13:31:49:3149 info: check access token :
+2023-12-11 13:31:49:3149 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:53:3153 info: [object Object]
+2023-12-11 13:31:53:3153 info: check access token :
+2023-12-11 13:31:53:3153 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 13:31:53:3153 info: [object Object]
+2023-12-11 13:31:53:3153 info: check access token :
+2023-12-11 13:31:53:3153 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 13:31:53:3153 info: [object Object]
+2023-12-11 13:31:53:3153 info: check access token :
+2023-12-11 13:31:53:3153 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:54:3154 info: [object Object]
+2023-12-11 13:31:54:3154 info: check access token :
+2023-12-11 13:31:54:3154 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:54:3154 info: [object Object]
+2023-12-11 13:31:54:3154 info: check access token :
+2023-12-11 13:31:54:3154 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:55:3155 info: GET TOTAL RESULT : success
+2023-12-11 13:31:55:3155 info: [object Object]
+2023-12-11 13:31:55:3155 info: check access token :
+2023-12-11 13:31:55:3155 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:55:3155 info: [object Object]
+2023-12-11 13:31:55:3155 info: check access token :
+2023-12-11 13:31:55:3155 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:55:3155 info: [object Object]
+2023-12-11 13:31:55:3155 info: check access token :
+2023-12-11 13:31:55:3155 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:55:3155 info: [object Object]
+2023-12-11 13:31:55:3155 info: check access token :
+2023-12-11 13:31:55:3155 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 13:31:58:3158 info: [object Object]
+2023-12-11 13:31:58:3158 info: check access token :
+2023-12-11 13:31:58:3158 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 13:31:58:3158 info: [object Object]
+2023-12-11 13:31:58:3158 info: check access token :
+2023-12-11 13:31:58:3158 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 13:31:58:3158 info: [object Object]
+2023-12-11 13:31:58:3158 info: check access token :
+2023-12-11 13:31:58:3158 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 13:31:59:3159 info: [object Object]
+2023-12-11 13:31:59:3159 info: check access token :
+2023-12-11 13:31:59:3159 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 13:31:59:3159 info: [object Object]
+2023-12-11 13:31:59:3159 info: check access token :
+2023-12-11 13:31:59:3159 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 14:54:50:5450 info: GET TOTAL RESULT : success
+2023-12-11 14:54:50:5450 info: [object Object]
+2023-12-11 14:54:50:5450 info: check access token :
+2023-12-11 14:54:50:5450 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 14:54:50:5450 info: [object Object]
+2023-12-11 14:54:50:5450 info: check access token :
+2023-12-11 14:54:50:5450 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 14:54:50:5450 info: [object Object]
+2023-12-11 14:54:50:5450 info: check access token :
+2023-12-11 14:54:50:5450 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 14:54:50:5450 info: [object Object]
+2023-12-11 14:54:50:5450 info: check access token :
+2023-12-11 14:54:50:5450 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:00:51:051 info: [object Object]
+2023-12-11 15:00:51:051 info: check access token :
+2023-12-11 15:00:51:051 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 15:01:01:11 info: [object Object]
+2023-12-11 15:01:01:11 info: check access token :
+2023-12-11 15:01:01:11 info: [object Object],[object Object],[object Object]
+2023-12-11 15:01:01:11 info: GET_RESULT_VISION_MONTH : success
+2023-12-11 15:01:50:150 info: [object Object]
+2023-12-11 15:01:50:150 info: check access token :
+2023-12-11 15:01:50:150 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 15:01:50:150 info: [object Object]
+2023-12-11 15:01:50:150 info: check access token :
+2023-12-11 15:01:50:150 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:01:57:157 info: [object Object]
+2023-12-11 15:01:57:157 info: check access token :
+2023-12-11 15:01:57:157 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 15:02:01:21 info: [object Object]
+2023-12-11 15:02:01:21 info: check access token :
+2023-12-11 15:02:01:21 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 15:02:01:21 info: [object Object]
+2023-12-11 15:02:01:21 info: check access token :
+2023-12-11 15:02:01:21 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:02:08:28 info: [object Object]
+2023-12-11 15:02:08:28 info: check access token :
+2023-12-11 15:02:08:28 info: GET_RESULT_BLIND_SPOT_MONTH : success
+2023-12-11 15:02:11:211 info: [object Object]
+2023-12-11 15:02:11:211 info: check access token :
+2023-12-11 15:02:11:211 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 15:02:11:211 info: [object Object]
+2023-12-11 15:02:11:211 info: check access token :
+2023-12-11 15:02:11:211 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:02:13:213 info: [object Object]
+2023-12-11 15:02:13:213 info: check access token :
+2023-12-11 15:02:13:213 info: GET_RESULT_EYE_MOVEMENT_MONTH : success
+2023-12-11 15:02:17:217 info: [object Object]
+2023-12-11 15:02:17:217 info: check access token :
+2023-12-11 15:02:17:217 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 15:02:17:217 info: [object Object]
+2023-12-11 15:02:17:217 info: check access token :
+2023-12-11 15:02:17:217 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:02:18:218 info: [object Object]
+2023-12-11 15:02:18:218 info: check access token :
+2023-12-11 15:02:18:218 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:02:19:219 info: [object Object]
+2023-12-11 15:02:19:219 info: check access token :
+2023-12-11 15:02:19:219 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:02:24:224 info: GET TOTAL RESULT : success
+2023-12-11 15:02:24:224 info: [object Object]
+2023-12-11 15:02:24:224 info: check access token :
+2023-12-11 15:02:24:224 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:02:24:224 info: [object Object]
+2023-12-11 15:02:24:224 info: check access token :
+2023-12-11 15:02:24:224 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:02:24:224 info: [object Object]
+2023-12-11 15:02:24:224 info: check access token :
+2023-12-11 15:02:24:224 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:02:24:224 info: [object Object]
+2023-12-11 15:02:24:224 info: check access token :
+2023-12-11 15:02:24:224 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:09:57:957 info: GET TOTAL RESULT : success
+2023-12-11 15:09:58:958 info: [object Object]
+2023-12-11 15:09:58:958 info: check access token :
+2023-12-11 15:09:58:958 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:10:00:100 info: GET TOTAL RESULT : success
+2023-12-11 15:10:00:100 info: [object Object]
+2023-12-11 15:10:00:100 info: check access token :
+2023-12-11 15:10:00:100 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:14:19:1419 info: GET TOTAL RESULT : success
+2023-12-11 15:14:19:1419 info: [object Object]
+2023-12-11 15:14:19:1419 info: check access token :
+2023-12-11 15:14:19:1419 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:14:19:1419 info: [object Object]
+2023-12-11 15:14:19:1419 info: check access token :
+2023-12-11 15:14:19:1419 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:14:19:1419 info: [object Object]
+2023-12-11 15:14:19:1419 info: check access token :
+2023-12-11 15:14:19:1419 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:14:19:1419 info: [object Object]
+2023-12-11 15:14:19:1419 info: check access token :
+2023-12-11 15:14:19:1419 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:14:24:1424 info: GET TOTAL RESULT : success
+2023-12-11 15:14:24:1424 info: [object Object]
+2023-12-11 15:14:24:1424 info: check access token :
+2023-12-11 15:14:24:1424 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:14:24:1424 info: [object Object]
+2023-12-11 15:14:24:1424 info: check access token :
+2023-12-11 15:14:24:1424 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 15:14:24:1424 info: [object Object]
+2023-12-11 15:14:24:1424 info: check access token :
+2023-12-11 15:14:24:1424 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 15:14:24:1424 info: [object Object]
+2023-12-11 15:14:24:1424 info: check access token :
+2023-12-11 15:14:24:1424 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 16:02:32:232 info: [object Object]
+2023-12-11 16:02:32:232 info: check access token :
+2023-12-11 16:02:32:232 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 16:02:49:249 info: [object Object]
+2023-12-11 16:02:49:249 info: check access token :
+2023-12-11 16:02:49:249 info: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2023-12-11 16:02:49:249 info: GET_RESULT_VISION_MONTH : success
+2023-12-11 16:02:53:253 info: [object Object]
+2023-12-11 16:02:53:253 info: check access token :
+2023-12-11 16:02:53:253 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 16:02:53:253 info: [object Object]
+2023-12-11 16:02:53:253 info: check access token :
+2023-12-11 16:02:53:253 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 16:02:54:254 info: [object Object]
+2023-12-11 16:02:54:254 info: check access token :
+2023-12-11 16:02:54:254 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 16:03:00:30 info: [object Object]
+2023-12-11 16:03:00:30 info: check access token :
+2023-12-11 16:03:00:30 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 16:03:00:30 info: [object Object]
+2023-12-11 16:03:00:30 info: check access token :
+2023-12-11 16:03:00:30 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 16:03:07:37 info: [object Object]
+2023-12-11 16:03:07:37 info: check access token :
+2023-12-11 16:03:07:37 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 16:03:40:340 info: [object Object]
+2023-12-11 16:03:40:340 info: check access token :
+2023-12-11 16:03:40:340 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 22:53:03:533 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 22:53:28:5328 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:54:19:5419 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:54:53:5453 error: GET_KAKAO_TOKEN_SEND_CODE :  Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:57:00:570 info: 1
+2023-12-11 22:57:00:570 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-11 22:57:49:5749 info: 1
+2023-12-11 22:57:49:5749 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-11 22:57:49:5749 error: Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 22:57:49:5749 error: GET_KAKAO_TOKEN_SEND_CODE :  Cannot read properties of undefined (reading 'access_token') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'access_token')
+    at sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:75:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-11 22:59:51:5951 info: 1
+2023-12-11 22:59:51:5951 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-11 23:02:32:232 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:48
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:29)
+2023-12-11 23:03:39:339 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:03:39:339 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:04:30:430 info: 1
+2023-12-11 23:04:30:430 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-11 23:04:30:430 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:04:41:441 info: undefined
+2023-12-11 23:04:41:441 info: undefined
+2023-12-11 23:06:47:647 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:29)
+2023-12-11 23:07:24:724 error: Cannot access 'tokenResponse' before initialization 
+ Error Stack: ReferenceError: Cannot access 'tokenResponse' before initialization
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:35)
+2023-12-11 23:07:52:752 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:33)
+2023-12-11 23:23:16:2316 error: Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:23:25:2325 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:33)
+2023-12-11 23:23:45:2345 error: GET_KAKAO_TOKEN_SEND_CODE :  res.send(...).catch is not a function 
+ Error Stack: TypeError: res.send(...).catch is not a function
+    at sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:78:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-11 23:24:13:2413 info: 1
+2023-12-11 23:24:13:2413 info: GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN
+2023-12-11 23:27:12:2712 info: [object Object]
+2023-12-11 23:27:12:2712 info: check access token :
+2023-12-11 23:27:12:2712 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:27:13:2713 info: [object Object]
+2023-12-11 23:27:13:2713 info: check access token :
+2023-12-11 23:27:13:2713 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:27:13:2713 info: [object Object]
+2023-12-11 23:27:13:2713 info: check access token :
+2023-12-11 23:27:13:2713 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:14:2714 info: [object Object]
+2023-12-11 23:27:14:2714 info: check access token :
+2023-12-11 23:27:14:2714 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:27:14:2714 info: [object Object]
+2023-12-11 23:27:14:2714 info: check access token :
+2023-12-11 23:27:14:2714 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:27:22:2722 info: [object Object]
+2023-12-11 23:27:22:2722 info: check access token :
+2023-12-11 23:27:22:2722 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:27:34:2734 info: [object Object]
+2023-12-11 23:27:34:2734 info: check access token :
+2023-12-11 23:27:34:2734 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:27:35:2735 info: [object Object]
+2023-12-11 23:27:35:2735 info: check access token :
+2023-12-11 23:27:35:2735 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:27:35:2735 info: [object Object]
+2023-12-11 23:27:35:2735 info: check access token :
+2023-12-11 23:27:35:2735 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:36:2736 info: [object Object]
+2023-12-11 23:27:36:2736 info: check access token :
+2023-12-11 23:27:36:2736 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:27:36:2736 info: [object Object]
+2023-12-11 23:27:36:2736 info: check access token :
+2023-12-11 23:27:36:2736 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:27:38:2738 info: [object Object]
+2023-12-11 23:27:38:2738 info: check access token :
+2023-12-11 23:27:38:2738 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:27:38:2738 info: [object Object]
+2023-12-11 23:27:38:2738 info: check access token :
+2023-12-11 23:27:38:2738 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:40:2740 info: [object Object]
+2023-12-11 23:27:40:2740 info: check access token :
+2023-12-11 23:27:40:2740 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:46:2746 info: [object Object]
+2023-12-11 23:27:46:2746 info: check access token :
+2023-12-11 23:27:46:2746 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:48:2748 info: [object Object]
+2023-12-11 23:27:48:2748 info: check access token :
+2023-12-11 23:27:48:2748 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:27:49:2749 info: [object Object]
+2023-12-11 23:27:49:2749 info: check access token :
+2023-12-11 23:27:49:2749 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:27:49:2749 info: [object Object]
+2023-12-11 23:27:49:2749 info: check access token :
+2023-12-11 23:27:49:2749 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:50:2750 info: [object Object]
+2023-12-11 23:27:50:2750 info: check access token :
+2023-12-11 23:27:50:2750 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:27:50:2750 info: [object Object]
+2023-12-11 23:27:50:2750 info: check access token :
+2023-12-11 23:27:50:2750 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:27:55:2755 info: GET TOTAL RESULT : success
+2023-12-11 23:27:55:2755 info: [object Object]
+2023-12-11 23:27:55:2755 info: check access token :
+2023-12-11 23:27:55:2755 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:55:2755 info: [object Object]
+2023-12-11 23:27:55:2755 info: check access token :
+2023-12-11 23:27:55:2755 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:27:55:2755 info: [object Object]
+2023-12-11 23:27:55:2755 info: check access token :
+2023-12-11 23:27:55:2755 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:27:55:2755 info: [object Object]
+2023-12-11 23:27:55:2755 info: check access token :
+2023-12-11 23:27:55:2755 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:00:280 info: [object Object]
+2023-12-11 23:28:00:280 info: check access token :
+2023-12-11 23:28:00:280 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:28:00:280 info: [object Object]
+2023-12-11 23:28:00:280 info: check access token :
+2023-12-11 23:28:00:280 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:28:01:281 info: [object Object]
+2023-12-11 23:28:01:281 info: check access token :
+2023-12-11 23:28:01:281 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:28:02:282 info: [object Object]
+2023-12-11 23:28:02:282 info: check access token :
+2023-12-11 23:28:02:282 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:28:02:282 info: [object Object]
+2023-12-11 23:28:02:282 info: check access token :
+2023-12-11 23:28:02:282 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:04:284 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:28:15:2815 info: [object Object]
+2023-12-11 23:28:15:2815 info: check access token :
+2023-12-11 23:28:15:2815 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:28:16:2816 info: [object Object]
+2023-12-11 23:28:16:2816 info: check access token :
+2023-12-11 23:28:16:2816 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:23:2823 info: [object Object]
+2023-12-11 23:28:23:2823 info: check access token :
+2023-12-11 23:28:23:2823 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:23:2823 info: [object Object]
+2023-12-11 23:28:23:2823 info: check access token :
+2023-12-11 23:28:23:2823 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:38:2838 info: [object Object]
+2023-12-11 23:28:38:2838 info: check access token :
+2023-12-11 23:28:38:2838 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:28:39:2839 info: [object Object]
+2023-12-11 23:28:39:2839 info: check access token :
+2023-12-11 23:28:39:2839 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:28:39:2839 info: [object Object]
+2023-12-11 23:28:39:2839 info: check access token :
+2023-12-11 23:28:39:2839 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:28:40:2840 info: [object Object]
+2023-12-11 23:28:40:2840 info: check access token :
+2023-12-11 23:28:40:2840 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:28:40:2840 info: [object Object]
+2023-12-11 23:28:40:2840 info: check access token :
+2023-12-11 23:28:40:2840 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:28:42:2842 info: [object Object]
+2023-12-11 23:28:42:2842 info: check access token :
+2023-12-11 23:28:42:2842 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:28:44:2844 info: [object Object]
+2023-12-11 23:28:44:2844 info: check access token :
+2023-12-11 23:28:44:2844 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:28:44:2844 info: [object Object]
+2023-12-11 23:28:44:2844 info: check access token :
+2023-12-11 23:28:44:2844 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:28:44:2844 info: [object Object]
+2023-12-11 23:28:44:2844 info: check access token :
+2023-12-11 23:28:44:2844 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:28:45:2845 info: [object Object]
+2023-12-11 23:28:45:2845 info: check access token :
+2023-12-11 23:28:45:2845 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:28:45:2845 info: [object Object]
+2023-12-11 23:28:45:2845 info: check access token :
+2023-12-11 23:28:45:2845 info: GET_EYEMOVEMENT_RESULT_DETAIL : success
+2023-12-11 23:29:19:2919 info: [object Object]
+2023-12-11 23:29:19:2919 info: check access token :
+2023-12-11 23:29:19:2919 info: GET_RESULT_VISION_DEFAULT: success
+2023-12-11 23:29:19:2919 info: [object Object]
+2023-12-11 23:29:19:2919 info: check access token :
+2023-12-11 23:29:19:2919 info: GET_RESULT_BLIND_SPOT : success
+2023-12-11 23:29:19:2919 info: [object Object]
+2023-12-11 23:29:19:2919 info: check access token :
+2023-12-11 23:29:19:2919 info: GET_RESULT_BLIND_SPOT_DETAIL : success
+2023-12-11 23:29:20:2920 info: [object Object]
+2023-12-11 23:29:20:2920 info: check access token :
+2023-12-11 23:29:20:2920 info: GET_RESULT_EYE_MOVEMENT: success
+2023-12-11 23:29:20:2920 info: [object Object]
+2023-12-11 23:29:20:2920 info: check access token :
+2023-12-11 23:29:20:2920 info: GET_EYEMOVEMENT_RESULT_DETAIL : success

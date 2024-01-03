@@ -13,40 +13,40 @@ module.exports = function(sequelize, DataTypes) {
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "blind_spot_left_result_check_id_key"
     },
     blind_spot_point: {
       type: DataTypes.ARRAY(DataTypes.TEXT),
-      allowNull: true
+      allowNull: false
     },
     scotoma: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_t: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_sn: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_in: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_st: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_it: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     location_n: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: false
     },
     created_date: {
       type: DataTypes.DATE,

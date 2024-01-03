@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\vscode_node\\project_icare2_20231219\\project_icare2\\logs\\.147e07969f795e0f0b5bb221d1cf6c0e18937070-audit.json",
+    "files": [
+        {
+            "date": 1702960080028,
+            "name": "D:\\vscode_node\\project_icare2_20231219\\project_icare2\\logs\\2023-12-19.log",
+            "hash": "95a72b8b43e5e4735fb0df2f73c178f647bb41bcee7a5cfd8d12807157a2464d"
+        },
+        {
+            "date": 1703633535096,
+            "name": "D:\\vscode_node\\project_icare2_20231219\\project_icare2\\logs\\2023-12-27.log",
+            "hash": "c77e7d8aa6a8d5245ce64e4533e73f7fa5dc526076dd9867c4969f28878fae0d"
+        }
+    ],
+    "hashType": "sha256"
+}

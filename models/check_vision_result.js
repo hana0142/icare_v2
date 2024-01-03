@@ -17,11 +17,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     left_eye_result: {
       type: DataTypes.REAL,
-      allowNull: true
+      allowNull: false
     },
     right_eye_result: {
       type: DataTypes.REAL,
-      allowNull: true
+      allowNull: false
     },
     created_date: {
       type: DataTypes.DATE,

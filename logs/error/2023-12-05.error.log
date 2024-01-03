@@ -1,0 +1,139 @@
+2023-12-05 02:16:07:167 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-05 13:09:22:922 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 13:10:21:1021 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 13:45:03:453 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 13:46:03:463 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 14:12:51:1251 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 14:22:47:2247 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 14:23:11:2311 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 16:37:59:3759 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 16:38:36:3836 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 16:39:29:3929 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)
+2023-12-05 22:45:01:451 error: jwt expired 
+ Error Stack: TokenExpiredError: jwt expired
+    at /home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/ec2-user/project_icare2/node_modules/jsonwebtoken/verify.js:101:10)
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:412:50)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/ec2-user/project_icare2/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/project_icare2/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:284:15
+    at param (/home/ec2-user/project_icare2/node_modules/express/lib/router/index.js:365:14)

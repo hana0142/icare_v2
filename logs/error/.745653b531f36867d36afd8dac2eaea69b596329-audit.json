@@ -1,0 +1,65 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/ec2-user/project_icare2/logs/error/.745653b531f36867d36afd8dac2eaea69b596329-audit.json",
+    "files": [
+        {
+            "date": 1701668685948,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-04.error.log",
+            "hash": "bfd5b3fa504e85b0a0842a6f317b6c0c0cf5ebd281d0e3ff8399972d8829af7a"
+        },
+        {
+            "date": 1701742567531,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-05.error.log",
+            "hash": "54c7787eee345839f706e2e562d317b625b245f714829c34100e9bdc206b09e3"
+        },
+        {
+            "date": 1701821001524,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-06.error.log",
+            "hash": "80e70aa211cca16a48a06dd30ca8dfc0dcf9356a14226146f8b3fc745e22e8fb"
+        },
+        {
+            "date": 1701907485311,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-07.error.log",
+            "hash": "270e2018345a4d31b9d82ad8197cf9c9b1e7d9f9bf0e38bfbd0c5b0a16815149"
+        },
+        {
+            "date": 1701993623019,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-08.error.log",
+            "hash": "862fda1f0db188830ab84059088e61236dc2d5fc7061c5af488028192e0ec574"
+        },
+        {
+            "date": 1702255360425,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-11.error.log",
+            "hash": "8ae2fe0f2d8e74421a945a2f6c9edb4025a838122bd905ae2c250a473f5f5373"
+        },
+        {
+            "date": 1702339538024,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-12.error.log",
+            "hash": "5cfcf94d0ececc7bec553b9c268bc421371552bad59fc03ba9ff597946bdb9bd"
+        },
+        {
+            "date": 1702426131832,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-13.error.log",
+            "hash": "6a492dbef45384f8039a01510b45a9fca06ede8cd6d9e928f4cc2b699e868dec"
+        },
+        {
+            "date": 1702512649582,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-14.error.log",
+            "hash": "ddd08ac33d263f23ca9ebebd1fe12a862a32e7e7c9f4ea4b76384fd56eff20a1"
+        },
+        {
+            "date": 1702598698109,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-15.error.log",
+            "hash": "68268c4899ff9ed91e2d14dabbd2118fab37d0e08e4883203f80f34e5a67833a"
+        },
+        {
+            "date": 1702943487377,
+            "name": "/home/ec2-user/project_icare2/logs/error/2023-12-18.error.log",
+            "hash": "ecdb11909f4553de1951af0a3d9317975b46171f7f6e9e7d6ea02d4688d407a4"
+        }
+    ],
+    "hashType": "sha256"
+}

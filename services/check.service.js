@@ -1,4 +1,13 @@
+/**
+ * version  : 0.1
+ * filename : check.service.js
+ * author   : @Hana
+ * comment  : 검사 관련 비즈니스 로직
+ */
+
 const { sequelize } = require('../models');
+const logger = require('../config/logger');
+
 const Check_info = require('../models').check_info;
 const Vision_result = require('../models').vision_result;
 const Blind_spot_result = require('../models').blind_spot_result;
@@ -8,315 +17,210 @@ const Eye_movement_result = require('../models').eye_movement_result;
 const Eye_movement_left_result = require('../models').eye_movement_left_result;
 const Eye_movement_right_result = require('../models').eye_movement_right_result;
 
-exports.CheckInfo = {
-    /**
-     * 검사 정보 insert
-     * 
-     * @param {String} check_category
-     * @param {String} check_id
-     * @param {String} user_id
-     * @return {Number} isExistedResult
-    */
-    insertCheckResult: async (check_category, check_id, user_id) => {
-        let isExistedResult = -2;
-        const created_date = Date.now();
-
-        try {
-            const createCheckInfo = await Check_info.create({
-                user_id: user_id,
-                check_id: check_id,
-                created_date: created_date,
-                check_category: check_category
-            }).then(() => {
-                isExistedResult = 0;
-            }).catch((err) => {
-                isExistedResult = -1;
-            });
-            return isExistedResult;
-        } catch (err) {
-            return_result = -1;
-            return isExistedResult;
-        }
-    }
-}
-
+/**
+ * 시력검사 관련 모듈
+ * 
+ * @module VisionCheck
+ */
 exports.VisionCheck = {
     /**
      * 시력검사결과 insert
      * 
-     * @param {String} check_no
-     * @param {String} user_id
-     * @param {Number} right_result
-     * @param {Number} left_result
-     * @param {Boolean} check_corrected
+     * @method insertResult
+     * @param {String} visionCheckId
+     * @param {String} userId
+     * @param {Number} leftVisionResult
+     * @param {Number} rightVisionResult
+     * @param {Boolean} isCorrected
      * @return {Number} isExistedResult
     */
-    insertVisionResult: async (check_no, user_id, right_result, left_result, check_corrected) => {
+    insertResult: async (visionCheckId, userId, leftVisionResult, rightVisionResult, isCorrected) => {
         let isExistedResult = -2;
+        const CHECK_CATEGORY = 'vs';
         const created_date = Date.now();
-
-        try {
-            const createVision = await Vision_result.create({
-                user_id: user_id,
-                check_id: check_no,
-                left_eye_result: left_result,
-                right_eye_result: right_result,
-                created_date: created_date,
-                check_corrected: check_corrected
-            }).then(() => {
-                isExistedResult = 0;
-            }).catch((err) => {
-                console.log(err);
-                isExistedResult = -1;
-            });
-            return isExistedResult;
-        } catch (err) {
-            console.log(err);
-            isExistedResult = -1;
-            return isExistedResult;
-        }
-    }
-}
-
-exports.BlindSpotCheck = {
-
-    /**
-     * 암점 자가인식 검사 정보 insert
-     * 
-     * @param {String} check_category
-     * @param {String} check_bs_id
-     * @param {String} user_id
-     * @param {Number} bs_right_vfi
-     * @param {Number} bs_left_vfi
-     * @param {Array} bs_right_spot_point
-     * @param {Array} bs_left_spot_point
-     * @param {Array} bs_right_location
-     * @param {Array} bs_left_location
-     * @return {Number} isExistedResult
-    */
-    insertBlindResult: async (check_category, check_bs_id, user_id, bs_right_vfi, bs_left_vfi, bs_right_spot_point, bs_left_spot_point, bs_right_location, bs_left_location) => {
         const t = await sequelize.transaction();
-        let isExistedResult = -2;
-        const created_date = Date.now();
 
         try {
-            const createCheckInfo = await Check_info.create({
-                check_id: check_bs_id,
-                user_id: user_id,
-                check_category: check_category,
-                created_date: created_date,
-                transaction: t
-            });
+            await Check_info.create({
+                check_category: CHECK_CATEGORY,
+                user_id: userId,
+                check_id: visionCheckId,
+                created_date: created_date
+            }, { transaction: t });
 
-            const createBlindSpotResult = await Blind_spot_result.create({
-                check_id: check_bs_id,
-                user_id: user_id,
-                left_vfi: bs_left_vfi,
-                right_vfi: bs_right_vfi,
-                created_date: created_date,
-                transaction: t
-            });
-            const createBlindSpotResultLeft = await Blind_spot_left_result.create({
-                check_id: check_bs_id,
-                user_id: user_id,
-                blind_spot_point: bs_left_spot_point,
-                scotoma: bs_left_location[1],
-                location_t: bs_left_location[3],
-                location_st: bs_left_location[5],
-                location_in: bs_left_location[7],
-                location_sn: bs_left_location[9],
-                location_it: bs_left_location[11],
-                location_n: bs_left_location[13],
-                created_date: created_date,
-                transaction: t
-            });
-            const createBlindSpotResultRight = await Blind_spot_right_result.create({
-                check_id: check_bs_id,
-                user_id: user_id,
-                blind_spot_point: bs_right_spot_point,
-                scotoma: bs_right_location[1],
-                location_t: bs_right_location[3],
-                location_st: bs_right_location[5],
-                location_in: bs_right_location[7],
-                location_sn: bs_right_location[9],
-                location_it: bs_right_location[11],
-                location_n: bs_right_location[13],
-                created_date: created_date,
-                transaction: t
-            });
+            await Vision_result.create({
+                check_id: visionCheckId,
+                user_id: userId,
+                check_corrected: isCorrected,
+                left_eye_result: leftVisionResult,
+                right_eye_result: rightVisionResult,
+                created_date: created_date
+            }, { transaction: t });
 
             await t.commit();
             isExistedResult = 0;
+            logger.info('POST CHECK VISION : INSERT VISION RESULT SUCCESS');
+
             return isExistedResult;
 
         } catch (err) {
             await t.rollback();
-            console.log(err);
+            logger.error('POST CHECK VISION : ', err);
             isExistedResult = -1;
-            return isExistedResult
-        }
-    },
-    // insert_blind_spot_left: async () => {
-    //     var return_result = -1;
-    //     // var dateNow = new Date();
-    //     const created_date = Date.now();
-    //     console.log(created_date);
 
-    //     try {
-    //         const insert_bs_left_result = await Blind_spot_left_result.create({
-    //             user_id: user_id,
-    //             check_id: check_no,
-    //             left_eye_result: left_result,
-    //             created_date: created_date,
-    //         }).then((result) => {
-    //             return_result = 0;
-    //             return return_result;
-    //         });
-
-    //         const insert_bs_left_result_location = await Blind_spot_left_detail_result.create({
-    //             user_id: user_id,
-    //             check_id: check_no,
-    //             created_date: created_date,
-    //             // check_corrected
-    //         })
-    //     } catch (err) {
-    //         console.log(err);
-    //         return return_result;
-    //     }
-
-
-    // try {
-    //     const resultPost = await Post.create(post, { transaction: t })
-    //     const resultPostResources = await PostResources.create({
-    //         PostId: resultPost.id,
-    //         name: req.body.title,
-    //         url: req.body.url,
-    //     }, { transaction: t })
-    //     await t.commit();
-    //     res.status(200).json(result)
-    // } catch (error) {
-    //     console.log(error || 'Error occured in transaction');
-    // }
-    // },
-
-    // insert_blind_spot_right: async (check_bs_no, user_id, bs_right_spot_point) => {
-    //     var return_result = -1;
-    //     // var dateNow = new Date();
-    //     const created_date = Date.now();
-
-    //     try {
-    //         const insert_bs_right_result = await Blind_spot_right_result.create({
-    //             user_id: user_id,
-    //             check_id: check_bs_no,
-    //             vfi: bs_right_vfi,
-    //             created_date: created_date
-    //         });
-
-    //         const insert_bs_right_location_result = await Blind_spot_right_detail_result.create({
-    //             user_id: user_id,
-    //             check_id: check_bs_no,
-    //             location_t: bs_right_location_t,
-    //             location_st: bs_right_location_st,
-    //             location_in: bs_right_location_in,
-    //             location_sn: bs_right_location_sn,
-    //             location_it: bs_right_location_it,
-    //             created_date: created_date,
-    //             // check_corrected: check_corrected
-    //         });
-    //         return_result = 0;
-    //         return return_result;
-
-    //     } catch (err) {
-    //         console.log(err);
-    //         return return_result;
-    //     }
-    // }
+            return isExistedResult;
+        };
+    }
 }
 
-exports.EyeMovementCheck = {
-    /**
- * 검사 정보 insert
+/**
+ * 암점자가인식 검사 관련 모듈
  * 
- * @param {String} check_category
- * @param {String} check_id
- * @param {String} user_id
- * @return {Number} isExistedResult
+ * @module BlindSpotCheck
 */
-    insert_em_result: async (check_em_id, user_id, right_vfi, left_vfi) => {
-        var return_result = -1;
-        const created_date = Date.now();
-
-        try {
-            const insert_eyemovement_result = await Eye_movement_result.create({
-                check_id: check_em_id,
-                user_id: user_id,
-                left_vfi: left_vfi,
-                right_vfi: right_vfi,
-                created_date: created_date
-            });
-
-        } catch (err) {
-            console.log;
-            return return_result;
-        }
-    },
+exports.BlindSpotCheck = {
     /**
-     * 검사 정보 insert
+     * 암점자가인식 검사 정보 insert
      * 
-     * @param {String} check_category
-     * @param {String} check_id
-     * @param {String} user_id
+     * @method inserResult
+     * @param {String} blindSpotCheckId
+     * @param {String} userId
+     * @param {Object} blindSpotLeftResults
+     * @param {Object} blindSpotRightResults
      * @return {Number} isExistedResult
     */
-    insert_em_right_result: async (check_em_id, user_id, right_location) => {
-        var return_result = -1;
-        // var dateNow = new Date();
-        const created_date = Date.now();
+    insertResult:
+        async (blindSpotCheckId, userId, blindSpotLeftResults, blindSpotRightResults) => {
+            let isExistedResult = -2;
+            const CHECK_CATEGORY = 'bs';
+            const created_date = Date.now();
+            const t = await sequelize.transaction();
 
-        try {
-            const insert_em_right_result = await Eye_movement_right_result.create({
-                user_id: user_id,
-                check_id: check_em_id,
-                location_t: right_location[1],
-                location_st: right_location[3],
-                location_in: right_location[5],
-                location_sn: right_location[7],
-                location_it: right_location[9],
-                created_date: created_date,
-            });
-        } catch (err) {
-            console.log(err);
-            return return_result;
+            try {
+                await Check_info.create({
+                    check_category: CHECK_CATEGORY,
+                    user_id: userId,
+                    check_id: blindSpotCheckId,
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Blind_spot_result.create({
+                    check_id: blindSpotCheckId,
+                    user_id: userId,
+                    left_vfi: blindSpotLeftResults[0],
+                    right_vfi: blindSpotRightResults[0],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Blind_spot_left_result.create({
+                    check_id: blindSpotCheckId,
+                    user_id: userId,
+                    blind_spot_point: blindSpotLeftResults[1],
+                    scotoma: blindSpotLeftResults[2][1],
+                    location_t: blindSpotLeftResults[2][3],
+                    location_st: blindSpotLeftResults[2][5],
+                    location_in: blindSpotLeftResults[2][7],
+                    location_sn: blindSpotLeftResults[2][9],
+                    location_it: blindSpotLeftResults[2][11],
+                    location_n: blindSpotLeftResults[2][13],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Blind_spot_right_result.create({
+                    check_id: blindSpotCheckId,
+                    user_id: userId,
+                    blind_spot_point: blindSpotRightResults[1],
+                    scotoma: blindSpotRightResults[2][1],
+                    location_t: blindSpotRightResults[2][3],
+                    location_st: blindSpotRightResults[2][5],
+                    location_in: blindSpotRightResults[2][7],
+                    location_sn: blindSpotRightResults[2][9],
+                    location_it: blindSpotRightResults[2][11],
+                    location_n: blindSpotRightResults[2][13],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await t.commit()
+                isExistedResult = 0;
+                return isExistedResult;
+
+            } catch (err) {
+                await t.rollback();
+                logger.error(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            };
         }
+}
 
-    },
-    /**
- * 검사 정보 insert
+/**
+ * 안구이동검사 관련 모듈
  * 
- * @param {String} check_category
- * @param {String} check_id
- * @param {String} user_id
- * @return {Number} isExistedResult
-*/
-    insert_em_left_result: async (check_em_id, user_id, left_location) => {
-        var return_result = -1;
-        // var dateNow = new Date();
-        const created_date = Date.now();
+ * @module EyeMovement
+ */
+exports.EyeMovementCheck = {
+    /**
+     * 안구이동검사 결과 insert
+     * 
+     * @method insertResult
+     * @param {String} EyeMovementCheckId
+     * @param {String} userId
+     * @return {Number} isExistedResult (0:insert 완료/-1:실패(DB ROLLBACK))
+    */
+    insertResult:
+        async (eyeMovementCheckId, userId, eyeMovementLeftResult, eyeMovementRightResult) => {
+            let isExistedResult = -2;
+            const CHECK_CATEGORY = 'em';
+            const created_date = Date.now();
+            const t = await sequelize.transaction();
 
-        try {
-            const insert_em_left_result = await Eye_movement_left_result.create({
-                user_id: user_id,
-                check_id: check_em_id,
-                location_t: left_location[1],
-                location_st: left_location[3],
-                location_in: left_location[5],
-                location_sn: left_location[7],
-                location_it: left_location[9],
-                created_date: created_date,
-            });
-        } catch (err) {
-            console.log(err);
-            return return_result;
+            try {
+                await Check_info.create({
+                    check_category: CHECK_CATEGORY,
+                    user_id: userId,
+                    check_id: eyeMovementCheckId,
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Eye_movement_result.create({
+                    check_id: eyeMovementCheckId,
+                    user_id: userId,
+                    left_vfi: eyeMovementLeftResult[0],
+                    right_vfi: eyeMovementRightResult[0],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Eye_movement_left_result.create({
+                    check_id: eyeMovementCheckId,
+                    user_id: userId,
+                    location_t: eyeMovementLeftResult[1][1],
+                    location_st: eyeMovementLeftResult[1][3],
+                    location_in: eyeMovementLeftResult[1][5],
+                    location_sn: eyeMovementLeftResult[1][7],
+                    location_it: eyeMovementLeftResult[1][9],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await Eye_movement_right_result.create({
+                    check_id: eyeMovementCheckId,
+                    user_id: userId,
+                    location_t: eyeMovementRightResult[1][1],
+                    location_st: eyeMovementRightResult[1][3],
+                    location_in: eyeMovementRightResult[1][5],
+                    location_sn: eyeMovementRightResult[1][7],
+                    location_it: eyeMovementRightResult[1][9],
+                    created_date: created_date
+                }, { transaction: t });
+
+                await t.commit()
+                isExistedResult = 0;
+                return isExistedResult;
+
+            } catch (err) {
+                await t.rollback();
+                logger.error(err);
+                isExistedResult = -1;
+                return isExistedResult;
+            };
         }
-    }
 }

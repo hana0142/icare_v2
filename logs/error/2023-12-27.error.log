@@ -1,0 +1,467 @@
+2023-12-27 13:32:26:3226 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:36:55:3655 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:39:38:3938 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:39:44:3944 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:39:47:3947 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:39:47:3947 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 13:44:27:4427 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\axios\dist\node\axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-12-27 14:52:30:5230 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:30:5230 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:31:5231 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:31:5231 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:32:5232 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:32:5232 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:33:5233 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:33:5233 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:34:5234 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:34:5234 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:35:5235 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:35:5235 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:36:5236 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:36:5236 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:37:5237 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:37:5237 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:38:5238 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:38:5238 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:39:5239 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:39:5239 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:40:5240 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:40:5240 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:41:5241 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:41:5241 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:42:5242 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:42:5242 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:43:5243 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:43:5243 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:44:5244 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:44:5244 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:45:5245 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:45:5245 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:46:5246 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:46:5246 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:47:5247 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:47:5247 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:48:5248 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:48:5248 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:49:5249 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:49:5249 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:50:5250 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:50:5250 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:51:5251 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:51:5251 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:52:5252 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:52:5252 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:53:5253 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:53:5253 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:54:5254 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:54:5254 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:55:5255 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:55:5255 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:56:5256 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:56:5256 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:57:5257 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:57:5257 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:58:5258 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:58:5258 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:52:59:5259 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:52:59:5259 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:01:531 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:01:531 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:02:532 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:02:532 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:03:533 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:03:533 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:04:534 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:04:534 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:05:535 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:05:535 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:06:536 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:06:536 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:07:537 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:07:537 error: POST_CHECK_VISION : DB ROLLBACK
+2023-12-27 14:53:08:538 error: POST CHECK VISION :  Validation error 
+ Error Stack: Error
+    at Query.run (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (D:\vscode_node\project_icare2_20231219\project_icare2\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.insertResult (D:\vscode_node\project_icare2_20231219\project_icare2\services\check.service.js:44:13)
+    at async postCheckResult (D:\vscode_node\project_icare2_20231219\project_icare2\controllers\check.controller.js:42:38)
+2023-12-27 14:53:08:538 error: POST_CHECK_VISION : DB ROLLBACK

@@ -9,11 +9,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     user_id: {
       type: DataTypes.STRING(100),
-      allowNull: true
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING(256),
-      allowNull: true
+      allowNull: false
     },
     provider: {
       type: DataTypes.STRING(100),

@@ -13,12 +13,12 @@ module.exports = function(sequelize, DataTypes) {
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "check_info_check_id_key"
     },
     check_category: {
       type: DataTypes.STRING(10),
-      allowNull: true
+      allowNull: false
     },
     created_date: {
       type: DataTypes.DATE,

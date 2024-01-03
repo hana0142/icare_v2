@@ -1,0 +1,40 @@
+config:
+  target : 'http://localhost:4000'
+  phases:
+    - duration: 40
+      arrivalRate: 1
+      name: Warm up
+before:
+  flow:
+    - get:
+        url : '/kakao/login'
+        json:
+          id: 'idynamics'
+          password: '1q2w3e4r12!'
+        capture:
+          json: '$.result.access_token'
+          as: access_token
+        expect:
+          - statusCode: 201
+    - post:
+        url : '/kakao/login'
+        json:
+          id: 'idynamics'
+          password: '1q2w3e4r12!'
+        capture:
+          json: '$.result.access_token'
+          as: access_token
+scenarios:
+  - flow:
+      - get:
+          url: '/api/result/vision/3036689912'
+          headers:
+            access_token: '{{access_token}}'
+      - get:
+          url: '/api/result/blindspot/3036689912'
+          headers:
+            access_token: '{{access_token}}'
+      - get:
+          url: '/api/result/eyemovement/3036689912'
+          headers:
+            access_token: '{{access_token}}'

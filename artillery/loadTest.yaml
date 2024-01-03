@@ -1,0 +1,46 @@
+config:
+  target : 'http://localhost:4000'
+  # phases - 60초 동안 매초 1개의 요청을 보내기
+  phases:  
+    #duration - 성능 측정 시간
+    - duration: 40
+      #arrivalRate: 매초 새로운 가상 유저를 만드는 수
+      arrivalRate: 1
+      name: Warm up
+before:
+  flow:
+    - get:
+        url : '/kakao/login'
+        followRedirect: true
+        # json:
+        #   id: 'idynamics'
+        #   password: '1q2w3e4r12!'
+        # capture:
+        #   json: '$.access_token'
+        #   as: 'access_token'
+
+scenarios:
+  - flow:
+      - post:
+          url: '/api/check/vision/3036689912'
+          headers:
+            access_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAzNjQxNTQwLCJleHAiOjE3MDYyMzM1NDB9.mPgCnsZOCoS_rEySzb1Tn-LhB6JDbrIMsyv5pn13tGg'
+          json: 
+            left_result: 2.3
+            right_result: 3.2
+            check_corrected: false
+          # timeout: 10
+
+
+      # - get:
+      #     url: '/api/result/vision/3036689912'
+      #     headers:
+      #       access_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAzNjQxNTQwLCJleHAiOjE3MDYyMzM1NDB9.mPgCnsZOCoS_rEySzb1Tn-LhB6JDbrIMsyv5pn13tGg'
+      # - get:
+      #     url: '/api/result/blindspot/3036689912'
+      #     headers:
+      #       access_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAzNjQxNTQwLCJleHAiOjE3MDYyMzM1NDB9.mPgCnsZOCoS_rEySzb1Tn-LhB6JDbrIMsyv5pn13tGg'
+      # - get:
+      #     url: '/api/result/eyemovement/3036689912'
+      #     headers:
+      #       access_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiSldUIiwiZW1haWwiOiJpZHluYW1pY3NAa2FrYW8uY29tIiwiaWF0IjoxNzAzNjQxNTQwLCJleHAiOjE3MDYyMzM1NDB9.mPgCnsZOCoS_rEySzb1Tn-LhB6JDbrIMsyv5pn13tGg'

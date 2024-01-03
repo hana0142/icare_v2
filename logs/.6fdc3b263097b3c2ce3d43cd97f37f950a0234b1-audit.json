@@ -1,0 +1,80 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/ec2-user/project_icare2/logs/.6fdc3b263097b3c2ce3d43cd97f37f950a0234b1-audit.json",
+    "files": [
+        {
+            "date": 1701668685945,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-04.log",
+            "hash": "095ff3eb7f06eb591b01a9603b6c853c66283ceb0bd68ce709e6b6fcc4c040a3"
+        },
+        {
+            "date": 1701737114628,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-05.log",
+            "hash": "719e48b8f6fdfcffc9a2a4f31d032c95243865bf1d31bea72b4dcb94c8532864"
+        },
+        {
+            "date": 1701820921775,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-06.log",
+            "hash": "73344cb34ca8bd6e93bc23eed4bd54cff206b24853ea51395b8f3b36967a5261"
+        },
+        {
+            "date": 1701907214156,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-07.log",
+            "hash": "d05010a78204c58eb6a7f5eab5c687b7e3b9d0031652dbf5a2e5044e0afabd65"
+        },
+        {
+            "date": 1701993623017,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-08.log",
+            "hash": "d61954cb40faedb2ce5ff5244723976e075c6cffe14f4500abbd9183085ed981"
+        },
+        {
+            "date": 1702127452235,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-09.log",
+            "hash": "08e35b24de83e61128b6b62919046abaf7581e4ab7c8f5ec01706e262d01f62c"
+        },
+        {
+            "date": 1702213063629,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-10.log",
+            "hash": "55c49a867ad0af9c4f2ab7dad5dce32ce25883a0a072034cfaeacd70131604c0"
+        },
+        {
+            "date": 1702255360422,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-11.log",
+            "hash": "012261aa088f3c06554b2c4fb967b1d2e5ca1a99dfd95e91468bf0f76af75cab"
+        },
+        {
+            "date": 1702339538021,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-12.log",
+            "hash": "5fa781ae660afdbb4b24ef985868aa2a65fb67de7dcb0f95c1ce24386f217be0"
+        },
+        {
+            "date": 1702425674243,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-13.log",
+            "hash": "b22b179f5db475a2e15e5d2a2f36ac72f5836285b5133e92339d20a9c4dcb231"
+        },
+        {
+            "date": 1702512649579,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-14.log",
+            "hash": "d1299487862be5cf98a9c8139de82aaddd3de670828b7cf3e2de529027635e97"
+        },
+        {
+            "date": 1702598494117,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-15.log",
+            "hash": "08478458858253d69a187e4fafac9e5b9a47d4b06a14386275503c0ed19751d8"
+        },
+        {
+            "date": 1702884882265,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-18.log",
+            "hash": "ca508b6d3e6c419685b84bf0b96197385a27ce38dcacde2ab4e3839354aea687"
+        },
+        {
+            "date": 1702948845970,
+            "name": "/home/ec2-user/project_icare2/logs/2023-12-19.log",
+            "hash": "0204145a0a12523905b3bbbde05a1b056d68595bb9713609dd2f90d96cfa03e9"
+        }
+    ],
+    "hashType": "sha256"
+}

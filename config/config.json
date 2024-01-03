@@ -4,7 +4,8 @@
     "password": "idynamics12!",
     "database": "db_icare_v2",
     "host": "idynamics.c983xfzqmsew.ap-northeast-2.rds.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "timezone": "+09:00"
   },
   "test": {
     "username": "root",

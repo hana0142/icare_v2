@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     check_id: {
       type: DataTypes.STRING(255),
-      allowNull: true,
+      allowNull: false,
       unique: "blind_spot_result_check_id_key"
     },
     user_id: {
@@ -28,8 +28,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DATE,
       allowNull: true
     },
-    updated_date: {
-      type: DataTypes.DATE,
+    check_date: {
+      type: DataTypes.DATEONLY,
       allowNull: true
     }
   }, {

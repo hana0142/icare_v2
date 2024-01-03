@@ -1,160 +1,454 @@
-const UserService = require('../services/user.service');
-const func_link = require('../middlewares/kakaoLinkUnlink');
+/**
+ * version  : 0.1
+ * filename : user.controller.js
+ * author   : @Hana
+ * comment  : 사용자 관련 컨트롤러 기능 구현(라우터에 연결)
+ */
+
+const qs = require('qs');
 const jwt = require('jsonwebtoken');
 const axios = require('axios');
-const qs = require('qs');
-const func_token = require('../middlewares/authToken');
-// const url = require('url');
 const logger = require('../config/logger');
-const e = require('express');
+const KakaoLink = require('../middlewares/kakaoLinkUnlink');
+const UserService = require('../services/user.service');
+const AuthorizeToken = require('../middlewares/authToken');
+const { sequelize } = require('../models');
 
 exports.Login = {
-    sendCode: async (req, res) => {
-        const { session, query } = req;
-        const { code } = query;
-        let tokenResponse;
+    kakaoLogin: (req, res) => {
+        const BASE_URL = "https://kauth.kakao.com/oauth/authorize";
+        const config = {
+            client_id: process.env.KAKAO_ID,
+            redirect_uri: process.env.KAKAO_REDIRECT,
+            response_type: "code",
+        };
+        const config_url = new URLSearchParams(config).toString();
+        const final_url = `${BASE_URL}?${config_url}`;
 
-        try {
-            // Authorization Server 부터 Access token 발급받기
-            tokenResponse = await axios({
-                method: "POST",
-                url: 'https://kauth.kakao.com/oauth/token',
-                headers: {
-                    "content-type": "application/x-www-form-urlencoded"
-                },
-                data: qs.stringify({
-                    grant_type: "authorization_code",
-                    client_id: process.env.KAKAO_ID,
-                    client_secret: process.env.KAKAO_SECRET_KEY,
-                    redirect_uri: process.env.KAKAO_REDIRECT,
-                    code
-                })
-            });
-            res.send(tokenResponse.data.access_token);
-        } catch (error) {
-            console.log(error);
-            return res.status(500).json('Internal Server Error Occured');
-        }
+        return res.redirect(final_url);
     },
 
-    getToken: async (req, res) => {
-        const access_token = req.headers.token;
-        var userResponse;
-
-        try {
-            //카카오 access_token으로 사용자 정보 요청하기
-            userResponse = await axios({
-                method: "GET",
-                url: "https://kapi.kakao.com/v2/user/me",
-                headers: {
-                    Authorization: `Bearer ${access_token}`
-                }
-            });
-        } catch (error) {
-            logger.error(error);
-            return res.status(400).send('Bad Request');
-        }
+    kakaoCallback: async (req, res) => {
+        const {
+            data: { access_token: kakaoAccessToken },
+        } = await axios('https://kauth.kakao.com/oauth/token', {
+            params: {
+                grant_type: 'authorization_code',
+                client_id: process.env.KAKAO_ID,
+                redirect_uri: process.env.KAKAO_REDIRECT,
+                code: req.query.code,
+                client_secret: process.env.KAKAO_SECRET_KEY,
+            },
+        });
 
         //카카오에서 가져온 사용자 정보 불러오기
+        const { data: userResponse } = await axios('https://kapi.kakao.com/v2/user/me', {
+            headers: {
+                Authorization: `Bearer ${kakaoAccessToken}`,
+            },
+        });
+
         const authData = {
-            ...userResponse.data
+            ...userResponse
         };
         const { session, query } = req;
-        const result = await func_link.Kakao.linkUser(session, "kakao", authData);
+        const isLinkedKakao = await KakaoLink.Kakao.linkUser(session, "kakao", authData);
+        // console.log('before', req.sessionID);
 
         //서버 DB 사용자 정보 확인
-        if (result) {
-            // console.log('*********************************************', result);
+        if (isLinkedKakao) {
             const email = await authData.kakao_account.email;
-            // console.log(email);
-            const check_user = await UserService.SelectExistedUser(email);
-            logger.info(check_user);
+            const isCheckedUser = await UserService.SelectExistedUser(email);
+            // console.log('linkkakao', req.sessionID);
 
             //1. 가입된 사용자
-            if (check_user === 1) {
+            if (isCheckedUser === 1) {
                 try {
                     var userInfo = await UserService.SelectUserInfo(email);
-                    console.log(userInfo);
                     userInfo = userInfo[0];
                     const token = userInfo.token;
                     const user_id = userInfo.user_id;
-                    const access_token = await func_token.GenerateAccessToken(email);
-                    const refresh_token = await func_token.GenerateRefreshToken(email);
-                    const storeRefreshToken = await UserService.UpdateUser(user_id, refresh_token);
 
-                    //리프레시 토큰 업데이트 
+
+                    const accessToken = await AuthorizeToken.GenerateAccessToken(email);
+                    const refreshToken = await AuthorizeToken.GenerateRefreshToken(email);
+                    const storeRefreshToken = await UserService.UpdateUser(user_id, refreshToken);
+
+                    //리프레시 토큰 업데이트
                     if (storeRefreshToken === 1) {
-                        logger.info('DB UPDATE REFRESH TOKEN');
+                        // console.log(req.cookies.SID);
+                        // console.log(req.headers.cookie.split('='));
+                        // console.log(req.sessionID);
+                        // console.log(req);
+                        // console.log(req.headers.cookie.SID);
+                        // res.cookies.sid = req.sessionID;
+
+                        req.session.isLoggedIn = true;
+                        req.session.user_id = user_id;
+                        req.session.save();
+                        const sessionId = req.sessionID;
+                        // console.log('refreshtoken', req.sessionID);
+                        // console.log('1', req);
+                        // console.log('1', res);
+                        // // req.ses
+                        // res.setHeader('Set-Cookie', `sid=${req.ressionID}`)
+                        // res.cookie('sid', req.ressionID);
+                        // req.session.save()
+                        // res.cookie('sid', req.sessionID, {
+                        //     maxAge: 10000
+                        // // });
+                        // console.log(req.cookies);
+                        // console.log(req.session);
+                        // console.log(req.sessionID);
+                        logger.info('GET_KAKAO_TOKEN : DB UPDATE REFRESH TOKEN');
+
                         return res.status(200).json({
                             'user_info': {
                                 'user_id': user_id,
                                 'email': email,
-                                'access_token': access_token
+                                'access_token': accessToken,
+                                'session_id': sessionId,
                             }
-                        })
+                        });
+
                     }
 
                     //토큰 업데이트 실패
                     else if (storeRefreshToken === 0) {
-                        logger.error('Not modified');
-                        return res.status(305).send('Not modified');
+                        logger.error('GET_KAKAO_TOKEN : Not modified');
+                        return res.status(305).send('GET_KAKAO_TOKEN : Not modified');
                     } else {
-                        logger.error('Bad Request');
-                        return res.status(400).send('Bad Request');
+                        logger.error('GET_KAKAO_TOKEN : Bad Request');
+                        return res.status(400).send('GET_KAKAO_TOKEN : Bad Request');
                     }
                 } catch (err) {
-                    logger.error(err);
-                    return res.status(500).send('Internal Server Error occured');
+                    logger.error('GET_KAKAO_TOKEN : ', err);
+                    return res.status(500).send('GET_KAKAO_TOKEN : Internal Server Error occured');
                 }
             }
-
 
             //2. 미가입자(DB에 없는 사용자)
             else {
                 try {
                     const user_id = authData.id;
                     const email = authData.kakao_account.email;
-                    const provider = 'kakao';
 
-                    const access_token = await func_token.GenerateAccessToken(email);
-                    const refresh_token = await func_token.GenerateRefreshToken(email);
-                    const insertUser = await UserService.InsertUser(user_id, email, provider, refresh_token);
+                    const access_token = await AuthorizeToken.GenerateAccessToken(email);
+                    const refresh_token = await AuthorizeToken.GenerateRefreshToken(email);
+                    const insertUser = await UserService.InsertUser(user_id, email, refresh_token);
 
                     if (insertUser === 1) {
                         logger.info('INSERT USER');
+                        // req.session.isLoggedIn = true;
+                        // req.session.user_id = user_id;
+                        // req.session.save();
+                        // console.log(req.sessionID);
                         return res.status(201).json({
                             'user_info': {
                                 'user_id': user_id,
                                 'email': email,
                                 'access_token': access_token
                             }
-                        })
-                    }
-                    else {
-                        logger.info(insertUser);
+                        });
+                    } else {
+                        logger.error('insert user fail');
                         return res.status(400).send('Bad Request');
                     }
                 } catch (err) {
                     logger.error(err);
                     return res.status(500).send('Internal Server Error occured');
                 }
-
             }
-
-            // res.redirect('/user/?email=' + email);
-            // req.session.loginData = userResponse.data;
-            // console.info("계정에 연결되었습니다.");
-
-            // return req.session.save(() => {
-            //     res.send({ loggedIn: true, loginDate: authData });
-            //     // res.redirect('/');
-            // });
-
         } else {
-            console.warn("이미 연결된 계정입니다.");
+            logger.error(JSON.stringify(req.session.authData));
+            return res.status(409).json('이미 연결된 계정입니다,');
+        }
+    },
+
+    deleteUser: async (req, res) => {
+        const user_id = req.params.user_id;
+        let dbDeleteResult;
+
+        try {
+            dbDeleteResult = await UserService.DeleteUser(user_id);
+
+            if (dbDeleteResult === 1) {
+                if (req.session) {
+                    req.session.destroy();
+                    return res.status(200).json('success');
+                }
+                else
+                    return res.status(200).json('success');
+
+            } else if (dbDeleteResult === 0) {
+
+                return res.status(400).json('fail db delete')
+            } else {
+
+                return res.status(400).json('fail db delete')
+            }
+        } catch (error) {
+            return res.status(500).json('fail');
+        }
+    },
+
+    deleteUserInDB: async (req, res) => {
+        const user_id = req.params.user_id;
+        const access_token = req.header.access_token;
+        let dbDeleteResult;
+
+        try {
+            dbDeleteResult = await UserService.DeleteUser(user_id);
+
+            if (dbDeleteResult === 1) {
+                if (req.session) {
+                    req.session.destroy();
+                    return res.status(200).json('success');
+                }
+                else
+                    return res.status(200).json('success');
+                // return res.status(200).json('success');
+
+            } else if (dbDeleteResult === 0) {
+                return res.status(400).json('fail db delete')
+            } else {
+                return res.status(400).json('fail')
+            }
+            // res.redirect("/kakao");
+        } catch (error) {
+            return res.status(500).json('fail');
+        }
+    },
+
+    deleteSession: async (req, res) => {
+        try {
+            // logger.info(JSON.stringify(req.session.isLoggedIn));
+            // const user_id = await req.cookies.sid;
+            // console.log('deletesessionID', req.sessionID);
+            // res.setHeader('Set-Cookie', 'login=podo; Max-Age=0;')
+            // console.log('delete_session_header', req.headers);
+            // console.log('deletesessioncookieID', req.cookies.sid);
+            // console.log('refreshtoken', req.sessionID);
+            // console.log('2', req);
+            // console.log('1', res);
+            // const select_data_query = `select * from session where sid = '${req.sessionID}'`
+            // const select_data_query = `select * from session where sid = '${req.sessionID}'`
+            const user_id = req.params.user_id;
+            const select_data_query = `select * from session where sess ->> 'user_id' = '` + user_id + `';`;
+            // // "DELETE FROM vehiculo WHERE vehiculo_id= $1", [id],
+            sequelize.query(
+                select_data_query).then((result) => {
+                    console.log(result);
+                    // 세션이 존재하지 않을 경우
+                    if (result[0].length === 0) {
+                        logger.error('no session');
+                        return res.status(404).json('no session');
+                    }
+                    // 세션이 존재할 경우
+                    else {
+                        logger.info(JSON.stringify(req.session.user_id));
+                        console.log('logout', result);
+                        // if (result.sid = sessionID) {
+                        req.session.destroy(function (err) {
+                            if (err) {
+                                return next(err);
+                            } else {
+                                req.session = null;
+                                res.clearCookie('connect.sid');
+                                res.clearCookie('user_id')
+                                logger.info('success');
+                                req.session = null;
+                                return res.status(200).json('success');
+                            }
+                        });
+                        // req.session.destroy((err) => {
+                        //     res.clearCookie('connect.sid');
+                        //     res.clearCookie('user_id')
+                        //     if (err) {
+                        //         logger.error('fail: session destory');
+                        //         return res.status(400).json('fail');
+                        //     } else {
+                        //         logger.info('success');
+                        //         req.session = null;
+                        //         return res.redirect('/kakao/login');
+                        //     }
+                        // })
+                        // } else {
+                        //     logger.error('user_id is different');
+                        //     return res.status(400).json('user_id is different');
+                        // }
+                    }
+                })
+        } catch (err) {
+            logger.error('INTERNAL SERVER ERROR', err);
+            return res.status(500).json('internal error');
         }
     }
 }
+
+exports.Auth = {
+    checkJsonWebToken: async (req, res, next) => {
+        if (req.headers.access_token) {
+            const accessToken = req.headers.access_token;
+            logger.info({ headers: req.headers });
+
+            try {
+                //1. access token verified
+                const isVerifedAccessToken = await AuthorizeToken.VerifyAccessToken(accessToken);
+                logger.info('no access_token  :', isVerifedAccessToken.ok);
+
+                if (isVerifedAccessToken.ok) {
+                    const decode_token = jwt.decode(accessToken);
+                    const email = decode_token.email;
+                    var userInfo = await UserService.SelectUserInfo(email);
+                    userInfo = userInfo[0];
+                    const user_id = userInfo.user_id;
+                    const new_refresh_token = await AuthorizeToken.GenerateRefreshToken(email);
+                    const updateToken = await UserService.UpdateUser(user_id, new_refresh_token);
+
+                    if (updateToken != -1) {
+                        // console.log(req.cookies.SID);
+                        req.session.isLoggedIn = true;
+
+                        // req.session.user_id = user_id;
+                        req.session.save();
+                        console.log('tokensave', req.sessionID);
+                        next();
+                    } else {
+                        logger.error('DB MODIFTIED FAIL')
+                        return res.status(403).json('DB MODIFTIED FAIL');
+                    }
+                }
+
+                //2. access token : expired && refresh token : verified
+                else if (isVerifedAccessToken.err === -1) {
+                    return res.status(401).json('Unauthorization');
+                }
+                else if (isVerifedAccessToken.err === -2) {
+                    return res.status(400).json('invalid token');
+                } else {
+                    if (req.session.isLoggedIn) {
+                        const user_id = req.session.user_id;
+                        const userInfo = await UserService.SelectUserInfoUserId(user_id);
+                        const refreshToken = userInfo[0].token;
+                        const verify_refresh_token = await AuthorizeToken.VerifyRefreshToken(refreshToken);
+
+                        try {
+                            if (verify_refresh_token.ok) {
+                                const decode_token = jwt.decode(refreshToken);
+                                const email = decode_token.email;
+                                const re_access_token = await AuthorizeToken.GenerateAccessToken(email);
+                                res.json({ 'new access token': re_access_token });
+                            }
+
+                            //3. access token : expired && refresh token : expired
+                            else {
+                                res.status(400).json('expired token');
+                            }
+                        } catch (err) {
+                            // console.log(err);
+                            logger.error(err);
+                            res.status(500).json('fail');
+                        }
+                    }
+                }
+            } catch (err) {
+                // console.log(err);
+                logger.error(err);
+                return res.status(500).json('fail');
+            }
+        } else {
+            return res.status(404).json('No Found Parameter Access Token');
+        }
+    },
+    testcheckJsonWebToken: async (req, res) => {
+        if (req.headers.access_token) {
+            const accessToken = req.headers.access_token;
+            console.log('testtoken', req.sessionID);
+            //1. access token verified
+            try {
+                const isVerifedAccessToken = jwt.verify(accessToken, process.env.JWT_TOKEN_SECRET);
+
+                if (!isVerifedAccessToken) {
+                    logger.err('accesstoken invalid', isVerifedAccessToken);
+                    return res.status(401).send('Unauthorized request');
+                }
+
+                // await AuthorizeToken.VerifyAccessToken(accessToken);
+                // const verified_rt = await AuthorizeToken.VerifyAccessToken(accessToken);
+                if (isVerifedAccessToken) {
+                    const decode_token = jwt.decode(accessToken);
+                    const email = decode_token.email;
+                    var userInfo = await UserService.SelectUserInfo(email);
+                    userInfo = userInfo[0];
+                    // console.log(userInfo);
+                    const user_id = userInfo.user_id;
+                    const new_access_token = await AuthorizeToken.GenerateAccessToken(email);
+                    const new_refresh_token = await AuthorizeToken.GenerateRefreshToken(email);
+                    const updateToken = await UserService.UpdateUser(user_id, new_refresh_token);
+
+                    // console.log('new_access_token');
+                    // console.log('user_id');
+
+                    if (updateToken != -1) {
+                        console.log('testtoken2', req.sessionID);
+
+                        // req.session.isLoggedIn = true;
+                        // req.session.user_id = user_id;
+                        // req.session.save();
+                        // console.log(req);
+                        return res.status(200).json('success');
+                        // return res.status(200).json({ 'new_access_token': new_access_token });
+                    }
+                    else {
+                        return res.status(401).json('invalid token');
+                    }
+                }
+
+                //2. access token : expired && refresh token : verified
+                else {
+                    const user_id = req.params.user_id;
+                    const userInfo = await UserService.SelectUserInfoUserId(user_id);
+                    // console.log('userinfo', userInfo[0].token);
+                    const refreshToken = userInfo[0].token;
+
+
+                    try {
+                        const verify_refresh_token = jwt.verify(refreshToken, JWT_TOKEN_SECRET);
+
+                        if (verify_refresh_token) {
+                            const decode_token = jwt.decode(refreshToken);
+                            console.log('decode', decode_token);
+                            const email = decode_token.email;
+                            console.log('check_mail', email);
+                            // var userInfo = await UserService.SelectUserInfo(email);
+                            // userInfo = userInfo[0];
+                            // console.log(userInfo);
+                            const re_access_token = await AuthorizeToken.GenerateAccessToken(email);
+                            return res.status(200).json('new access token', re_access_token);
+
+                        }
+
+                        //3. access token : expired && refresh token : expired
+                        else {
+                            logger.error('expired token')
+                            return res.status(401).json('expired token');
+                        }
+                    } catch (err) {
+                        console.log(err);
+                        return res.status(500).json('fail');
+                    }
+                }
+            } catch (err) {
+                logger.error(err);
+                return res.status(401).json('unauthorization')
+            }
+        }
+    },
+
+}
+
+
 
 exports.Local = {
     checkUser: async (req, res) => {
@@ -190,381 +484,15 @@ exports.Local = {
     }
 }
 
-
-exports.kakao = {
-
-}
-
-exports.auth = {
-    check_token: async (req, res, next) => {
-        console.log('check_token', req.headers.access_token);
-        const access_token = req.headers.access_token;
-        const decode_token = jwt.decode(access_token);
-        console.log('decode', decode_token);
-        const email = decode_token.email;
-        console.log('check_mail', email);
-
-
-        if (req.headers.access_token) {
-            const accessToken = req.headers.access_token;
-
-            //1. access token verified
-            const verified_at = await func_token.VerifyAccessToken(accessToken);
-
-            if (verified_at) {
-
-                var userInfo = await UserService.SelectUserInfo(email);
-                userInfo = userInfo[0];
-                console.log(userInfo);
-                const user_id = userInfo.user_id;
-                const new_access_token = await func_token.GenerateAccessToken(email);
-                const new_refresh_token = await func_token.GenerateRefreshToken(email);
-                const updateToken = await UserService.UpdateUser(user_id, new_refresh_token);
-
-                console.log('new_access_token');
-                console.log('user_id');
-
-                if (updateToken != -1) {
-                    res.cookie('user_id', user_id);
-                    req.cookies.user_id = user_id;
-
-                    res.cookie('access_token', new_access_token);
-                    req.cookies.access_token = new_access_token;
-
-                    res.cookie('email', email);
-                    req.cookies.email = email;
-                    next();
-                }
-                else {
-                    return res.status(400).json('fail');
-                }
-            }
-
-            //2. access token : expired && refresh token : verified
-            else {
-                const re_access_token = await func_token.GenerateAccessToken(email);
-                const re_refresh_token = await func_token.GenerateRefreshToken(email);
-                const verify_refresh_token = await func_token.VerifyRefreshToken(re_refresh_token);
-
-                try {
-                    if (verify_refresh_token) {
-                        const re_access_token = await func_token.GenerateAccessToken(email);
-                        res.cookie('user_id', user_id);
-                        res.cookie('access_token', re_access_token);
-                        next();
-                    }
-
-                    //3. access token : expired && refresh token : expired
-                    else {
-                        return res.status(400).json('expired token');
-                    }
-                } catch (err) {
-                    console.log(err);
-                    return res.status(500).json('fail');
-                }
-            }
-
-
-
-            // if (verify_token) {
-            //     // req.user = userInfo[0];
-            //     const jwt_token = func_token.generate_token(email);
-            //     // console.log(req.user);
-            //     const updateToken = await UserService.UpdateUser(user_id, jwt_token);
-
-            //     if (updateToken != -1) {
-            //         // req.user = user;
-            //         res.cookie('user', userInfo[0]);
-            //         return res.status(200).json('success');
-            //     }
-            // }
-
-
+exports.Test = {
+    testHome: async (req, res) => {
+        try {
+            console.log('test');
+            return res.status(200);
+        } catch (err) {
+            console.log('fail');
+            return res.status(400);
         }
-
 
     }
 }
-
-
-
-
-// postUser: async (req, res) => {
-//     const { accessToken } = req.body;
-//     let kakaoProfile;
-
-//     try {
-//         console.log(accessToken);
-//         kakaoProfile = await axios.get('https://kapi.kakao.com/v2/user/me', {
-//             headers: {
-//                 Authorization: 'Bearer' + accessToken,
-//                 'Content-Type': 'application/json'
-//             }
-//         });
-//         console.log(kakaoProfile);
-//     } catch (err) {
-//         return res.send('accesstoken error');
-//     }
-// },
-
-// getKakaoToken: async (req, res) => {
-//     let ACCESSTOKEN;
-//     try {
-//         const url = 'https://kauth.kakao.com/oauth/token';
-//         const body = qs.stringify({
-//             grant_type: 'authorization_code',
-//             code: req.query.code
-//         });
-
-//         const header = { 'content-type': 'application/x-www-form-urlencoded' };
-//         const response = await axios.post(url, body, header);
-//         ACCESSTOKEN = response.data.access_token;
-//         res.send('susccess');
-//     } catch (e) {
-//         console.log(e.message);
-//         res.send('error');
-//     }
-
-
-//     try {
-//         const url = 'https://kapi.kakao.com/v2/user/me';
-//         const header = {
-//             headers: {
-//                 Authorization: `Beared ${ACCESSTOKEN}`
-//             }
-//         };
-
-//         const response = await axios.get(url, header);
-//         console.log(response.data.properties);
-//         const payload = { nickname };
-//         const access_token = makeJwt(payload);
-//         console.log(access_token);
-//         res.cookie('userToken', access_token).redirect('/');
-//     } catch (err) {
-//         console.log(err);
-
-//     }
-
-//     // const header = require
-//     // if (req.query.code) {
-//     //     const code = req.query.code
-//     //     let options = {
-//     //         url: 'https://kauth.kakao.com/oauth/token',
-//     //         method: 'post',
-//     //         headers: {
-//     //             "Content-Type": "application/x-www-form-urlencoded"
-//     //         },
-//     //         data: qs.stringify({
-//     //             grant_type: 'authorization_code',
-//     //             client_id: process.env.KAKAO_ID,
-//     //             redirect_uri: process.env.KAKAO_REDIRECT,
-//     //             code: code
-//     //         })
-//     //     }
-//     //     let isLinkedUserDB = 'fail'
-//     //     axios(options)
-//     //         .then(function (response) {
-//     //             if (response.status === 200) {
-//     //                 const token = response.data.access_token
-//     //                 console.log(`token : ${token}`)
-//     //                 isLinkedUserDB = 'success'
-//     //                 return true
-//     //             }
-//     //         }).catch(function (err) {
-//     //             console.log(`main getCode err : ${err}`)
-//     //             isLinkedUserDB = 'failed'
-//     //             return false
-//     //         })
-//     //         .then(function () {
-//     //             const url = `${redirect}result/${result}`
-//     //             res.redirect(url)
-//     //         })
-//     // } else {
-//     //     res.status(200).json({ 'msg': `ICE ALERT MAIN PAGE` })
-//     // }
-// },
-// returnCodeAPI: async (req, res) => {
-//     try {
-//         url = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.KAKAO_ID}&redirect_uri=${process.env.KAKAO_REDIRECT}`
-//         console.log(req.query.code);
-//         res.redirect(url)
-//     } catch (e) {
-//         console.log(e)
-//     }
-// },
-
-// getResult: async (req, res) => {
-//     try {
-//         console.log(req.params.result)
-//         if (req.params.result === 'success') {
-//             res.status(200).json({ 'msg': `등록이 완료되었습니다` })
-//         } else {
-//             res.status(200).json({ 'msg': `등록에 실패했습니다` })
-//         }
-//     } catch (e) {
-//         console.log(e)
-//     }
-
-// },
-
-// kakaoRecall: async (req, res) => {
-//     const { session, query } = req;
-//     const { code } = query;
-//     console.log(query);
-//     console.info("==== session ====");
-//     const url = `https://kauth.kakao.com/oauth/token`;
-
-//     let tokenResponse;
-
-//     try {
-//         tokenResponse = await axios({
-//             method: "POST",
-//             url,
-//             headers: {
-//                 "content-type": "application/x-www-form-urlencoded"
-//             },
-//             data: qs.stringify({
-//                 grant_type: "authorization_code",
-//                 client_id: process.env.KAKAO_ID,
-//                 client_secret: process.env.KAKAO_SECRET_KEY,
-//                 redirect_uri: process.env.KAKAO_REDIRECT,
-//                 code
-//             })
-//         });
-//     } catch (error) {
-//         return res.json(error.data);
-//     }
-
-//     console.info("==== tokenResponse.data ====");
-//     console.log(tokenResponse.data);
-
-//     const { access_token } = tokenResponse.data;
-
-//     // let userResponse;
-
-//     // try {
-//     //     userResponse = await axios({
-//     //         method: "GET",
-//     //         url: "https://kapi.kakao.com/v2/user/me",
-//     //         headers: {
-//     //             Authorization: `Bearer ${access_token}`
-//     //         }
-//     //     });
-//     // } catch (error) {
-//     //     return res.json(error.data);
-//     // }
-
-//     // console.info("==== userResponse.data ====");
-//     // console.log(userResponse.data);
-
-//     // const authData = {
-//     //     ...tokenResponse.data,
-//     //     ...userResponse.data
-//     // };
-
-//     // const result = linkUser(session, "kakao", authData);
-
-//     // if (isLinkedUserDB) {
-//     //     console.info("계정에 연결되었습니다.");
-//     // } else {
-//     //     console.warn("이미 연결된 계정입니다.");
-//     // }
-
-//     res.redirect("/");
-// }
-
-
-/*kakao
-// linkAccount: async (req, res) => {
-
-
-    //     const { access_token } = tokenResponse.data;
-
-    //     let userResponse;
-    //     try {
-    //         // access_token 으로 사용자 정보 요청하기
-    //         userResponse = await axios({
-    //             method: "GET",
-    //             url: "https://kapi.kakao.com/v2/user/me",
-    //             headers: {
-    //                 Authorization: `Bearer ${access_token}`
-    //             }
-    //         });
-
-    //     } catch (error) {
-    //         return res.json(error.data);
-    //     }
-
-    //     console.info("==== userResponse.data ====");
-    //     console.log(userResponse.data);
-
-    //     const authData = {
-    //         ...tokenResponse.data,
-    //         ...userResponse.data
-    //     };
-
-    //     const isLinkedUserDB = func_link.kakao.linkUser(session, "kakao", authData);
-    //     // console.log(reseult)
-    //     if (isLinkedUserDB) {
-    //         console.log('*********************************************', isLinkedUserDB);
-    //         // res.
-    //         // res.cookie('user_id', authData.id);
-    //         const email = userResponse.data.kakao_account.email;
-    //         const check_user = await UserService.SelectUserInfo(email);
-
-    //         if (check_user == 0) {
-    //             res.redirect('/user')
-    //         }
-    //         else {
-    //             res.redirect('/user/register')
-    //         }
-
-    //         // res.redirect('/user/?email=' + email);
-    //         // req.session.loginData = userResponse.data;
-    //         console.info("계정에 연결되었습니다.");
-
-    //         // return req.session.save(() => {
-    //         //     res.send({ loggedIn: true, loginDate: authData });
-    //         //     // res.redirect('/');
-    //         // });
-
-    //     } else {
-    //         console.warn("이미 연결된 계정입니다.");
-    //         // res.redirect('/user/check/?email=' + email);
-
-    //     }
-
-    // },
-
-    // unlinkAccount: async (req, res) => {
-    //     const { session } = req;
-
-    //     const { access_token } = session.authData.kakao;
-
-    //     let unlinkResponse;
-    //     try {
-    //         unlinkResponse = await axios({
-    //             method: "POST",
-    //             url: "https://kapi.kakao.com/v1/user/unlink",
-    //             headers: {
-    //                 Authorization: `Bearer ${access_token}`
-    //             }
-    //         });
-    //     } catch (error) {
-    //         return res.json(error.data);
-    //     }
-
-    //     console.log("==== unlinkResponse.data ====");
-    //     console.log(unlinkResponse.data);
-
-    //     const { id } = unlinkResponse.data;
-    //     const result = func_link.kakao.unlinkUser(session, "kakao", id);
-
-    //     if (result) {
-    //         console.log("연결 해제되었습니다.");
-    //     } else {
-    //         console.log("카카오와 연동된 계정이 아닙니다.");
-    //     }
-    //     res.redirect("/");
-    // },
-*/

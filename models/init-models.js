@@ -8,6 +8,7 @@ var _check_vision_result = require("./check_vision_result");
 var _eye_movement_left_result = require("./eye_movement_left_result");
 var _eye_movement_result = require("./eye_movement_result");
 var _eye_movement_right_result = require("./eye_movement_right_result");
+var _session = require("./session");
 var _users = require("./users");
 var _vision_result = require("./vision_result");
 
@@ -21,6 +22,7 @@ function initModels(sequelize) {
   var eye_movement_left_result = _eye_movement_left_result(sequelize, DataTypes);
   var eye_movement_result = _eye_movement_result(sequelize, DataTypes);
   var eye_movement_right_result = _eye_movement_right_result(sequelize, DataTypes);
+  var session = _session(sequelize, DataTypes);
   var users = _users(sequelize, DataTypes);
   var vision_result = _vision_result(sequelize, DataTypes);
 
@@ -35,6 +37,7 @@ function initModels(sequelize) {
     eye_movement_left_result,
     eye_movement_result,
     eye_movement_right_result,
+    session,
     users,
     vision_result,
   };

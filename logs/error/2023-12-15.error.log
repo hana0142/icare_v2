@@ -1,0 +1,13 @@
+2023-12-15 00:04:58:458 error: no session
+2023-12-15 01:03:37:337 error: no session
+2023-12-15 01:03:53:353 error: no session
+2023-12-15 02:10:11:1011 error: no session
+2023-12-15 02:10:17:1017 error: no session
+2023-12-15 05:39:34:3934 error: Cannot read properties of undefined (reading 'user_id') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'user_id')
+    at testcheckJsonWebToken (/home/ec2-user/project_icare2/controllers/user.controller.js:385:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-15 07:56:12:5612 error: GET_RESULT_BLIND_SPOT_DETAIL : Do Not Found check ID
+2023-12-15 07:56:22:5622 error: GET_RESULT_BLIND_SPOT_DETAIL : Do Not Found check ID
+2023-12-15 07:56:30:5630 error: GET_RESULT_BLIND_SPOT_DETAIL : Do Not Found check ID
+2023-12-15 07:56:55:5655 error: GET_RESULT_BLIND_SPOT_DETAIL : Do Not Found check ID

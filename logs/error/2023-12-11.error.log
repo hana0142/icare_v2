@@ -1,0 +1,132 @@
+2023-12-11 00:42:40:4240 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:23:29:2329 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:23:53:2353 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:50:53:5053 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 01:52:55:5255 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 02:03:15:315 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 02:07:00:70 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:53:03:533 error: Request failed with status code 401 
+ Error Stack: AxiosError: Request failed with status code 401
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 22:53:28:5328 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:54:19:5419 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:54:53:5453 error: GET_KAKAO_TOKEN_SEND_CODE :  Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:69:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:53:29)
+2023-12-11 22:57:49:5749 error: Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 22:57:49:5749 error: GET_KAKAO_TOKEN_SEND_CODE :  Cannot read properties of undefined (reading 'access_token') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'access_token')
+    at sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:75:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-11 23:02:32:232 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:48
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:29)
+2023-12-11 23:03:39:339 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:03:39:339 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:04:30:430 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:06:47:647 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:29)
+2023-12-11 23:07:24:724 error: Cannot access 'tokenResponse' before initialization 
+ Error Stack: ReferenceError: Cannot access 'tokenResponse' before initialization
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:35)
+2023-12-11 23:07:52:752 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:33)
+2023-12-11 23:23:16:2316 error: Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-11 23:23:25:2325 error: Cannot read properties of undefined (reading 'data') 
+ Error Stack: TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/ec2-user/project_icare2/controllers/user.controller.js:72:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:55:33)
+2023-12-11 23:23:45:2345 error: GET_KAKAO_TOKEN_SEND_CODE :  res.send(...).catch is not a function 
+ Error Stack: TypeError: res.send(...).catch is not a function
+    at sendCode (/home/ec2-user/project_icare2/controllers/user.controller.js:78:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-11 23:28:04:284 error: GET_KAKAO_TOKEN_SEND_CODE :  Request failed with status code 400 
+ Error Stack: AxiosError: Request failed with status code 400
+    at settle (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:1913:12)
+    at IncomingMessage.handleStreamEnd (/home/ec2-user/project_icare2/node_modules/axios/dist/node/axios.cjs:3008:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
